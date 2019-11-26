@@ -1,0 +1,12 @@
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Library/IoLib.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Base.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/NXP/iMXPlatformPkg/Include/iMXUart.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/iMXPlatformPkg/Library/UartSerialPortLib/UartSerialPortLib/DEBUG/AutoGen.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/AArch64/ProcessorBind.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/NXP/iMXPlatformPkg/Library/UartSerialPortLib/UartSerialPortLib.c
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Uefi/UefiBaseType.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Protocol/SerialIo.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Library/BaseLib.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Library/PcdLib.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/NXP/iMXPlatformPkg/Library/UartSerialPortLib/UartSerialPortLib.inf
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Library/SerialPortLib.h

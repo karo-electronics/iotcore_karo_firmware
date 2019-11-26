@@ -1,0 +1,4 @@
+gCommandLineDefines: {'CONFIG_NOT_SECURE_UEFI': '1', 'SHIP_MODE': 'FALSE', 'DEBUG_MSG_ENABLE': 'TRUE', 'BUILD_UNIT_TESTS': 'FALSE', 'BUILD_APPS': 'FALSE', 'MS_CHANGE_ACTIVE': 'TRUE', 'BUILDID_STRING': '1.1.1', 'PERF_TRACE_ENABLE': 'FALSE', 'ARCH': 'AARCH64'}
+BuildOptionPcd: []
+Active Platform: /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/KARO/TX8M_MINI_EVK_1GB/TX8M_MINI_EVK_1GB.dsc
+Flash Image Definition: /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/KARO/TX8M_MINI_EVK_1GB/TX8M_MINI_EVK_1GB.fdf

@@ -1,0 +1,9 @@
+Platform:     TX8M_MINI_EVK_1GB
+Version:      1.1.1
+Date:         2019-10-23T09-16-39
+Commit:       None
+State:        0/0
+
+Overrides
+----------------------------------------------------------------
+

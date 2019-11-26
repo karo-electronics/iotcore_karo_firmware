@@ -1,0 +1,8 @@
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Library/BaseCpuLib/AArch64/CpuFlushTlb.S
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseCpuLib/BaseCpuLib/DEBUG/AutoGen.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Library/BaseCpuLib/AArch64/CpuSleep.asm
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Base.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Library/BaseCpuLib/AArch64/CpuFlushTlb.asm
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/AArch64/ProcessorBind.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Library/BaseCpuLib/AArch64/CpuSleep.S
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Library/BaseCpuLib/BaseCpuLib.inf

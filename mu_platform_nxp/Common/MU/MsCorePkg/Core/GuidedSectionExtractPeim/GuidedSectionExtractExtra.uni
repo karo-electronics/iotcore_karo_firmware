@@ -1,0 +1,9 @@
+// /** @file
+// JasTst Localized Strings and Content
+// **/
+
+#string STR_PROPERTIES_MODULE_NAME 
+#language en-US 
+"Core DXE Services GUIDed Section Extraction PEIM"
+
+

@@ -1,0 +1,48 @@
+// *++
+//
+// Copyright (c) 2004 - 2014, Intel Corporation.
+// Copyright (c) 2015 - 2018, Microsoft Corporation.
+// This program and the accompanying materials
+// are licensed and made available under the terms and conditions of the BSD License
+// which accompanies this distribution.  The full text of the license may be found at
+// http://opensource.org/licenses/bsd-license.php
+//
+// THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+// WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+//
+// Module Name:
+//
+//   SetupBrowserStr.uni
+//
+// Abstract:
+//
+//   String definitions for Browser.
+//
+// --*/
+
+
+/=#
+
+#langdef en-US "English"
+#langdef fr-FR "Français"
+
+#string UNKNOWN_STRING                 #language en-US  "!"
+                                       #language fr-FR  "!"
+#string STATUS_BROWSER_ERROR           #language en-US  "Browser met some error, return!"
+                                       #language fr-FR  "Browser met some error, return!"
+#string STATUS_BROWSER_FORM_NOT_FOUND  #language en-US  "Form not found, return!"
+                                       #language fr-FR  "Form not found, return!"
+#string STATUS_BROWSER_NO_SUBMIT_IF    #language en-US  "Not allowed to submit, return!"
+                                       #language fr-FR  "Not allowed to submit, return!"
+#string SAVE_FAILED                    #language en-US  "Failed to Save"
+                                       #language fr-FR  "Échouer à économiser"
+#string NO_SUBMIT_IF_CHECK_FAILED      #language en-US  "NO_SUBMIT_IF check fail."
+                                       #language fr-FR  "NO_SUBMIT_IF check fail."
+#string FORM_SUPPRESSED                #language en-US  "Form is suppressed. Nothing is displayed."
+                                       #language fr-FR  "Form is suppressed. Nothing is displayed."
+#string PROTOCOL_NOT_FOUND             #language en-US  "Convert string to device path fail. Can't goto the destination."
+                                       #language fr-FR  "Convert string to device path fail. Can't goto the destination."
+#string DISCARD_OR_JUMP                #language en-US  "Press OK to continue"
+                                       #language fr-FR  "Press OK to continue"
+#string DISCARD_OR_CHECK               #language en-US  "Press OK to discard the changes then continue"
+                                       #language fr-FR  "Press OK to discard the changes then continue"

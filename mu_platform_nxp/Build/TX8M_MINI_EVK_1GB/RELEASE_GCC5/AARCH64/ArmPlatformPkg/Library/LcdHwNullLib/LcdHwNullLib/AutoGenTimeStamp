@@ -1,0 +1,9 @@
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPlatformPkg/Include/Library/LcdPlatformLib.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Base.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/AArch64/ProcessorBind.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPlatformPkg/Library/LcdHwNullLib/LcdHwNullLib.c
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Uefi/UefiBaseType.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Protocol/GraphicsOutput.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Library/DebugLib.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Library/LcdHwNullLib/LcdHwNullLib/DEBUG/AutoGen.h
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPlatformPkg/Library/LcdHwNullLib/LcdHwNullLib.inf

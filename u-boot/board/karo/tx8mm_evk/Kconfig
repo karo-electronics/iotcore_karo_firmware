@@ -1,0 +1,39 @@
+if TARGET_KARO_TX8MM_EVK
+
+config SYS_BOARD
+	default "tx8mm_evk"
+
+config SYS_VENDOR
+	default "karo"
+
+config SYS_CONFIG_NAME
+	default "tx8mm_evk"
+
+config TX8MM_EVK
+	bool
+	default y
+	select BOARD_LATE_INIT
+	imply FEC_MXC
+	select MII
+	select PHYLIB
+	select MXC_UART
+
+choice
+        prompt "U-Boot image variant"
+	    default TX8MM_EVK_UBOOT
+
+config TX8MM_EVK_UBOOT
+        bool "Standard U-Boot image"
+
+config TX8MM_EVK_UBOOT_MFG
+        bool "U-Boot image for use with Freescale's MfGTool"
+        select UBOOT_IGNORE_ENV
+
+config TX8MM_EVK_UBOOT_NOENV
+        bool "U-Boot using only built-in environment"
+        select UBOOT_IGNORE_ENV
+
+endchoice
+
+
+endif

@@ -1,0 +1,84 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+ .comment       0x0000000000000000       0x2e /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                PECOFF_HEADER_SIZE = 0x0
+                0x0000000000000000                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000000000        0x8
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.ReferenceAcpiTable
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+                0x0000000000000000                ReferenceAcpiTable
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x0000000000000008        0x0
+ .iplt          0x0000000000000008        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+.data           0x0000000000000020       0x5c
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.Dbg2     0x0000000000000020       0x5c /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+ *(.bss .bss.*)
+
+.igot.plt       0x0000000000000080        0x0
+ .igot.plt      0x0000000000000080        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000000080        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x0000000000000080        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+.hii
+ *(.hii)
+
+.build-id       0x000000000000007c       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x000000000000007c       0x24 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+ *(COMMON)
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+OUTPUT(/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000      0x5f0
+ .debug_info    0x0000000000000000      0x5f0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+.debug_abbrev   0x0000000000000000       0xe8
+ .debug_abbrev  0x0000000000000000       0xe8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+.debug_aranges  0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+.debug_line     0x0000000000000000      0x3ff
+ .debug_line    0x0000000000000000      0x3ff /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+
+.debug_str      0x0000000000000000      0xab2
+ .debug_str     0x0000000000000000      0xab2 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables/OUTPUT/iMX8Pkg/AcpiTables/Dbg2.obj
+                                        0xb20 (size before relaxing)

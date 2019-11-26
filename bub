@@ -1,0 +1,99 @@
+#!/bin/bash
+set -e
+
+# U-Boot
+
+
+export CROSS_COMPILE=~/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+export ARCH=arm64
+
+pushd u-boot
+if [ "$1" = "clean" ]
+then
+	echo cleaning environment
+	make mrproper
+else
+	echo building with non clean environment
+fi
+make karo_tx8mm_evk_nt_defconfig
+make
+# make V=1
+popd
+
+
+
+
+# Arm Trusted Firmware
+
+export CROSS_COMPILE=~/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+export ARCH=arm64
+
+pushd imx-atf
+make PLAT=imx8mm SPD=opteed bl31
+popd
+
+
+
+# OP-TEE OS
+
+export -n CROSS_COMPILE
+export -n ARCH
+export CROSS_COMPILE64=~/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+pushd optee_os
+
+make PLATFORM=imx PLATFORM_FLAVOR=mx8mmevk \
+  CFG_TEE_CORE_DEBUG=n CFG_TEE_CORE_LOG_LEVEL=2  CFG_UART_BASE=0x30890000 \
+  CFG_RPMB_FS=y CFG_RPMB_TESTKEY=y CFG_RPMB_WRITE_KEY=y CFG_REE_FS=n  \
+  CFG_IMXCRYPT=y CFG_CORE_HEAP_SIZE=98304
+
+${CROSS_COMPILE64}objcopy -O binary ./out/arm-plat-imx/core/tee.elf ./out/arm-plat-imx/tee.bin
+popd
+
+
+
+# OP-TEE Trusted Applications
+
+export TA_DEV_KIT_DIR=../../../../optee_os/out/arm-plat-imx/export-ta_arm64
+export TA_CROSS_COMPILE=~/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+export TA_CPU=cortex-a53
+
+pushd MSRSec/TAs/optee_ta
+make CFG_ARM64_ta_arm64=y CFG_FTPM_USE_WOLF=y CFG_AUTHVARS_USE_WOLF=y
+
+# debug
+# CFG_TEE_TA_LOG_LEVEL=4 CFG_TA_DEBUG=y make
+
+popd
+
+# cp MSRSec/TAs/optee_ta/out/AuthVars/2d57c0f7-bddf-48ea-832f-d84a1a219301.ta  mu_platform_nxp/Microsoft/OpteeClientPkg/Bin/AuthvarsTa/Arm64/Test/
+# cp MSRSec/TAs/optee_ta/out/AuthVars/2d57c0f7-bddf-48ea-832f-d84a1a219301.elf mu_platform_nxp/Microsoft/OpteeClientPkg/Bin/AuthvarsTa/Arm64/Test/
+
+cp MSRSec/TAs/optee_ta/out/fTPM/53bab89c-b864-4d7e-acbc-33c07a9c1b8d.ta mu_platform_nxp/Microsoft/OpteeClientPkg/Bin/fTpmTa/Arm64/Test/
+cp MSRSec/TAs/optee_ta/out/fTPM/53bab89c-b864-4d7e-acbc-33c07a9c1b8d.elf mu_platform_nxp/Microsoft/OpteeClientPkg/Bin/fTpmTa/Arm64/Test/
+
+
+# Imx-mkimage
+
+export CROSS_COMPILE=~/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+export ARCH=arm64
+
+pushd imx-mkimage/iMX8M
+
+cp ../../firmware-imx-8.1/firmware/ddr/synopsys/ddr3_dmem_1d.bin .
+cp ../../firmware-imx-8.1/firmware/ddr/synopsys/ddr3_imem_1d.bin .
+cp ../../optee_os/out/arm-plat-imx/tee.bin .
+cp ../../imx-atf/build/imx8mm/release/bl31.bin .
+cp ../../u-boot/u-boot-nodtb.bin  .
+cp ../../u-boot/spl/u-boot-spl.bin .
+cp ../../u-boot/arch/arm/dts/imx8mm-tx8m-1610-mipi-mb.dtb .
+cp ../../u-boot/tools/mkimage .
+
+mv mkimage mkimage_uboot
+
+cd ..
+make SOC=iMX8MM dtbs_ddr3l=imx8mm-tx8m-1610-mipi-mb.dtb flash_ddr3l_val_no_hdmi
+popd
+
+###cp imx-mkimage/iMX8M/flash.bin /mnt/karonas/trans/Uwe/WIN10IOT/firmware/tx8mm
+
+

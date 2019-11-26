@@ -1,0 +1,17 @@
+if TARGET_KARO_TX8MM_EVK
+
+config SYS_BOARD
+	default "tx8mm_evk"
+
+config SYS_VENDOR
+	default "karo"
+
+config SYS_CONFIG_NAME
+	default "tx8mm_evk"
+
+config SHOW_ACTIVITY
+	bool "show led activity"
+
+
+
+endif

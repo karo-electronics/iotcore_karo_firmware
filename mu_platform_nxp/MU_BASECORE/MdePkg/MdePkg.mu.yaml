@@ -1,0 +1,19 @@
+{
+    "CompilerPlugin": {
+        "IgnoreInf": []
+    },
+    "DependencyCheck": {
+        "AcceptableDependencies": [
+            "MdePkg/MdePkg.dec",
+            "MsUnitTestPkg/MsUnitTestPkg.dec"
+        ], 
+        "IgnoreInf": []
+    },
+    "DSCCheck": {
+        "IgnoreInf": [
+            "MdePkg/Library/VsIntrinsicLib/VsIntrinsicLib.inf",
+            "MdePkg/Library/BaseBinSecurityLibNull/BaseBinSecurityLibNull.inf",
+            "MdePkg/Library/BaseBinSecurityLibRng/BaseBinSecurityLibRng.inf"
+        ]
+    }
+}

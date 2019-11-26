@@ -1,0 +1,61 @@
+// *++
+//
+// Strings for Simple Window Manager
+//
+// Copyright (c) 2015 - 2018, Microsoft Corporation.
+//
+// All rights reserved.
+// Redistribution and use in source and binary forms, with or without 
+// modification, are permitted provided that the following conditions are met:
+// 1. Redistributions of source code must retain the above copyright notice,
+// this list of conditions and the following disclaimer.
+// 2. Redistributions in binary form must reproduce the above copyright notice,
+// this list of conditions and the following disclaimer in the documentation
+// and/or other materials provided with the distribution.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+// ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+// WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+// IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+// INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+// BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+// LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+// OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+// ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// --*/
+
+#langdef   en-US " English "
+#langdef   fr-FR " Français "
+#langdef   ja-JP "\wide 日本語 "
+
+#langdef   en    " Standard English "
+#langdef   fr    " Standard Français "
+#langdef   ja    "\wide 日本語 "
+
+////////////////////////////////////////////////////////////////////////////////////
+// Generic Strings
+//
+#string STR_NULL_STRING             #language en-US  ""
+                                    #language ja-JP  ""
+
+#string STR_GENERIC_YES_STRING      #language en-US  "Yes"
+                                    #language ja-JP  "Yes"      ## TODO
+
+#string STR_GENERIC_NO_STRING       #language en-US  "No"
+                                    #language ja-JP  "No"       ## TODO
+
+#string STR_GENERIC_OK_STRING       #language en-US  "Ok"
+                                    #language ja-JP  "Ok"       ## TODO
+
+#string STR_GENERIC_CANCEL_STRING   #language en-US  "Cancel"
+                                    #language ja-JP  "Cancel"   ## TODO
+
+#string STR_GENERIC_RETRY_STRING    #language en-US  "Retry"
+                                    #language ja-JP  "Retry"    ## TODO
+
+#string STR_GENERIC_NEXT_STRING     #language en-US  "Next"
+                                    #language ja-JP  "Next"     ## TODO
+
+#string STR_GENERIC_RESTART_STRING  #language en-US  "Restart now"
+                                    #language ja-JP  "Restart now"  ## TODO

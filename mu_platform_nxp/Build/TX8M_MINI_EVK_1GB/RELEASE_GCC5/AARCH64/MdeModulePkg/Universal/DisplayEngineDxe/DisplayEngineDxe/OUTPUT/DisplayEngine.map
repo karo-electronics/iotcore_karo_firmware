@@ -1,0 +1,983 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/OUTPUT/DisplayEngine.lib(AutoGen.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/OUTPUT/DisplayEngine.lib(FormDisplay.obj)
+                              AutoGen.obj (symbol from plugin) (InitializeDisplayEngine)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/OUTPUT/DisplayEngine.lib(ProcessOptions.obj)
+                              FormDisplay.obj (symbol from plugin) (EmptyEventProcess)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/OUTPUT/DisplayEngine.lib(InputHandler.obj)
+                              ProcessOptions.obj (symbol from plugin) (ReadString)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/OUTPUT/DisplayEngine.lib(Popup.obj)
+                              FormDisplay.obj (symbol from plugin) (CreatePopup)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              InputHandler.obj (symbol from plugin) (MultU64x32)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              InputHandler.obj (symbol from plugin) (LShiftU64)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+                              FormDisplay.obj (symbol from plugin) (InitializeListHead)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              FormDisplay.obj (symbol from plugin) (StrCpyS)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              FormDisplay.obj (symbol from plugin) (StrLen)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes32)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes16)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (RShiftU64)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SafeString.obj (symbol from plugin) (DivU64x32)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(MemLibGuid.obj)
+                              FormDisplay.obj (symbol from plugin) (CopyGuid)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(ZeroMemWrapper.obj)
+                              FormDisplay.obj (symbol from plugin) (ZeroMem)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareMemWrapper.obj)
+                              FormDisplay.obj (symbol from plugin) (CompareMem)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CopyMemWrapper.obj)
+                              FormDisplay.obj (symbol from plugin) (CopyMem)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(SetMem.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CopyMem.obj)
+                              MemLibGuid.obj (symbol from plugin) (InternalMemCopyMem)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareMem.obj)
+                              CompareMemWrapper.obj (symbol from plugin) (InternalMemCompareMem)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareGuid.obj)
+                              MemLibGuid.obj (symbol from plugin) (InternalMemCompareGuid)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+                              ProcessOptions.obj (symbol from plugin) (UnicodeSPrint)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+                              PrintLib.obj (symbol from plugin) (BasePrintLibConvertValueToString)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort/OUTPUT/BaseDebugLibSerialPort.lib(DebugLib.obj)
+                              AutoGen.obj (symbol from plugin) (BaseDebugLibSerialPortConstructor)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmArchTimerLib/ArmArchTimerLib/OUTPUT/ArmArchTimerLib.lib(ArmArchTimerLib.obj)
+                              AutoGen.obj (symbol from plugin) (TimerConstructor)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+                              FormDisplay.obj (symbol from plugin) (AllocateZeroPool)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib(UefiRuntimeServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiRuntimeServicesTableLibConstructor)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib/OUTPUT/UefiHiiServicesLib.lib(UefiHiiServicesLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiHiiServicesLibConstructor)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiLibConstructor)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiLib.obj)
+                              FormDisplay.obj (symbol from plugin) (HiiAddPackages)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiString.obj)
+                              ProcessOptions.obj (symbol from plugin) (HiiSetString)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiLanguage.obj)
+                              HiiString.obj (symbol from plugin) (HiiGetSupportedLanguages)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/CustomizedDisplayLib/CustomizedDisplayLib/OUTPUT/CustomizedDisplayLib.lib(CustomizedDisplayLib.obj)
+                              FormDisplay.obj (symbol from plugin) (FormExitPolicy)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/CustomizedDisplayLib/CustomizedDisplayLib/OUTPUT/CustomizedDisplayLib.lib(CustomizedDisplayLibInternal.obj)
+                              CustomizedDisplayLib.obj (symbol from plugin) (ProcessExternedOpcode)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/CustomizedDisplayLib/CustomizedDisplayLib/OUTPUT/CustomizedDisplayLib.lib(AutoGen.obj)
+                              CustomizedDisplayLib.obj (symbol from plugin) (CustomizedDisplayLibStrings)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x64.obj)
+                              ArmArchTimerLib.obj (symbol from plugin) (MultU64x64)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+                              PrintLibInternal.obj (symbol from plugin) (DivU64x32Remainder)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(BitField.obj)
+                              HiiLib.obj (symbol from plugin) (BitFieldRead32)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              PrintLibInternal.obj (symbol from plugin) (ReadUnaligned16)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(SetMemWrapper.obj)
+                              DebugLib.obj (symbol from plugin) (SetMem)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(SetMem64Wrapper.obj)
+                              SetMemWrapper.obj (symbol from plugin) (SetMem64)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                              ArmArchTimerLib.obj (symbol from plugin) (ArmIsArchTimerImplemented)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib(BaseDebugPrintErrorLevelLib.obj)
+                              DebugLib.obj (symbol from plugin) (GetDebugPrintErrorLevel)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/iMXPlatformPkg/Library/UartSerialPortLib/UartSerialPortLib/OUTPUT/SerialPortLib.lib(UartSerialPortLib.obj)
+                              DebugLib.obj (symbol from plugin) (SerialPortInitialize)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmGenericTimerPhyCounterLib/ArmGenericTimerPhyCounterLib/OUTPUT/ArmGenericTimerPhyCounterLib.lib(ArmGenericTimerPhyCounterLib.obj)
+                              ArmArchTimerLib.obj (symbol from plugin) (ArmGenericTimerGetTimerFreq)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilities.obj)
+                              UefiLib.obj (symbol from plugin) (DevicePathType)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(UefiDevicePathLib.obj)
+                              HiiLib.obj (symbol from plugin) (GetDevicePathSize)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathToText.obj)
+                              UefiDevicePathLib.obj (symbol from plugin) (UefiDevicePathLibConvertDeviceNodeToText)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathFromText.obj)
+                              UefiDevicePathLib.obj (symbol from plugin) (UefiDevicePathLibConvertTextToDeviceNode)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes64.obj)
+                              DevicePathFromText.obj (symbol from plugin) (SwapBytes64)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                              ArmGenericTimerPhyCounterLib.obj (symbol from plugin) (ArmReadCntFrq)
+/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLibArm.obj)
+                              UartSerialPortLib.obj (symbol from plugin) (MmioRead32)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000       0x18 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x2e /tmp/cckKjTI5.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 DriverEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 FormDisplay.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ProcessOptions.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 InputHandler.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Popup.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LinkedList.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 String.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CompareMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(SetMem.obj)
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(SetMem.obj)
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CopyMem.obj)
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CopyMem.obj)
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareMem.obj)
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareMem.obj)
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareGuid.obj)
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareGuid.obj)
+ .text          0x0000000000000000        0x0 PrintLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLibInternal.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DebugLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmArchTimerLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiBootServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemoryAllocationLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiRuntimeServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiHiiServicesLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 HiiLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 HiiString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 HiiLanguage.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CustomizedDisplayLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CustomizedDisplayLibInternal.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32Remainder.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BitField.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem64Wrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateDataCacheEntryByMVA
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanDataCacheEntryByMVA
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanDataCacheEntryToPoUByMVA
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateInstructionCacheEntryToPoUByMVA
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanInvalidateDataCacheEntryByMVA
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanInvalidateDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateInstructionCache
+                0x0000000000000000       0x10 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableMmu
+                0x0000000000000000       0x88 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableMmu
+                0x0000000000000000       0x74 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableCachesAndMmu
+                0x0000000000000000       0x6c /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmMmuEnabled
+                0x0000000000000000       0x34 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableDataCache
+                0x0000000000000000       0x68 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableDataCache
+                0x0000000000000000       0x68 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableInstructionCache
+                0x0000000000000000       0x68 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableInstructionCache
+                0x0000000000000000       0x68 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableAlignmentCheck
+                0x0000000000000000       0x58 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableAlignmentCheck
+                0x0000000000000000       0x68 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableStackAlignmentCheck
+                0x0000000000000000       0x58 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableStackAlignmentCheck
+                0x0000000000000000       0x68 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableBranchPrediction
+                0x0000000000000000        0x4 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableBranchPrediction
+                0x0000000000000000        0x4 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.AArch64AllDataCachesOperation
+                0x0000000000000000       0xa8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDataMemoryBarrier
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDataSynchronizationBarrier
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInstructionSynchronizationBarrier
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteVBar
+                0x0000000000000000       0x34 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadVBar
+                0x0000000000000000       0x30 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableVFP
+                0x0000000000000000       0x64 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCallWFI
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadMpidr
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadTpidrurw
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteTpidrurw
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadIdPfr0
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadIdPfr1
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteHcr
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadHcr
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadCurrentEL
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadCntHctl
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteCntHctl
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text          0x0000000000000000        0x0 BaseDebugPrintErrorLevelLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UartSerialPortLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmGenericTimerPhyCounterLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DevicePathUtilities.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiDevicePathLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DevicePathToText.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DevicePathFromText.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .data          0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .bss           0x0000000000000000        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntFrq
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntFrq
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntPct
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntkCtl
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntkCtl
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntpTval
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntpTval
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntpCtl
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntpCtl
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvTval
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntvTval
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvCtl
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntvCtl
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvCt
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntpCval
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntpCval
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvCval
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntvCval
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvOff
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntvOff
+                0x0000000000000000        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text          0x0000000000000000        0x0 IoLibArm.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/cckKjTI5.ltrans0.ltrans.o
+START GROUP
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmCacheMaintenanceLib/ArmCacheMaintenanceLib/OUTPUT/ArmCacheMaintenanceLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/iMXPlatformPkg/Library/UartSerialPortLib/UartSerialPortLib/OUTPUT/SerialPortLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort/OUTPUT/BaseDebugLibSerialPort.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmGenericTimerPhyCounterLib/ArmGenericTimerPhyCounterLib/OUTPUT/ArmGenericTimerPhyCounterLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmArchTimerLib/ArmArchTimerLib/OUTPUT/ArmArchTimerLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib/OUTPUT/UefiHiiServicesLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Library/CustomizedDisplayLib/CustomizedDisplayLib/OUTPUT/CustomizedDisplayLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/OUTPUT/DisplayEngine.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000     0xc39c
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.InternalAllocatePool.constprop.34
+                0x0000000000001000       0x38 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.SetUnicodeMem.constprop.26
+                0x0000000000001038       0x20 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetNextNode.constprop.21
+                0x0000000000001058        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.MultU64x32.constprop.13
+                0x0000000000001060        0xc /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.LShiftU64.constprop.11
+                0x000000000000106c        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ReadUnaligned16
+                0x0000000000001074       0x30 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ReadUnaligned32
+                0x00000000000010a4       0x28 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.WaitForKeyStroke
+                0x00000000000010cc       0x78 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetFieldFromNum
+                0x0000000000001144       0x40 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.HiiRemovePackages
+                0x0000000000001184       0x18 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.FreePool
+                0x000000000000119c       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.FreeLibStrings
+                0x00000000000011ac       0xf0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.BaseDebugLibSerialPortConstructor
+                0x000000000000129c       0x18 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.BasePrintLibFillBuffer
+                0x00000000000012b4       0x34 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.AsciiStrnCmp
+                0x00000000000012e8       0x40 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.AsciiStrLen
+                0x0000000000001328       0x1c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.StrCmp   0x0000000000001344       0x28 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.StrLen   0x000000000000136c       0x1c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.StrSize  0x0000000000001388       0x1c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.StrnLenS
+                0x00000000000013a4       0x3c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.InternalSafeStringNoStrOverlap
+                0x00000000000013e0       0x3c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.StrCatS  0x000000000000141c       0xc4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.StrnCpyS
+                0x00000000000014e0       0xd8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.StrCpyS  0x00000000000015b8       0xa0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.RemoveEntryList
+                0x0000000000001658       0x18 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.SwapListEntries
+                0x0000000000001670       0x8c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.IsNull   0x00000000000016fc        0xc /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.IsListEmpty
+                0x0000000000001708       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetFirstNode
+                0x0000000000001718        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.InsertTailList
+                0x0000000000001720       0x18 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.InsertHeadList
+                0x0000000000001738       0x14 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.InitializeListHead
+                0x000000000000174c        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.SetValuesByType
+                0x0000000000001754       0x54 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.EmptyEventProcess
+                0x00000000000017a8        0x4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.SetArrayData
+                0x00000000000017ac       0x44 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetArrayData
+                0x00000000000017f0       0x4c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.HiiValueToUINT64
+                0x000000000000183c       0x50 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.NewStrCat
+                0x000000000000188c       0x30 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetStringWidth.part.2
+                0x00000000000018bc       0x5c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetStringWidth
+                0x0000000000001918        0xc /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.DriverClearDisplayPage
+                0x0000000000001924       0x54 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.SetDisplayAttribute
+                0x0000000000001978       0x58 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.AdjustDateAndTimePosition
+                0x00000000000019d0       0x88 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text._DriverUnloadHandler
+                0x0000000000001a58      0x2c4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.unlikely.BasePrintLibSPrint.constprop.20
+                0x0000000000001d1c       0x54 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.BasePrintLibSPrintMarker.constprop.19
+                0x0000000000001d70      0xd44 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.UnicodeVSPrint
+                0x0000000000002ab4       0x54 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.UnicodeSPrint
+                0x0000000000002b08       0x50 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.PrintFormattedNumber.constprop.9
+                0x0000000000002b58       0xa8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.TimerConstructor
+                0x0000000000002c00       0x18 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.CopyMem  0x0000000000002c18       0x1c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.InternalAllocateCopyPool.constprop.28
+                0x0000000000002c34       0x3c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.CopyGuid
+                0x0000000000002c70        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.CompareMem
+                0x0000000000002c78       0x18 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetIndexInfoForOpcode
+                0x0000000000002c90       0x80 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.UpdateHighlightMenuInfo
+                0x0000000000002d10      0x178 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.FindHighLightMenuOption
+                0x0000000000002e88      0x124 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ZeroMem  0x0000000000002fac        0xc /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.AllocateZeroPool
+                0x0000000000002fb8       0x34 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetBestLanguage.constprop.32
+                0x0000000000002fec      0x140 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.PrintAt  0x000000000000312c      0x278 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.PrintCharAt
+                0x00000000000033a4       0x1c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.PrintStringAtWithWidth
+                0x00000000000033c0       0x20 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.PrintHotKeyHelpString
+                0x00000000000033e0      0x1e4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.PrintStringAt
+                0x00000000000035c4       0x1c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.UpdateStatusBar
+                0x00000000000035e0      0x170 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.DisplayMenuString
+                0x0000000000003750       0x94 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.RefreshKeyHelp
+                0x00000000000037e4      0x62c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ClearLines
+                0x0000000000003e10       0xb4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.CreateMultiStringPopUp.constprop.15
+                0x0000000000003ec4      0x2bc /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.CreateDialog
+                0x0000000000004180      0x3d0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ConfirmDataChange
+                0x0000000000004550       0xc4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.RefreshTimeOutProcess
+                0x0000000000004614       0x98 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.HiiGetSupportedLanguages
+                0x00000000000046ac       0x98 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.HiiGetString.constprop.29
+                0x0000000000004744      0x1bc /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.LibGetToken
+                0x0000000000004900       0x40 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetToken
+                0x0000000000004940       0x40 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.CompareHiiValue.constprop.8
+                0x0000000000004980      0x260 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetWidth
+                0x0000000000004be0      0x138 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.HiiSetString.constprop.17
+                0x0000000000004d18      0x11c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.HiiAddPackages
+                0x0000000000004e34      0x194 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ParseMessageString.part.0
+                0x0000000000004fc8      0x114 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.AddOneSelectableOption
+                0x00000000000050dc       0xf0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.CreatePopup
+                0x00000000000051cc      0xaa0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ReadString
+                0x0000000000005c6c      0x714 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetLineByWidth
+                0x0000000000006380      0x230 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ProcessHelpString.constprop.4
+                0x00000000000065b0      0x110 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.UpdateSkipInfoForMenu
+                0x00000000000066c0       0xb4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.UiAddMenuOption
+                0x0000000000006774      0x22c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetNumericInput
+                0x00000000000069a0      0xc04 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ValueToOption
+                0x00000000000075a4       0xc0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.GetSelectionInputPopUp
+                0x0000000000007664      0x980 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ProcessOptions
+                0x0000000000007fe4      0xcd4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.DisplayOneMenu
+                0x0000000000008cb8      0x628 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.IsSelectable
+                0x00000000000092e0       0xc0 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.UpdateOptionSkipLines
+                0x00000000000093a0       0x90 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.FindTopOfScreenMenuOption
+                0x0000000000009430      0x12c /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.FindTopOfScreenMenu
+                0x000000000000955c       0xc4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.MoveToNextStatement
+                0x0000000000009620       0xe4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.CompareGuid
+                0x0000000000009704        0x4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.ProcessUserOpcode
+                0x0000000000009708      0x134 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.FormDisplay
+                0x000000000000983c     0x2884 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .text.memcpy   0x000000000000c0c0       0x20 /tmp/cckKjTI5.ltrans0.ltrans.o
+                0x000000000000c0c0                memcpy
+ .text._ModuleEntryPoint
+                0x000000000000c0e0      0x7f8 /tmp/cckKjTI5.ltrans0.ltrans.o
+                0x000000000000c0e0                _ModuleEntryPoint
+ *fill*         0x000000000000c8d8        0x8 
+ .text          0x000000000000c8e0      0x200 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(SetMem.obj)
+                0x000000000000c8e0                InternalMemSetMem16
+                0x000000000000c8ec                InternalMemSetMem32
+                0x000000000000c8f8                InternalMemSetMem64
+                0x000000000000c904                InternalMemZeroMem
+                0x000000000000c90c                InternalMemSetMem
+ .text          0x000000000000cae0      0x218 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CopyMem.obj)
+                0x000000000000cc4c                InternalMemCopyMem
+ *fill*         0x000000000000ccf8        0x8 
+ .text          0x000000000000cd00       0xe0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareMem.obj)
+                0x000000000000cd00                InternalMemCompareMem
+ .text          0x000000000000cde0       0x20 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib(CompareGuid.obj)
+                0x000000000000cde0                InternalMemCompareGuid
+ .text.ArmIsArchTimerImplemented
+                0x000000000000ce00        0x8 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000ce00                ArmIsArchTimerImplemented
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.SetValuesByType
+                0x000000000000ce08        0x5 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000ce0d        0x3 
+ .rodata.SetArrayData
+                0x000000000000ce10        0x4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.GetArrayData
+                0x000000000000ce14        0x4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.HiiValueToUINT64
+                0x000000000000ce18        0x7 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000ce1f        0x1 
+ .rodata.CompareHiiValue.constprop.8
+                0x000000000000ce20       0x18 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.AddOneSelectableOption
+                0x000000000000ce38        0x4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.GetSelectionInputPopUp
+                0x000000000000ce3c        0x5 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000ce41        0x3 
+ .rodata.ProcessOptions
+                0x000000000000ce44        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.FormDisplay
+                0x000000000000ce4c       0x32 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.BasePrintLibSPrintMarker.constprop.19.str1.1
+                0x000000000000ce7e       0x7b /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.CSWTCH.178
+                0x000000000000cef9        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000cf01        0x1 
+ .rodata.CreatePopup.str2.2
+                0x000000000000cf02        0xe /tmp/cckKjTI5.ltrans0.ltrans.o
+                                         0x16 (size before relaxing)
+ .rodata.DisplayMenuString.str2.2
+                0x000000000000cf10        0xe /tmp/cckKjTI5.ltrans0.ltrans.o
+                                          0x2 (size before relaxing)
+ .rodata.GetNumericInput.str2.2
+                0x000000000000cf10       0x14 /tmp/cckKjTI5.ltrans0.ltrans.o
+                                         0x18 (size before relaxing)
+ .rodata.HiiGetString.constprop.29.str1.1
+                0x000000000000cf24       0x7b /tmp/cckKjTI5.ltrans0.ltrans.o
+                                          0x1 (size before relaxing)
+ .rodata.HiiGetString.constprop.29.str2.2
+                0x000000000000cf24       0x1a /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.HiiSetString.constprop.17.str1.1
+                0x000000000000cf3e        0x7 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000cf45        0x1 
+ .rodata.PrintCharAt.str2.2
+                0x000000000000cf46        0x6 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.PrintFormattedNumber.constprop.9.str2.2
+                0x000000000000cf4c       0x12 /tmp/cckKjTI5.ltrans0.ltrans.o
+                                         0x1a (size before relaxing)
+ .rodata.PrintStringAtWithWidth.str2.2
+                0x000000000000cf5e       0x12 /tmp/cckKjTI5.ltrans0.ltrans.o
+                                          0x6 (size before relaxing)
+ .rodata.ProcessOptions.str2.2
+                0x000000000000cf5e        0xa /tmp/cckKjTI5.ltrans0.ltrans.o
+                                         0x10 (size before relaxing)
+ .rodata.RefreshKeyHelp.str2.2
+                0x000000000000cf68       0x16 /tmp/cckKjTI5.ltrans0.ltrans.o
+                                         0x24 (size before relaxing)
+ .rodata.RefreshTimeOutProcess.str2.2
+                0x000000000000cf7e        0x6 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.UpdateStatusBar.str2.2
+                0x000000000000cf84        0x6 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata._ModuleEntryPoint.str2.2
+                0x000000000000cf8a        0x4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdFrontPageFormSetGuid
+                0x000000000000cf8e       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000cf9e        0x2 
+ .rodata.gScanCodeToOperation
+                0x000000000000cfa0       0x38 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.gScreenOperationToControlFlag
+                0x000000000000cfd8       0x50 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.mEndOfPakageList
+                0x000000000000d028        0x4 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.mHexStr
+                0x000000000000d02c       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000d03c        0x4 
+ .rodata.mStatusString
+                0x000000000000d040      0x138 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .rodata.str1.1
+                0x000000000000d178      0x224 /tmp/cckKjTI5.ltrans0.ltrans.o
+                                        0x235 (size before relaxing)
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x000000000000d39c        0x0
+ .iplt          0x000000000000d39c        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+
+.data           0x000000000000e000     0x21b0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.CustomizedDisplayLibStrings
+                0x000000000000e000      0x6ea /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.DisplayEngineStrings
+                0x000000000000e6ea     0x15c6 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gCustomizedDisplayLibGuid
+                0x000000000000fcb0       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gDisplayEngineGuid
+                0x000000000000fcc0       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEdkiiFormBrowserEx2ProtocolGuid
+                0x000000000000fcd0       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEdkiiFormDisplayEngineProtocolGuid
+                0x000000000000fce0       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiGlobalVariableGuid
+                0x000000000000fcf0       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiHiiConfigRoutingProtocolGuid
+                0x000000000000fd00       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiHiiDatabaseProtocolGuid
+                0x000000000000fd10       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiHiiFontProtocolGuid
+                0x000000000000fd20       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiHiiImageProtocolGuid
+                0x000000000000fd30       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiHiiPopupProtocolGuid
+                0x000000000000fd40       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiHiiStringProtocolGuid
+                0x000000000000fd50       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiIfrTianoGuid
+                0x000000000000fd60       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gEfiLoadedImageProtocolGuid
+                0x000000000000fd70       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.gLibIsFirstForm
+                0x000000000000fd80        0x1 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .data.mIsFirstForm
+                0x000000000000fd81        0x1 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000fd82        0x6 
+ .data.mPrivateData
+                0x000000000000fd88       0x38 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *(.bss .bss.*)
+ .bss.gAdjustNumber
+                0x000000000000fdc0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gAreYouSure
+                0x000000000000fdc8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gBS       0x000000000000fdd0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gBannerData
+                0x000000000000fdd8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gBrowserError
+                0x000000000000fde0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gCancelOption
+                0x000000000000fde8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gChangesOpt
+                0x000000000000fdf0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gCheckError
+                0x000000000000fdf8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gClassOfVfr
+                0x000000000000fe00        0x2 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000fe02        0x6 
+ .bss.gConfirmDefaultMsg
+                0x000000000000fe08        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmDefaultMsg2nd
+                0x000000000000fe10        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmDiscardMsg
+                0x000000000000fe18        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmError
+                0x000000000000fe20        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmExitMsg
+                0x000000000000fe28        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmExitMsg2nd
+                0x000000000000fe30        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmMsgConnect
+                0x000000000000fe38        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmMsgEnd
+                0x000000000000fe40        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmOpt
+                0x000000000000fe48        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmOptCancel
+                0x000000000000fe50        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmOptNo
+                0x000000000000fe58        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmOptOk
+                0x000000000000fe60        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmOptYes
+                0x000000000000fe68        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmPassword
+                0x000000000000fe70        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmResetMsg
+                0x000000000000fe78        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmResetMsg2nd
+                0x000000000000fe80        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmSubmitMsg
+                0x000000000000fe88        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gConfirmSubmitMsg2nd
+                0x000000000000fe90        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gDecNumericInput
+                0x000000000000fe98        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gDirection
+                0x000000000000fea0        0x2 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000fea2        0x6 
+ .bss.gDiscardChange
+                0x000000000000fea8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gEmptyString
+                0x000000000000feb0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gEnterCommitString
+                0x000000000000feb8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gEnterEscapeString
+                0x000000000000fec0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gEnterString
+                0x000000000000fec8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gErrorPopup
+                0x000000000000fed0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gEscapeString
+                0x000000000000fed8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gFooterHeight
+                0x000000000000fee0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gFormData
+                0x000000000000fee8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gFormNotFound
+                0x000000000000fef0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gFormSuppress
+                0x000000000000fef8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gHelpBlockWidth
+                0x000000000000ff00        0x2 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000ff02        0x6 
+ .bss.gHexNumericInput
+                0x000000000000ff08        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gHighligthMenuInfo
+                0x000000000000ff10       0x48 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gHiiConfigRouting
+                0x000000000000ff58        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gHiiDatabase
+                0x000000000000ff60        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gHiiFont  0x000000000000ff68        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gHiiHandle
+                0x000000000000ff70        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gHiiImage
+                0x000000000000ff78        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gHiiString
+                0x000000000000ff80        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gInfoPopup
+                0x000000000000ff88        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gInputErrorMessage
+                0x000000000000ff90        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gJumpToFormSet
+                0x000000000000ff98        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gLibEmptyString
+                0x000000000000ffa0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gMaxRowWidth
+                0x000000000000ffa8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gMenuOption
+                0x000000000000ffb0       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gMesStrLineNum
+                0x000000000000ffc0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gMessageString
+                0x000000000000ffc8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gMiniString
+                0x000000000000ffd0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gMinusString
+                0x000000000000ffd8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gMisMatch
+                0x000000000000ffe0        0x1 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000ffe1        0x1 
+ .bss.gModalSkipColumn
+                0x000000000000ffe2        0x2 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000000ffe4        0x4 
+ .bss.gMoveHighlight
+                0x000000000000ffe8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gNoOption
+                0x000000000000fff0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gNoResponse
+                0x000000000000fff8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gNoSubmitIf
+                0x0000000000010000        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gNoSubmitIfFailed
+                0x0000000000010008        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gNvUpdateMessage
+                0x0000000000010010        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gOkOption
+                0x0000000000010018        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gOldFormEntry
+                0x0000000000010020       0x38 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gOptionBlockWidth
+                0x0000000000010058        0x2 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x000000000001005a        0x6 
+ .bss.gOptionMismatch
+                0x0000000000010060        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gPassowordInvalid
+                0x0000000000010068        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gPasswordUnsupported
+                0x0000000000010070        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gPlusString
+                0x0000000000010078        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gPopupDimensions
+                0x0000000000010080       0x20 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gPressEnter
+                0x00000000000100a0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gPromptBlockWidth
+                0x00000000000100a8        0x2 /tmp/cckKjTI5.ltrans0.ltrans.o
+ *fill*         0x00000000000100aa        0x6 
+ .bss.gPromptForData
+                0x00000000000100b0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gPromptForNewPassword
+                0x00000000000100b8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gPromptForPassword
+                0x00000000000100c0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gProtocolNotFound
+                0x00000000000100c8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gRT       0x00000000000100d0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gReconnectConfirmChanges
+                0x00000000000100d8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gReconnectFail
+                0x00000000000100e0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gReconnectRequired
+                0x00000000000100e8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gST       0x00000000000100f0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gSaveChanges
+                0x00000000000100f8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gSaveFailed
+                0x0000000000010100        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gSaveNoSubmitProcess
+                0x0000000000010108        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gSaveProcess
+                0x0000000000010110        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gScreenDimensions
+                0x0000000000010118       0x20 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gStatementDimensions
+                0x0000000000010138       0x20 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gToggleCheckBox
+                0x0000000000010158        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gUserInput
+                0x0000000000010160        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gUserSelectableOptions
+                0x0000000000010168       0x10 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gWarningPopup
+                0x0000000000010178        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gYesOption
+                0x0000000000010180        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.gYesResponse
+                0x0000000000010188        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.mCDLStringPackHandle
+                0x0000000000010190        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.mLibUnknownString
+                0x0000000000010198        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.mSpaceBuffer
+                0x00000000000101a0        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+ .bss.mUnknownString
+                0x00000000000101a8        0x8 /tmp/cckKjTI5.ltrans0.ltrans.o
+
+.igot.plt       0x00000000000101b0        0x0
+ .igot.plt      0x00000000000101b0        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x00000000000101b0        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x00000000000101b0        0x0 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+
+.hii
+ *(.hii)
+
+.build-id       0x00000000000101b0       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x00000000000101b0       0x24 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+ *(COMMON)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/DEBUG/DisplayEngine.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000    0x128d0
+ .debug_info    0x0000000000000000    0x128d0 /tmp/cckKjTI5.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x6e1
+ .debug_abbrev  0x0000000000000000      0x6e1 /tmp/cckKjTI5.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000    0x161b8
+ .debug_loc     0x0000000000000000    0x161b8 /tmp/cckKjTI5.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x6c0
+ .debug_aranges
+                0x0000000000000000      0x6c0 /tmp/cckKjTI5.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000     0x2260
+ .debug_ranges  0x0000000000000000     0x2260 /tmp/cckKjTI5.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000     0x37a4
+ .debug_line    0x0000000000000000     0x37a4 /tmp/cckKjTI5.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x4f20
+ .debug_str     0x0000000000000000     0x4f20 /tmp/cckKjTI5.ltrans0.ltrans.o
+                                       0x577c (size before relaxing)
+
+.debug_frame    0x0000000000000000     0x13c8
+ .debug_frame   0x0000000000000000     0x13c8 /tmp/cckKjTI5.ltrans0.ltrans.o

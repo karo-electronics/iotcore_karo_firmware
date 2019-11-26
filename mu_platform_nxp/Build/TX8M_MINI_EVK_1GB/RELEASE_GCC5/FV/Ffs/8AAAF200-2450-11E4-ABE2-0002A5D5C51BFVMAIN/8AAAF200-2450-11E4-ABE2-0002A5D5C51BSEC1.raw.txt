@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/FV/Ffs/8AAAF200-2450-11E4-ABE2-0002A5D5C51BFVMAIN/8AAAF200-2450-11E4-ABE2-0002A5D5C51BSEC1.raw /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Microsoft/OpteeClientPkg/Bin/HelloWorldTa/Arm64/Test/8aaaf200-2450-11e4-abe2-0002a5d5c51b.ta

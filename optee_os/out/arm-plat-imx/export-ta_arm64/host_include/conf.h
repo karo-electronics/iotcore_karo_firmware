@@ -1,0 +1,168 @@
+#ifndef _out_arm_plat_imx_include_generated_conf_h_
+#define _out_arm_plat_imx_include_generated_conf_h_
+/* CFG_AES_GCM_TABLE_BASED is not set */
+#define CFG_ARM64_core 1
+#define CFG_ARM64_ta_arm64 1
+#define CFG_ARM_GICV3 1
+/* CFG_BOOT_SECONDARY_REQUEST is not set */
+#define CFG_CC_OPTIMIZE_FOR_SIZE 1
+#define CFG_CORE_BIGNUM_MAX_BITS 4096
+#define CFG_CORE_CLUSTER_SHIFT 2
+#define CFG_CORE_HEAP_SIZE 98304
+/* CFG_CORE_LARGE_PHYS_ADDR is not set */
+/* CFG_CORE_RODATA_NOEXEC is not set */
+#define CFG_CORE_RWDATA_NOEXEC 1
+/* CFG_CORE_SANITIZE_KADDRESS is not set */
+/* CFG_CORE_SANITIZE_UNDEFINED is not set */
+#define CFG_CORE_TZSRAM_EMUL_SIZE 458752
+#define CFG_CORE_UNMAP_CORE_AT_EL0 1
+#define CFG_CORE_WORKAROUND_SPECTRE_BP 1
+#define CFG_CORE_WORKAROUND_SPECTRE_BP_SEC 1
+#define CFG_CRYPTO 1
+#define CFG_CRYPTOLIB_DIR core/lib/libtomcrypt
+#define CFG_CRYPTOLIB_NAME tomcrypt
+#define CFG_CRYPTO_AES 1
+#define CFG_CRYPTO_AES_ARM64_CE 1
+/* CFG_CRYPTO_AES_GCM_FROM_CRYPTOLIB is not set */
+/* CFG_CRYPTO_AUTHENC_HW is not set */
+#define CFG_CRYPTO_BLOB_HW 1
+#define CFG_CRYPTO_CBC 1
+#define CFG_CRYPTO_CBC_MAC 1
+#define CFG_CRYPTO_CCM 1
+/* CFG_CRYPTO_CCM_HW is not set */
+#define CFG_CRYPTO_CIPHER_HW 1
+#define CFG_CRYPTO_CMAC 1
+#define CFG_CRYPTO_CMAC_HW 1
+#define CFG_CRYPTO_CONCAT_KDF 1
+#define CFG_CRYPTO_CTR 1
+#define CFG_CRYPTO_CTS 1
+#define CFG_CRYPTO_DES 1
+#define CFG_CRYPTO_DH 1
+/* CFG_CRYPTO_DH_HW is not set */
+#define CFG_CRYPTO_DSA 1
+/* CFG_CRYPTO_DSA_HW is not set */
+#define CFG_CRYPTO_ECB 1
+#define CFG_CRYPTO_ECC 1
+#define CFG_CRYPTO_ECC_HW 1
+#define CFG_CRYPTO_GCM 1
+/* CFG_CRYPTO_GCM_HW is not set */
+#define CFG_CRYPTO_HASH_HW 1
+#define CFG_CRYPTO_HASH_HW_MD5 1
+#define CFG_CRYPTO_HASH_HW_SHA1 1
+#define CFG_CRYPTO_HASH_HW_SHA224 1
+#define CFG_CRYPTO_HASH_HW_SHA256 1
+/* CFG_CRYPTO_HASH_HW_SHA384 is not set */
+/* CFG_CRYPTO_HASH_HW_SHA512 is not set */
+#define CFG_CRYPTO_HKDF 1
+#define CFG_CRYPTO_HMAC 1
+/* CFG_CRYPTO_HMAC_FULL_HW is not set */
+#define CFG_CRYPTO_MD5 1
+#define CFG_CRYPTO_PBKDF2 1
+/* CFG_CRYPTO_PKCS_HW is not set */
+#define CFG_CRYPTO_PK_HW 1
+#define CFG_CRYPTO_RNG_HW 1
+#define CFG_CRYPTO_RSA 1
+#define CFG_CRYPTO_RSA_HW 1
+#define CFG_CRYPTO_SHA1 1
+#define CFG_CRYPTO_SHA1_ARM64_CE 1
+#define CFG_CRYPTO_SHA224 1
+#define CFG_CRYPTO_SHA256 1
+#define CFG_CRYPTO_SHA256_ARM64_CE 1
+#define CFG_CRYPTO_SHA384 1
+#define CFG_CRYPTO_SHA512 1
+/* CFG_CRYPTO_SIZE_OPTIMIZATION is not set */
+#define CFG_CRYPTO_WITH_CE 1
+#define CFG_CRYPTO_WITH_HW_ACC 1
+#define CFG_CRYPTO_XTS 1
+#define CFG_DDR_SIZE 0x80000000
+#define CFG_DEBUG_INFO 1
+/* CFG_DT is not set */
+#define CFG_DTB_MAX_SIZE 0x10000
+#define CFG_DYN_SHM_CAP 1
+/* CFG_EARLY_TA is not set */
+/* CFG_ENABLE_SCTLR_RR is not set */
+/* CFG_ENABLE_SCTLR_Z is not set */
+#define CFG_GENERIC_BOOT 1
+#define CFG_GIC 1
+#define CFG_GP_SOCKETS 1
+#define CFG_HWSUPP_MEM_PERM_PXN 1
+#define CFG_HWSUPP_MEM_PERM_WXN 1
+#define CFG_HWSUPP_PMULT_64 1
+#define CFG_IMXCRYPT 1
+#define CFG_IMXCRYPT_TOMCRYPT 1
+#define CFG_IMX_CAAM 1
+/* CFG_IMX_LPUART is not set */
+/* CFG_IMX_OCRAM is not set */
+#define CFG_IMX_SNVS 1
+#define CFG_IMX_UART 1
+/* CFG_IMX_WDOG is not set */
+#define CFG_KERN_LINKER_ARCH aarch64
+#define CFG_KERN_LINKER_FORMAT elf64-littleaarch64
+#define CFG_LIBUTILS_WITH_ISOC 1
+#define CFG_LPAE_ADDR_SPACE_SIZE (1ull << 32)
+#define CFG_LTC_OPTEE_THREAD 1
+#define CFG_MMAP_REGIONS 24
+#define CFG_MSG_LONG_PREFIX_MASK 0x1a
+#define CFG_MX8MM 1
+#define CFG_NUM_THREADS 2
+#define CFG_OPTEE_REVISION_MAJOR 3
+#define CFG_OPTEE_REVISION_MINOR 2
+#define CFG_OS_REV_REPORTS_GIT_SHA1 1
+/* CFG_PAGED_USER_TA is not set */
+#define CFG_PM_STUBS 1
+/* CFG_REE_FS is not set */
+#define CFG_REE_FS_TA 1
+#define CFG_RESERVED_VASPACE_SIZE (1024 * 1024 * 10)
+#define CFG_RPMB_FS 1
+#define CFG_RPMB_FS_DEV_ID 0
+#define CFG_RPMB_TESTKEY 1
+#define CFG_RPMB_WRITE_KEY 1
+#define CFG_SCTLR_ALIGNMENT_CHECK 1
+/* CFG_SECSTOR_TA is not set */
+/* CFG_SECSTOR_TA_MGMT_PTA is not set */
+/* CFG_SECURE_DATA_PATH is not set */
+#define CFG_SECURE_TIME_SOURCE_CNTPCT 1
+#define CFG_SHMEM_SIZE 0x00400000
+#define CFG_SYSTEM_PTA 1
+#define CFG_TA_BIGNUM_MAX_BITS 2048
+#define CFG_TA_DYNLINK 1
+#define CFG_TA_FLOAT_SUPPORT 1
+/* CFG_TA_GPROF_SUPPORT is not set */
+#define CFG_TA_MBEDTLS 1
+#define CFG_TA_MBEDTLS_SELF_TEST 1
+#define CFG_TEE_API_VERSION GPD-1.1-dev
+/* CFG_TEE_CORE_DEBUG is not set */
+#define CFG_TEE_CORE_EMBED_INTERNAL_TESTS 1
+#define CFG_TEE_CORE_LOG_LEVEL 2
+/* CFG_TEE_CORE_MALLOC_DEBUG is not set */
+#define CFG_TEE_CORE_NB_CORE 4
+#define CFG_TEE_CORE_TA_TRACE 1
+#define CFG_TEE_FW_IMPL_VERSION FW_IMPL_UNDEF
+#define CFG_TEE_FW_MANUFACTURER FW_MAN_UNDEF
+#define CFG_TEE_IMPL_DESCR OPTEE
+#define CFG_TEE_MANUFACTURER LINARO
+#define CFG_TEE_TA_LOG_LEVEL 1
+/* CFG_TEE_TA_MALLOC_DEBUG is not set */
+#define CFG_TZC380 1
+#define CFG_UART_BASE 0x30890000
+/* CFG_ULIBS_GPROF is not set */
+#define CFG_WITH_ARM_TRUSTED_FW 1
+#define CFG_WITH_HAB 1
+#define CFG_WITH_LPAE 1
+/* CFG_WITH_PAGER is not set */
+/* CFG_WITH_SOFTWARE_PRNG is not set */
+#define CFG_WITH_STACK_CANARIES 1
+#define CFG_WITH_USER_TA 1
+#define CFG_WITH_VFP 1
+#define PLATFORM_FLAVOR mx8mmevk
+#define PLATFORM_FLAVOR_mx8mmevk 1
+#define PLATFORM_imx 1
+#define _CFG_CRYPTO_WITH_ACIPHER 1
+#define _CFG_CRYPTO_WITH_ASN1 1
+#define _CFG_CRYPTO_WITH_AUTHENC 1
+#define _CFG_CRYPTO_WITH_CBC 1
+#define _CFG_CRYPTO_WITH_CIPHER 1
+#define _CFG_CRYPTO_WITH_HASH 1
+#define _CFG_CRYPTO_WITH_HUK 1
+#define _CFG_CRYPTO_WITH_MAC 1
+#endif

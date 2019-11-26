@@ -1,0 +1,2680 @@
+Platform Summary
+Platform Name:        iMX8
+Platform DSC Path:    /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/KARO/TX8M_MINI_EVK_1GB/TX8M_MINI_EVK_1GB.dsc
+Architectures:        AARCH64
+Tool Chain:           GCC5
+Target:               RELEASE
+SKUID:                DEFAULT
+DefaultStore:         STANDARD
+Output Path:          /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB
+Build Environment:    Linux-4.9.0-11-amd64-x86_64-with-debian-9.11
+Build Duration:       00:05:21
+AutoGen Duration:     00:00:24
+Make Duration:        00:04:53
+GenFds Duration:      00:00:04
+Report Content:       PCD
+>======================================================================================================================<
+PCDs not used by modules or in conditional directives
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+========================================================================================================================
+
+gArmPlatformTokenSpaceGuid
+    PcdClusterCount                         :  FIXED   (UINT32) = 0x1 (1)
+ *P PcdWatchdogCount                        :  FIXED   (UINT32) = 0x2 (2)
+                                                    DEC DEFAULT = 0x0 (0)
+
+gArmTokenSpaceGuid
+ *P PcdRelocateVectorTable                  :   FLAG  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+
+gEfiMdeModulePkgTokenSpaceGuid
+ *P PcdFirmwarePerformanceDataTableS3Support   :   FLAG  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+ *P PcdSetNxForStack                        :  FIXED  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdTurnOffUsbLegacySupport              :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+
+gEfiMdePkgTokenSpaceGuid
+    PcdPostCodePropertyMask                 :  FIXED    (UINT8) = 0x0 (0)
+
+gMsPkgTokenSpaceGuid
+    PcdSecureBootEnable                     :  FIXED  (BOOLEAN) = 0
+<======================================================================================================================>
+
+>======================================================================================================================<
+Platform Configuration Database Report
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+  *M  - Module scoped PCD override
+========================================================================================================================
+
+gArmPlatformTokenSpaceGuid
+ *P PcdArmLcdDdrFrameBufferBase             :  FIXED   (UINT64) = 0x40000000 (1073741824)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdArmLcdDdrFrameBufferSize             :  FIXED   (UINT32) = 0x007E9000 (8294400)
+    PcdCPUCorePrimaryStackSize              :  FIXED   (UINT32) = 0x10000 (65536)
+    PcdCPUCoreSecondaryStackSize            :  FIXED   (UINT32) = 0x1000 (4096)
+ *P PcdCoreCount                            :  FIXED   (UINT32) = 0x4 (4)
+                                                    DEC DEFAULT = 0x1 (1)
+    PcdGopDisableOnExitBootServices         :   FLAG  (BOOLEAN) = 0
+    PcdSendSgiToBringUpSecondaryCores       :   FLAG  (BOOLEAN) = 0
+ *P PcdSystemMemoryUefiRegionSize           :  FIXED   (UINT32) = 0x01000000 (16777216)
+                                                    DEC DEFAULT = 0x08000000 (134217728)
+
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+    PcdArmArchTimerHypIntrNum               :  FIXED   (UINT32) = 0x1A (26)
+    PcdArmArchTimerIntrNum                  :  FIXED   (UINT32) = 0x1E (30)
+    PcdArmArchTimerSecIntrNum               :  FIXED   (UINT32) = 0x1D (29)
+    PcdArmArchTimerVirtIntrNum              :  FIXED   (UINT32) = 0x1B (27)
+    PcdArmGicV3WithV2Legacy                 :   FLAG  (BOOLEAN) = 0
+    PcdArmPrimaryCoreMask                   :  FIXED   (UINT32) = 0xF03 (3843)
+    PcdArmReenterPeiForCapsuleWarmReboot    :   FLAG  (BOOLEAN) = 0
+    PcdCpuVectorBaseAddress                 :  FIXED   (UINT64) = 0xffff0000 (4294901760)
+    PcdDebuggerExceptionSupport             :   FLAG  (BOOLEAN) = 0
+ *F PcdFdBaseAddress                        :  FIXED   (UINT64) = 0x50004000 (1342193664)
+                                                    DEC DEFAULT = 0x0 (0)
+ *F PcdFdSize                               :  FIXED   (UINT32) = 0x000F8000 (1015808)
+                                                    DEC DEFAULT = 0x0 (0)
+ *F PcdFvBaseAddress                        :  FIXED   (UINT64) = 0x50004000 (1342193664)
+                                                    DEC DEFAULT = 0x0 (0)
+ *F PcdFvSize                               :  FIXED   (UINT32) = 0x000F8000 (1015808)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdGicDistributorBase                   :  FIXED   (UINT64) = 0x38800000 (947912704)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdGicInterruptInterfaceBase            :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdGicRedistributorsBase                :  FIXED   (UINT64) = 0x38880000 (948436992)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdHypFvBaseAddress                     :  FIXED   (UINT32) = 0x0 (0)
+    PcdHypFvSize                            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSecureFvBaseAddress                  :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdSystemMemoryBase                     :  FIXED   (UINT64) = 0x40000000 (1073741824)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdSystemMemorySize                     :  FIXED   (UINT64) = 0x3E000000 (1040187392)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdVFPEnabled                           :  FIXED   (UINT32) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdAcpiDefaultCreatorId                 :  FIXED   (UINT32) = 0x20202020 (538976288)
+    PcdAcpiDefaultCreatorRevision           :  FIXED   (UINT32) = 0x01000013 (16777235)
+    PcdAcpiDefaultOemId                     :  FIXED    (VOID*) = "INTEL "
+    PcdAcpiDefaultOemRevision               :  FIXED   (UINT32) = 0x00000002 (2)
+    PcdAcpiDefaultOemTableId                :  FIXED   (UINT64) = 0x20202020324B4445 (2314885531123270725)
+    PcdAcpiExposedTableVersions             :  FIXED   (UINT32) = 0x3E (62)
+    PcdAcpiTableStorageFile                 :  FIXED    (VOID*) = {
+0x25,0x4E,0x37,0x7E,0x01,0x8E,0xEE,0x4F,0x87,0xF2,0x39,0x0C,0x23,0xC6,0x06,0xCD}
+    PcdBootManagerInBootOrder               :  FIXED  (BOOLEAN) = 1
+ *P PcdBootManagerMenuFile                  :  FIXED    (VOID*) = {
+0x21,0xAA,0x2C,0x46,0x14,0x76,0x03,0x45,0x83,0x6E,0x8A,0xB6,0xF4,0x66,0x23,0x31}
+                                                    DEC DEFAULT = {
+0xDC,0x5B,0xC2,0xEE,0xF2,0x67,0x95,0x4D,0xB1,0xD5,0xF8,0x1B,0x20,0x39,0xD1,0x1D}
+    PcdBoottimeReservedNvVariableSpaceSize   :  FIXED   (UINT32) = 0x00 (0)
+    PcdBrowerGrayOutReadOnlyMenu            :   FLAG  (BOOLEAN) = 0
+    PcdBrowserFieldBackgroundHighlightColor   :  FIXED    (UINT8) = 0x00 (0)
+    PcdBrowserFieldTextColor                :  FIXED    (UINT8) = 0x00 (0)
+    PcdBrowserFieldTextHighlightColor       :  FIXED    (UINT8) = 0x07 (7)
+    PcdBrowserGrayOutTextStatement          :   FLAG  (BOOLEAN) = 0
+    PcdBrowserSubtitleTextColor             :  FIXED    (UINT8) = 0x01 (1)
+    PcdConInConnectOnDemand                 :  FIXED  (BOOLEAN) = 0
+    PcdConOutColumn                         :  PATCH   (UINT32) = 0x50 (80)
+    PcdConOutGopSupport                     :   FLAG  (BOOLEAN) = 1
+    PcdConOutRow                            :  PATCH   (UINT32) = 0x19 (25)
+    PcdConOutUgaSupport                     :   FLAG  (BOOLEAN) = 1
+    PcdCpuStackGuard                        :  FIXED  (BOOLEAN) = 0
+    PcdDevicePathSupportDevicePathFromText   :   FLAG  (BOOLEAN) = 1
+    PcdDevicePathSupportDevicePathToText    :   FLAG  (BOOLEAN) = 1
+    PcdDiskIoDataBufferBlockNum             :  FIXED   (UINT32) = 0x40 (64)
+    PcdDriverHealthConfigureForm            :  FIXED    (VOID*) = {
+0xF4,0xD9,0x96,0x42,0xFC,0xF6,0xDE,0x4D,0x86,0x85,0x8C,0xE2,0xD7,0x9D,0x90,0xF0}
+ *P PcdDxeNxMemoryProtectionPolicy          :  FIXED   (UINT64) = 0xC000000000007FD1 (13835058055282196433)
+                                                    DEC DEFAULT = 0x0000000 (0)
+    PcdEdkiiFpdtStringRecordEnableOnly      :  FIXED  (BOOLEAN) = 0
+ *P PcdEmuVariableNvModeEnable              :  FIXED  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdEmuVariableNvStoreReserved           :  FIXED   (UINT64) = 0x0 (0)
+    PcdErrorCodeSetVariable                 :  FIXED   (UINT32) = 0x03058002 (50692098)
+    PcdExtFpdtBootRecordPadSize             :  FIXED   (UINT32) = 0x20000 (131072)
+ *P PcdFirmwareRevision                     :  FIXED   (UINT32) = 0x00000001 (1)
+                                                    DEC DEFAULT = 0x00010000 (65536)
+    PcdFirmwareVendor                       :  FIXED    (VOID*) = L"EDK II"
+    PcdFirmwareVersionString                :  FIXED    (VOID*) = L""
+ *P PcdFlashNvStorageFtwSpareBase           :  FIXED   (UINT32) = 0x30378000 (808943616)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdFlashNvStorageFtwSpareBase64         :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdFlashNvStorageFtwSpareSize           :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFlashNvStorageFtwWorkingBase         :  FIXED   (UINT32) = 0x30374000 (808927232)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdFlashNvStorageFtwWorkingBase64       :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdFlashNvStorageFtwWorkingSize         :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFlashNvStorageVariableBase           :  FIXED   (UINT32) = 0x30370000 (808910848)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdFlashNvStorageVariableBase64         :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdFlashNvStorageVariableSize           :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdFrameworkCompatibilitySupport        :   FLAG  (BOOLEAN) = 0
+    PcdFrontPageFormSetGuid                 :  FIXED    (VOID*) = {
+0xBC,0x30,0x0C,0x9E,0x06,0x3F,0xA6,0x4B,0x82,0x88,0x09,0x17,0x9B,0x85,0x5D,0xBE}
+    PcdFullFtwServiceEnable                 :   FLAG  (BOOLEAN) = 1
+    PcdHeapGuardPageType                    :  FIXED   (UINT64) = 0x0 (0)
+    PcdHeapGuardPoolType                    :  FIXED   (UINT64) = 0x0 (0)
+    PcdHeapGuardPropertyMask                :  FIXED    (UINT8) = 0x0 (0)
+    PcdHiiOsRuntimeSupport                  :   FLAG  (BOOLEAN) = 1
+    PcdHwErrStorageSize                     :  FIXED   (UINT32) = 0x0000 (0)
+ *P PcdImageProtectionPolicy                :  FIXED   (UINT32) = 0x3 (3)
+                                                    DEC DEFAULT = 0x00000002 (2)
+    PcdInstallAcpiSdtProtocol               :   FLAG  (BOOLEAN) = 0
+    PcdLoadFixAddressBootTimeCodePageNumber   :  PATCH   (UINT32) = 0x0 (0)
+    PcdLoadFixAddressRuntimeCodePageNumber   :  PATCH   (UINT32) = 0x0 (0)
+    PcdLoadModuleAtFixAddressEnable         :  FIXED   (UINT64) = 0x0 (0)
+    PcdMaxAuthVariableSize                  :  FIXED   (UINT32) = 0x00 (0)
+    PcdMaxEfiSystemTablePointerAddress      :  FIXED   (UINT64) = 0x0 (0)
+    PcdMaxHardwareErrorVariableSize         :  FIXED   (UINT32) = 0x8000 (32768)
+    PcdMaxPeiPerformanceLogEntries          :  FIXED    (UINT8) = 0x28 (40)
+    PcdMaxPeiPerformanceLogEntries16        :  FIXED   (UINT16) = 0x0 (0)
+    PcdMaxRepairCount                       :  FIXED   (UINT32) = 0x00 (0)
+    PcdMaxSizeNonPopulateCapsule            :  FIXED   (UINT32) = 0xa00000 (10485760)
+    PcdMaxSizePopulateCapsule               :  FIXED   (UINT32) = 0x6400000 (104857600)
+    PcdMaxUserNvVariableSpaceSize           :  FIXED   (UINT32) = 0x00 (0)
+    PcdMaxVariableSize                      :  FIXED   (UINT32) = 0x400 (1024)
+    PcdMaxVolatileVariableSize              :  FIXED   (UINT32) = 0x00 (0)
+    PcdMemoryProfileDriverPath              :  FIXED    (VOID*) = {0x0}
+    PcdMemoryProfileMemoryType              :  FIXED   (UINT64) = 0x0 (0)
+    PcdMemoryProfilePropertyMask            :  FIXED    (UINT8) = 0x0 (0)
+    PcdNullPointerDetectionPropertyMask     :  FIXED    (UINT8) = 0x0 (0)
+    PcdNvStoreDefaultValueBuffer            :    DEX    (VOID*) = {0x0}
+    PcdPlatformRecoverySupported            :  FIXED  (BOOLEAN) = 1
+    PcdProgressCodeOsLoaderLoad             :  FIXED   (UINT32) = 0x03058000 (50692096)
+    PcdProgressCodeOsLoaderStart            :  FIXED   (UINT32) = 0x03058001 (50692097)
+    PcdPropertiesTableEnable                :  FIXED  (BOOLEAN) = 0
+    PcdReclaimVariableSpaceAtEndOfDxe       :  FIXED  (BOOLEAN) = 0
+ *P PcdResetOnMemoryTypeInformationChange   :  FIXED  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+    PcdSetNvStoreDefaultId                  :    DEX   (UINT16) = 0x0 (0)
+    PcdSetupConOutColumn                    :  PATCH   (UINT32) = 0x50 (80)
+    PcdSetupConOutRow                       :  PATCH   (UINT32) = 0x19 (25)
+    PcdSetupVideoHorizontalResolution       :  PATCH   (UINT32) = 0x320 (800)
+    PcdSetupVideoVerticalResolution         :  PATCH   (UINT32) = 0x258 (600)
+    PcdSmbiosDocRev                         :  FIXED    (UINT8) = 0x0 (0)
+    PcdSmbiosEntryPointProvideMethod        :  FIXED   (UINT32) = 0x3 (3)
+ *P PcdSmbiosVersion                        :  FIXED   (UINT16) = 0x0300 (768)
+                                                    DEC DEFAULT = 0x0302 (770)
+    PcdSupportHiiImageProtocol              :   FLAG  (BOOLEAN) = 1
+    PcdSupportUpdateCapsuleReset            :   FLAG  (BOOLEAN) = 0
+    PcdTestKeyUsed                          :    DYN  (BOOLEAN) = 0
+    PcdUnicodeCollation2Support             :   FLAG  (BOOLEAN) = 1
+    PcdUnicodeCollationSupport              :   FLAG  (BOOLEAN) = 1
+    PcdVariableCollectStatistics            :   FLAG  (BOOLEAN) = 0
+    PcdVariableStoreSize                    :  FIXED   (UINT32) = 0x10000 (65536)
+ *P PcdVideoHorizontalResolution            :  PATCH   (UINT32) = 0x500 (1280)
+                                                    DEC DEFAULT = 0x320 (800)
+ *P PcdVideoVerticalResolution              :  PATCH   (UINT32) = 0x320 (800)
+                                                    DEC DEFAULT = 0x258 (600)
+    PcdVpdBaseAddress                       :  FIXED   (UINT32) = 0x0 (0)
+    PcdVpdBaseAddress64                     :    DEX   (UINT64) = 0x0 (0)
+
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDefaultTerminalType                  :  FIXED    (UINT8) = 0x4 (4)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdHardwareErrorRecordLevel             :  FIXED   (UINT16) = 0x0 (0)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumGuidedExtractHandler          :  FIXED   (UINT32) = 0x10 (16)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPerformanceLibraryPropertyMask       :  FIXED    (UINT8) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdPlatformBootTimeOut                  :  FIXED   (UINT16) = 0x0 (0)
+                                                    DEC DEFAULT = 0xffff (65535)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdSpinLockTimeout                      :  FIXED   (UINT32) = 0x989680 (10000000)
+    PcdUartDefaultBaudRate                  :  FIXED   (UINT64) = 0x1C200 (115200)
+    PcdUartDefaultDataBits                  :  FIXED    (UINT8) = 0x8 (8)
+    PcdUartDefaultParity                    :  FIXED    (UINT8) = 0x1 (1)
+    PcdUartDefaultReceiveFifoDepth          :  FIXED   (UINT16) = 0x1 (1)
+    PcdUartDefaultStopBits                  :  FIXED    (UINT8) = 0x1 (1)
+    PcdUefiFileHandleLibPrintBufferSize     :  FIXED   (UINT16) = 0x600 (1536)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUefiVariableDefaultLang              :  FIXED    (VOID*) = "eng"
+    PcdUefiVariableDefaultLangCodes         :  FIXED    (VOID*) = "engfraengfra"
+    PcdUefiVariableDefaultLangDeprecate     :   FLAG  (BOOLEAN) = 0
+    PcdUefiVariableDefaultPlatformLang      :  FIXED    (VOID*) = "en-US"
+    PcdUefiVariableDefaultPlatformLangCodes   :  FIXED    (VOID*) = "en;fr;en-US;fr-FR"
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+
+gEfiShellPkgTokenSpaceGuid
+    PcdShellDecodeIScsiMapNames             :  FIXED  (BOOLEAN) = 0
+    PcdShellFileOperationSize               :  FIXED   (UINT32) = 0x1000 (4096)
+    PcdShellForceConsole                    :   FLAG  (BOOLEAN) = 0
+    PcdShellIncludeNtGuids                  :   FLAG  (BOOLEAN) = 1
+    PcdShellInsertModeDefault               :  FIXED  (BOOLEAN) = 1
+ *P PcdShellLibAutoInitialize               :  FIXED  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+    PcdShellMapNameLength                   :  FIXED    (UINT8) = 0x32 (50)
+    PcdShellMaxHistoryCommandCount          :  FIXED   (UINT16) = 0x0020 (32)
+    PcdShellPageBreakDefault                :  FIXED  (BOOLEAN) = 0
+    PcdShellPrintBufferSize                 :  FIXED   (UINT16) = 0x3E80 (16000)
+    PcdShellProfileMask                     :  FIXED    (UINT8) = 0xFF (255)
+    PcdShellRequireHiiPlatform              :   FLAG  (BOOLEAN) = 1
+    PcdShellScreenLogCount                  :  FIXED    (UINT8) = 0x3 (3)
+    PcdShellSupplier                        :  FIXED    (VOID*) = L"EDK II"
+    PcdShellSupportFrameworkHii             :   FLAG  (BOOLEAN) = 0
+    PcdShellSupportLevel                    :  FIXED    (UINT8) = 0x3 (3)
+    PcdShellSupportOldProtocols             :  FIXED  (BOOLEAN) = 0
+    PcdShellVendorExtendedDecode            :  FIXED   (UINT32) = 0x0 (0)
+    PcdUsbExtendedDecode                    :  FIXED  (BOOLEAN) = 1
+
+gEmbeddedTokenSpaceGuid
+    PcdMemoryTypeEfiACPIMemoryNVS           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMemoryTypeEfiACPIReclaimMemory       :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdMemoryTypeEfiBootServicesCode        :  FIXED   (UINT32) = 0x190 (400)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdMemoryTypeEfiBootServicesData        :  FIXED   (UINT32) = 0x4E20 (20000)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdMemoryTypeEfiLoaderCode              :  FIXED   (UINT32) = 0x14 (20)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdMemoryTypeEfiLoaderData              :  FIXED   (UINT32) = 0x0 (0)
+    PcdMemoryTypeEfiReservedMemoryType      :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdMemoryTypeEfiRuntimeServicesCode     :  FIXED   (UINT32) = 0x41 (65)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdMemoryTypeEfiRuntimeServicesData     :  FIXED   (UINT32) = 0x50 (80)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdMetronomeTickPeriod                  :  FIXED   (UINT32) = 0x3E8 (1000)
+                                                    DEC DEFAULT = 0x64 (100)
+    PcdPrePiCpuIoSize                       :  FIXED    (UINT8) = 0x0 (0)
+ *P PcdPrePiProduceMemoryTypeInformationHob   :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdTimerPeriod                          :  FIXED   (UINT32) = 0x186A0 (100000)
+
+gOpteeClientPkgTokenSpaceGuid
+ *P PcdTpm2AcpiBufferBase                   :  FIXED   (UINT64) = 0x407EA000 (1082040320)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdTpm2AcpiBufferSize                   :  FIXED   (UINT32) = 0x3000 (12288)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdTrustZonePrivateMemoryBase           :  FIXED   (UINT64) = 0xBE000000 (3187671040)
+                                                    DEC DEFAULT = 0xDEAD1 (912081)
+ *P PcdTrustZonePrivateMemorySize           :  FIXED   (UINT64) = 0x01E00000 (31457280)
+                                                    DEC DEFAULT = 0x37 (55)
+ *P PcdTrustZoneSharedMemoryBase            :  FIXED   (UINT64) = 0xBFE00000 (3219128320)
+                                                    DEC DEFAULT = 0xDEAD2 (912082)
+ *P PcdTrustZoneSharedMemorySize            :  FIXED   (UINT64) = 0x00200000 (2097152)
+                                                    DEC DEFAULT = 0xAA (170)
+
+giMX8TokenSpaceGuid
+    PcdPciConfigurationSpaceBaseAddress     :  FIXED   (UINT64) = 0x40000000 (1073741824)
+    PcdPciConfigurationSpaceSize            :  FIXED   (UINT64) = 0x10000000 (268435456)
+    PcdPcieControlBaseAddress               :  FIXED   (UINT64) = 0x33800000 (864026624)
+    PcdUsb1XhciBaseAddress                  :  FIXED   (UINT64) = 0x38100000 (940572672)
+    PcdUsb2XhciBaseAddress                  :  FIXED   (UINT64) = 0x38200000 (941621248)
+
+giMXPlatformTokenSpaceGuid
+ *P PcdGlobalDataBaseAddress                :  FIXED   (UINT32) = 0x407E9000 (1082036224)
+                                                    DEC DEFAULT = 0x00000000 (0)
+    PcdGlobalDataSize                       :  FIXED   (UINT32) = 0x1000 (4096)
+    PcdGpioBankMemoryRange                  :  FIXED   (UINT32) = 0x4000 (16384)
+    PcdKdUartInstance                       :  FIXED   (UINT32) = 0x1 (1)
+ *P PcdSdhc1Base                            :  FIXED   (UINT32) = 0x30B40000 (817102848)
+                                                    DEC DEFAULT = 0x02190000 (35192832)
+    PcdSdhc1CardDetectSignal                :  FIXED   (UINT16) = 0xFF00 (65280)
+ *P PcdSdhc1Enable                          :  FIXED  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdSdhc1WriteProtectSignal              :  FIXED   (UINT16) = 0xFF00 (65280)
+                                                    DEC DEFAULT = 0xFF01 (65281)
+ *P PcdSdhc2Base                            :  FIXED   (UINT32) = 0x30B50000 (817168384)
+                                                    DEC DEFAULT = 0x02194000 (35209216)
+    PcdSdhc2CardDetectSignal                :  FIXED   (UINT16) = 0xFF00 (65280)
+ *P PcdSdhc2Enable                          :  FIXED  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdSdhc2WriteProtectSignal              :  FIXED   (UINT16) = 0xFF00 (65280)
+                                                    DEC DEFAULT = 0xFF01 (65281)
+ *P PcdSdhc3Base                            :  FIXED   (UINT32) = 0x30B60000 (817233920)
+                                                    DEC DEFAULT = 0x02198000 (35225600)
+ *P PcdSdhc3CardDetectSignal                :  FIXED   (UINT16) = 0xFFFF (65535)
+                                                    DEC DEFAULT = 0xFF00 (65280)
+    PcdSdhc3Enable                          :  FIXED  (BOOLEAN) = 0
+ *P PcdSdhc3WriteProtectSignal              :  FIXED   (UINT16) = 0xFF00 (65280)
+                                                    DEC DEFAULT = 0xFF01 (65281)
+ *P PcdSdhc4Base                            :  FIXED   (UINT32) = 0x00000000 (0)
+                                                    DEC DEFAULT = 0x0219C000 (35241984)
+    PcdSdhc4CardDetectSignal                :  FIXED   (UINT16) = 0xFF00 (65280)
+    PcdSdhc4Enable                          :  FIXED  (BOOLEAN) = 0
+    PcdSdhc4WriteProtectSignal              :  FIXED   (UINT16) = 0xFF01 (65281)
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          ArmPlatformPrePiUniCore
+Module INF Path:      ArmPlatformPkg/PrePi/PeiUniCore.inf
+File GUID:            d959e387-7b91-452c-90e0-a1dbac90ddb8
+Size:                 0x73A0 (28.91K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    54533ms
+Driver Type:          0x3 (SECURITY_CORE)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmPlatformTokenSpaceGuid
+ *P PcdArmLcdDdrFrameBufferBase             :  FIXED   (UINT64) = 0x40000000 (1073741824)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdArmLcdDdrFrameBufferSize             :  FIXED   (UINT32) = 0x007E9000 (8294400)
+    PcdCPUCorePrimaryStackSize              :  FIXED   (UINT32) = 0x10000 (65536)
+    PcdCPUCoreSecondaryStackSize            :  FIXED   (UINT32) = 0x1000 (4096)
+ *P PcdCoreCount                            :  FIXED   (UINT32) = 0x4 (4)
+                                                    DEC DEFAULT = 0x1 (1)
+    PcdSendSgiToBringUpSecondaryCores       :   FLAG  (BOOLEAN) = 0
+ *P PcdSystemMemoryUefiRegionSize           :  FIXED   (UINT32) = 0x01000000 (16777216)
+                                                    DEC DEFAULT = 0x08000000 (134217728)
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+    PcdArmPrimaryCoreMask                   :  FIXED   (UINT32) = 0xF03 (3843)
+ *F PcdFdBaseAddress                        :  FIXED   (UINT64) = 0x50004000 (1342193664)
+                                                    DEC DEFAULT = 0x0 (0)
+ *F PcdFdSize                               :  FIXED   (UINT32) = 0x000F8000 (1015808)
+                                                    DEC DEFAULT = 0x0 (0)
+ *F PcdFvBaseAddress                        :  FIXED   (UINT64) = 0x50004000 (1342193664)
+                                                    DEC DEFAULT = 0x0 (0)
+ *F PcdFvSize                               :  FIXED   (UINT32) = 0x000F8000 (1015808)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdSecureFvBaseAddress                  :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdSystemMemoryBase                     :  FIXED   (UINT64) = 0x40000000 (1073741824)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdSystemMemorySize                     :  FIXED   (UINT64) = 0x3E000000 (1040187392)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdVFPEnabled                           :  FIXED   (UINT32) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdEdkiiFpdtStringRecordEnableOnly      :  FIXED  (BOOLEAN) = 0
+    PcdFirmwareVersionString                :  FIXED    (VOID*) = L""
+    PcdMaxPeiPerformanceLogEntries          :  FIXED    (UINT8) = 0x28 (40)
+    PcdMaxPeiPerformanceLogEntries16        :  FIXED   (UINT16) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumGuidedExtractHandler          :  FIXED   (UINT32) = 0x10 (16)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPerformanceLibraryPropertyMask       :  FIXED    (UINT8) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+gEmbeddedTokenSpaceGuid
+    PcdMemoryTypeEfiACPIMemoryNVS           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMemoryTypeEfiACPIReclaimMemory       :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdMemoryTypeEfiBootServicesCode        :  FIXED   (UINT32) = 0x190 (400)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdMemoryTypeEfiBootServicesData        :  FIXED   (UINT32) = 0x4E20 (20000)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdMemoryTypeEfiLoaderCode              :  FIXED   (UINT32) = 0x14 (20)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdMemoryTypeEfiLoaderData              :  FIXED   (UINT32) = 0x0 (0)
+    PcdMemoryTypeEfiReservedMemoryType      :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdMemoryTypeEfiRuntimeServicesCode     :  FIXED   (UINT32) = 0x41 (65)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdMemoryTypeEfiRuntimeServicesData     :  FIXED   (UINT32) = 0x50 (80)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdPrePiCpuIoSize                       :  FIXED    (UINT8) = 0x0 (0)
+ *P PcdPrePiProduceMemoryTypeInformationHob   :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+gOpteeClientPkgTokenSpaceGuid
+ *P PcdTpm2AcpiBufferBase                   :  FIXED   (UINT64) = 0x407EA000 (1082040320)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdTpm2AcpiBufferSize                   :  FIXED   (UINT32) = 0x3000 (12288)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdTrustZonePrivateMemoryBase           :  FIXED   (UINT64) = 0xBE000000 (3187671040)
+                                                    DEC DEFAULT = 0xDEAD1 (912081)
+ *P PcdTrustZonePrivateMemorySize           :  FIXED   (UINT64) = 0x01E00000 (31457280)
+                                                    DEC DEFAULT = 0x37 (55)
+ *P PcdTrustZoneSharedMemoryBase            :  FIXED   (UINT64) = 0xBFE00000 (3219128320)
+                                                    DEC DEFAULT = 0xDEAD2 (912082)
+ *P PcdTrustZoneSharedMemorySize            :  FIXED   (UINT64) = 0x00200000 (2097152)
+                                                    DEC DEFAULT = 0xAA (170)
+giMX8TokenSpaceGuid
+    PcdPciConfigurationSpaceBaseAddress     :  FIXED   (UINT64) = 0x40000000 (1073741824)
+    PcdPciConfigurationSpaceSize            :  FIXED   (UINT64) = 0x10000000 (268435456)
+    PcdPcieControlBaseAddress               :  FIXED   (UINT64) = 0x33800000 (864026624)
+giMXPlatformTokenSpaceGuid
+ *P PcdGlobalDataBaseAddress                :  FIXED   (UINT32) = 0x407E9000 (1082036224)
+                                                    DEC DEFAULT = 0x00000000 (0)
+    PcdGlobalDataSize                       :  FIXED   (UINT32) = 0x1000 (4096)
+    PcdGpioBankMemoryRange                  :  FIXED   (UINT32) = 0x4000 (16384)
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          DxeCore
+Module INF Path:      MdeModulePkg/Core/Dxe/DxeMain.inf
+File GUID:            D6A2CB7F-6A18-4e2f-B43B-9920A733700A
+Size:                 0x35000 (212.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    105135ms
+Driver Type:          0x5 (DXE_CORE)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+    PcdCpuVectorBaseAddress                 :  FIXED   (UINT64) = 0xffff0000 (4294901760)
+    PcdDebuggerExceptionSupport             :   FLAG  (BOOLEAN) = 0
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdCpuStackGuard                        :  FIXED  (BOOLEAN) = 0
+ *P PcdDxeNxMemoryProtectionPolicy          :  FIXED   (UINT64) = 0xC000000000007FD1 (13835058055282196433)
+                                                    DEC DEFAULT = 0x0000000 (0)
+    PcdEdkiiFpdtStringRecordEnableOnly      :  FIXED  (BOOLEAN) = 0
+    PcdExtFpdtBootRecordPadSize             :  FIXED   (UINT32) = 0x20000 (131072)
+    PcdFrameworkCompatibilitySupport        :   FLAG  (BOOLEAN) = 0
+    PcdHeapGuardPageType                    :  FIXED   (UINT64) = 0x0 (0)
+    PcdHeapGuardPoolType                    :  FIXED   (UINT64) = 0x0 (0)
+    PcdHeapGuardPropertyMask                :  FIXED    (UINT8) = 0x0 (0)
+ *P PcdImageProtectionPolicy                :  FIXED   (UINT32) = 0x3 (3)
+                                                    DEC DEFAULT = 0x00000002 (2)
+    PcdLoadFixAddressBootTimeCodePageNumber   :  PATCH   (UINT32) = 0x0 (0)
+    PcdLoadFixAddressRuntimeCodePageNumber   :  PATCH   (UINT32) = 0x0 (0)
+    PcdLoadModuleAtFixAddressEnable         :  FIXED   (UINT64) = 0x0 (0)
+    PcdMaxEfiSystemTablePointerAddress      :  FIXED   (UINT64) = 0x0 (0)
+    PcdMemoryProfileDriverPath              :  FIXED    (VOID*) = {0x0}
+    PcdMemoryProfileMemoryType              :  FIXED   (UINT64) = 0x0 (0)
+    PcdMemoryProfilePropertyMask            :  FIXED    (UINT8) = 0x0 (0)
+    PcdNullPointerDetectionPropertyMask     :  FIXED    (UINT8) = 0x0 (0)
+    PcdPropertiesTableEnable                :  FIXED  (BOOLEAN) = 0
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPerformanceLibraryPropertyMask       :  FIXED    (UINT8) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          PcdDxe
+Module INF Path:      MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
+File GUID:            80CF7257-87AB-47f9-A3FE-D50B76D89541
+Size:                 0x6000 (24.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    38489ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdSetNvStoreDefaultId                  :    DEX   (UINT16) = 0x0 (0)
+    PcdVpdBaseAddress                       :  FIXED   (UINT32) = 0x0 (0)
+    PcdVpdBaseAddress64                     :    DEX   (UINT64) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          ArmCpuDxe
+Module INF Path:      ArmPkg/Drivers/CpuDxe/CpuDxe.inf
+File GUID:            B8D9777E-D72A-451F-9BDB-BAFB52A68415
+Size:                 0x7000 (28.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    46665ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+    PcdCpuVectorBaseAddress                 :  FIXED   (UINT64) = 0xffff0000 (4294901760)
+    PcdDebuggerExceptionSupport             :   FLAG  (BOOLEAN) = 0
+ *P PcdVFPEnabled                           :  FIXED   (UINT32) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          RuntimeDxe
+Module INF Path:      MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
+File GUID:            B601F8C4-43B7-4784-95B1-F4226CB40CEE
+Size:                 0x40000 (256.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    24193ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          SecurityStubDxe
+Module INF Path:      MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+File GUID:            F80697E9-7FD6-4665-8646-88E33EF71DFC
+Size:                 0x8000 (32.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    47141ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          CapsuleRuntimeDxe
+Module INF Path:      MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
+File GUID:            42857F0A-13F2-4B21-8A23-53D3F714B840
+Size:                 0x30000 (192.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    27921ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdMaxSizeNonPopulateCapsule            :  FIXED   (UINT32) = 0xa00000 (10485760)
+    PcdMaxSizePopulateCapsule               :  FIXED   (UINT32) = 0x6400000 (104857600)
+    PcdSupportUpdateCapsuleReset            :   FLAG  (BOOLEAN) = 0
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          MonotonicCounterRuntimeDxe
+Module INF Path:      MdeModulePkg/Universal/MonotonicCounterRuntimeDxe/MonotonicCounterRuntimeDxe.inf
+File GUID:            AD608272-D07F-4964-801E-7BD3B7888652
+Size:                 0x30000 (192.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    15272ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          ResetSystemRuntimeDxe
+Module INF Path:      MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
+File GUID:            4B28E4C7-FF36-4e10-93CF-A82159E777C5
+Size:                 0x40000 (256.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    21181ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+    PcdArmReenterPeiForCapsuleWarmReboot    :   FLAG  (BOOLEAN) = 0
+ *F PcdFvBaseAddress                        :  FIXED   (UINT64) = 0x50004000 (1342193664)
+                                                    DEC DEFAULT = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          RealTimeClock
+Module INF Path:      EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
+File GUID:            B336F62D-4135-4A55-AE4E-4971BBF0885D
+Size:                 0x30000 (192.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    17757ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          MetronomeDxe
+Module INF Path:      EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
+File GUID:            4C6E0267-C77D-410D-8100-1495911A989D
+Size:                 0x4000 (16.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    16174ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+gEmbeddedTokenSpaceGuid
+ *P PcdMetronomeTickPeriod                  :  FIXED   (UINT32) = 0x3E8 (1000)
+                                                    DEC DEFAULT = 0x64 (100)
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          ArmGicDxe
+Module INF Path:      ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
+File GUID:            DE371F7C-DEC4-4D21-ADF1-593ABCC15882
+Size:                 0x5000 (20.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    40481ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+    PcdArmGicV3WithV2Legacy                 :   FLAG  (BOOLEAN) = 0
+ *P PcdGicDistributorBase                   :  FIXED   (UINT64) = 0x38800000 (947912704)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdGicInterruptInterfaceBase            :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdGicRedistributorsBase                :  FIXED   (UINT64) = 0x38880000 (948436992)
+                                                    DEC DEFAULT = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          ArmTimerDxe
+Module INF Path:      ArmPkg/Drivers/TimerDxe/TimerDxe.inf
+File GUID:            49ea041e-6752-42ca-b0b1-7344fe2546b7
+Size:                 0x4000 (16.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    18477ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+    PcdArmArchTimerHypIntrNum               :  FIXED   (UINT32) = 0x1A (26)
+    PcdArmArchTimerIntrNum                  :  FIXED   (UINT32) = 0x1E (30)
+    PcdArmArchTimerSecIntrNum               :  FIXED   (UINT32) = 0x1D (29)
+    PcdArmArchTimerVirtIntrNum              :  FIXED   (UINT32) = 0x1B (27)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+gEmbeddedTokenSpaceGuid
+    PcdTimerPeriod                          :  FIXED   (UINT32) = 0x186A0 (100000)
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          WatchdogTimer
+Module INF Path:      MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
+File GUID:            F099D67F-71AE-4c36-B2A3-DCEB0EB2B7D8
+Size:                 0x4000 (16.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    14524ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          ConPlatformDxe
+Module INF Path:      MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
+File GUID:            51ccf399-4fdf-4e55-a45b-e123f84d456a
+Size:                 0x5000 (20.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    35707ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdBootManagerInBootOrder               :  FIXED  (BOOLEAN) = 1
+ *P PcdBootManagerMenuFile                  :  FIXED    (VOID*) = {
+0x21,0xAA,0x2C,0x46,0x14,0x76,0x03,0x45,0x83,0x6E,0x8A,0xB6,0xF4,0x66,0x23,0x31}
+                                                    DEC DEFAULT = {
+0xDC,0x5B,0xC2,0xEE,0xF2,0x67,0x95,0x4D,0xB1,0xD5,0xF8,0x1B,0x20,0x39,0xD1,0x1D}
+    PcdDriverHealthConfigureForm            :  FIXED    (VOID*) = {
+0xF4,0xD9,0x96,0x42,0xFC,0xF6,0xDE,0x4D,0x86,0x85,0x8C,0xE2,0xD7,0x9D,0x90,0xF0}
+    PcdErrorCodeSetVariable                 :  FIXED   (UINT32) = 0x03058002 (50692098)
+    PcdMaxRepairCount                       :  FIXED   (UINT32) = 0x00 (0)
+    PcdProgressCodeOsLoaderLoad             :  FIXED   (UINT32) = 0x03058000 (50692096)
+    PcdProgressCodeOsLoaderStart            :  FIXED   (UINT32) = 0x03058001 (50692097)
+ *P PcdResetOnMemoryTypeInformationChange   :  FIXED  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPerformanceLibraryPropertyMask       :  FIXED    (UINT8) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          ConSplitterDxe
+Module INF Path:      MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
+File GUID:            408edcec-cf6d-477c-a5a8-b4844e3de281
+Size:                 0x8000 (32.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    69960ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdConInConnectOnDemand                 :  FIXED  (BOOLEAN) = 0
+    PcdConOutColumn                         :  PATCH   (UINT32) = 0x50 (80)
+    PcdConOutGopSupport                     :   FLAG  (BOOLEAN) = 1
+    PcdConOutRow                            :  PATCH   (UINT32) = 0x19 (25)
+    PcdConOutUgaSupport                     :   FLAG  (BOOLEAN) = 1
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          GraphicsConsoleDxe
+Module INF Path:      MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
+File GUID:            CCCB0C28-4B24-11d5-9A5A-0090273FC14D
+Size:                 0x7000 (28.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    45137ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+ *P PcdVideoHorizontalResolution            :  PATCH   (UINT32) = 0x500 (1280)
+                                                    DEC DEFAULT = 0x320 (800)
+ *P PcdVideoVerticalResolution              :  PATCH   (UINT32) = 0x320 (800)
+                                                    DEC DEFAULT = 0x258 (600)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          TerminalDxe
+Module INF Path:      MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf
+File GUID:            9E863906-A40F-4875-977F-5B93FF237FC6
+Size:                 0x8000 (32.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    78481ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdErrorCodeSetVariable                 :  FIXED   (UINT32) = 0x03058002 (50692098)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDefaultTerminalType                  :  FIXED    (UINT8) = 0x4 (4)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          SerialDxe
+Module INF Path:      MdeModulePkg/Universal/SerialDxe/SerialDxe.inf
+File GUID:            D3987D4B-971A-435F-8CAF-4967EB627241
+Size:                 0x4000 (16.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    15969ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUartDefaultBaudRate                  :  FIXED   (UINT64) = 0x1C200 (115200)
+    PcdUartDefaultDataBits                  :  FIXED    (UINT8) = 0x8 (8)
+    PcdUartDefaultParity                    :  FIXED    (UINT8) = 0x1 (1)
+    PcdUartDefaultReceiveFifoDepth          :  FIXED   (UINT16) = 0x1 (1)
+    PcdUartDefaultStopBits                  :  FIXED    (UINT8) = 0x1 (1)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          VariableRuntimeDxe
+Module INF Path:      MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+File GUID:            CBD2E4D5-7068-4FF5-B462-9822B4AD8D60
+Size:                 0x40000 (256.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    99696ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdBoottimeReservedNvVariableSpaceSize   :  FIXED   (UINT32) = 0x00 (0)
+ *P PcdEmuVariableNvModeEnable              :  FIXED  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdEmuVariableNvStoreReserved           :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdFlashNvStorageVariableBase           :  FIXED   (UINT32) = 0x30370000 (808910848)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdFlashNvStorageVariableBase64         :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdFlashNvStorageVariableSize           :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdHwErrStorageSize                     :  FIXED   (UINT32) = 0x0000 (0)
+    PcdMaxAuthVariableSize                  :  FIXED   (UINT32) = 0x00 (0)
+    PcdMaxHardwareErrorVariableSize         :  FIXED   (UINT32) = 0x8000 (32768)
+    PcdMaxUserNvVariableSpaceSize           :  FIXED   (UINT32) = 0x00 (0)
+    PcdMaxVariableSize                      :  FIXED   (UINT32) = 0x400 (1024)
+    PcdMaxVolatileVariableSize              :  FIXED   (UINT32) = 0x00 (0)
+    PcdReclaimVariableSpaceAtEndOfDxe       :  FIXED  (BOOLEAN) = 0
+    PcdVariableCollectStatistics            :   FLAG  (BOOLEAN) = 0
+    PcdVariableStoreSize                    :  FIXED   (UINT32) = 0x10000 (65536)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdSpinLockTimeout                      :  FIXED   (UINT32) = 0x989680 (10000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUefiVariableDefaultLangDeprecate     :   FLAG  (BOOLEAN) = 0
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          FaultTolerantWriteDxe
+Module INF Path:      MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe.inf
+File GUID:            FE5CEA76-4F72-49e8-986F-2CD899DFFE5D
+Size:                 0x5000 (20.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    53284ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+ *P PcdFlashNvStorageFtwSpareBase           :  FIXED   (UINT32) = 0x30378000 (808943616)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdFlashNvStorageFtwSpareBase64         :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdFlashNvStorageFtwSpareSize           :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFlashNvStorageFtwWorkingBase         :  FIXED   (UINT32) = 0x30374000 (808927232)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdFlashNvStorageFtwWorkingBase64       :  FIXED   (UINT64) = 0x0 (0)
+ *P PcdFlashNvStorageFtwWorkingSize         :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdFullFtwServiceEnable                 :   FLAG  (BOOLEAN) = 1
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          HiiDatabase
+Module INF Path:      MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
+File GUID:            348C4D62-BFBD-4882-9ECE-C80BB1C4783B
+Size:                 0x16000 (88.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    151662ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdHiiOsRuntimeSupport                  :   FLAG  (BOOLEAN) = 1
+    PcdNvStoreDefaultValueBuffer            :    DEX    (VOID*) = {0x0}
+    PcdSupportHiiImageProtocol              :   FLAG  (BOOLEAN) = 1
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUefiVariableDefaultPlatformLang      :  FIXED    (VOID*) = "en-US"
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          Fat
+Module INF Path:      FatPkg/EnhancedFatDxe/Fat.inf
+File GUID:            961578FE-B6B7-44c3-AF35-6BC705CD2B1F
+Size:                 0x9000 (36.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    123849ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUefiVariableDefaultLang              :  FIXED    (VOID*) = "eng"
+    PcdUefiVariableDefaultPlatformLang      :  FIXED    (VOID*) = "en-US"
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          DiskIoDxe
+Module INF Path:      MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
+File GUID:            6B38F7B4-AD98-40e9-9093-ACA2B5A253C4
+Size:                 0x5000 (20.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    33260ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdDiskIoDataBufferBlockNum             :  FIXED   (UINT32) = 0x40 (64)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          PartitionDxe
+Module INF Path:      MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
+File GUID:            1FA1F39E-FEFF-4aae-BD7B-38A070A3B609
+Size:                 0x6000 (24.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    67967ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          SdMmcDxe
+Module INF Path:      Microsoft/Drivers/SdMmcDxe/SdMmcDxe.inf
+File GUID:            16738C4A-8044-4DD8-B68E-58A53CEFF5D9
+Size:                 0xA000 (40.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    91776ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          FvSimpleFileSystem
+Module INF Path:      MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
+File GUID:            907125c0-a5f1-11e3-a3fe-a3198b49350c
+Size:                 0x7000 (28.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    54249ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUefiVariableDefaultLang              :  FIXED    (VOID*) = "eng"
+    PcdUefiVariableDefaultPlatformLang      :  FIXED    (VOID*) = "en-US"
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          EnglishDxe
+Module INF Path:      MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+File GUID:            CD3BAFB6-50FB-4fe8-8E4E-AB74D2C1A600
+Size:                 0x4000 (16.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    15592ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdUnicodeCollation2Support             :   FLAG  (BOOLEAN) = 1
+    PcdUnicodeCollationSupport              :   FLAG  (BOOLEAN) = 1
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          iMX8Dxe
+Module INF Path:      iMX8Pkg/Drivers/iMX8Dxe/iMX8Dxe.inf
+File GUID:            6E261F6C-4CF8-DF84-9226-17A360B03D84
+Size:                 0x8000 (32.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    60687ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+    PcdHypFvBaseAddress                     :  FIXED   (UINT32) = 0x0 (0)
+    PcdHypFvSize                            :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdSystemMemoryBase                     :  FIXED   (UINT64) = 0x40000000 (1073741824)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdSystemMemorySize                     :  FIXED   (UINT64) = 0x3E000000 (1040187392)
+                                                    DEC DEFAULT = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiFileHandleLibPrintBufferSize     :  FIXED   (UINT16) = 0x600 (1536)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+gEfiShellPkgTokenSpaceGuid
+ *P PcdShellLibAutoInitialize               :  FIXED  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+    PcdShellPrintBufferSize                 :  FIXED   (UINT16) = 0x3E80 (16000)
+giMX8TokenSpaceGuid
+    PcdUsb1XhciBaseAddress                  :  FIXED   (UINT64) = 0x38100000 (940572672)
+    PcdUsb2XhciBaseAddress                  :  FIXED   (UINT64) = 0x38200000 (941621248)
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          SdhcDxe
+Module INF Path:      iMXPlatformPkg/Drivers/SdhcDxe/SdhcDxe.inf
+File GUID:            A9945BAB-78C9-43C9-9175-F576CA189870
+Size:                 0x5000 (20.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    25740ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+    PcdGpioBankMemoryRange                  :  FIXED   (UINT32) = 0x4000 (16384)
+ *P PcdSdhc1Base                            :  FIXED   (UINT32) = 0x30B40000 (817102848)
+                                                    DEC DEFAULT = 0x02190000 (35192832)
+    PcdSdhc1CardDetectSignal                :  FIXED   (UINT16) = 0xFF00 (65280)
+ *P PcdSdhc1Enable                          :  FIXED  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdSdhc1WriteProtectSignal              :  FIXED   (UINT16) = 0xFF00 (65280)
+                                                    DEC DEFAULT = 0xFF01 (65281)
+ *P PcdSdhc2Base                            :  FIXED   (UINT32) = 0x30B50000 (817168384)
+                                                    DEC DEFAULT = 0x02194000 (35209216)
+    PcdSdhc2CardDetectSignal                :  FIXED   (UINT16) = 0xFF00 (65280)
+ *P PcdSdhc2Enable                          :  FIXED  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdSdhc2WriteProtectSignal              :  FIXED   (UINT16) = 0xFF00 (65280)
+                                                    DEC DEFAULT = 0xFF01 (65281)
+ *P PcdSdhc3Base                            :  FIXED   (UINT32) = 0x30B60000 (817233920)
+                                                    DEC DEFAULT = 0x02198000 (35225600)
+ *P PcdSdhc3CardDetectSignal                :  FIXED   (UINT16) = 0xFFFF (65535)
+                                                    DEC DEFAULT = 0xFF00 (65280)
+    PcdSdhc3Enable                          :  FIXED  (BOOLEAN) = 0
+ *P PcdSdhc3WriteProtectSignal              :  FIXED   (UINT16) = 0xFF00 (65280)
+                                                    DEC DEFAULT = 0xFF01 (65281)
+ *P PcdSdhc4Base                            :  FIXED   (UINT32) = 0x00000000 (0)
+                                                    DEC DEFAULT = 0x0219C000 (35241984)
+    PcdSdhc4CardDetectSignal                :  FIXED   (UINT16) = 0xFF00 (65280)
+    PcdSdhc4Enable                          :  FIXED  (BOOLEAN) = 0
+    PcdSdhc4WriteProtectSignal              :  FIXED   (UINT16) = 0xFF01 (65281)
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          LcdGraphicsOutputDxe
+Module INF Path:      ArmPlatformPkg/Drivers/LcdGraphicsOutputDxe/LcdGraphicsOutputDxe.inf
+File GUID:            89464DAE-8DAA-41FE-A4C8-40D2175AF1E9
+Size:                 0x5000 (20.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    32921ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmPlatformTokenSpaceGuid
+ *P PcdArmLcdDdrFrameBufferBase             :  FIXED   (UINT64) = 0x40000000 (1073741824)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdArmLcdDdrFrameBufferSize             :  FIXED   (UINT32) = 0x007E9000 (8294400)
+    PcdGopDisableOnExitBootServices         :   FLAG  (BOOLEAN) = 0
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          DevicePathDxe
+Module INF Path:      MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+File GUID:            9B680FCE-AD6B-4F3A-B60B-F59899003443
+Size:                 0xD000 (52.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    82152ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdDevicePathSupportDevicePathFromText   :   FLAG  (BOOLEAN) = 1
+    PcdDevicePathSupportDevicePathToText    :   FLAG  (BOOLEAN) = 1
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          DisplayEngine
+Module INF Path:      MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
+File GUID:            E660EA85-058E-4b55-A54B-F02F83A24707
+Size:                 0x12000 (72.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    139965ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdBrowerGrayOutReadOnlyMenu            :   FLAG  (BOOLEAN) = 0
+    PcdBrowserFieldBackgroundHighlightColor   :  FIXED    (UINT8) = 0x00 (0)
+    PcdBrowserFieldTextColor                :  FIXED    (UINT8) = 0x00 (0)
+    PcdBrowserFieldTextHighlightColor       :  FIXED    (UINT8) = 0x07 (7)
+    PcdBrowserGrayOutTextStatement          :   FLAG  (BOOLEAN) = 0
+    PcdBrowserSubtitleTextColor             :  FIXED    (UINT8) = 0x01 (1)
+    PcdFrontPageFormSetGuid                 :  FIXED    (VOID*) = {
+0xBC,0x30,0x0C,0x9E,0x06,0x3F,0xA6,0x4B,0x82,0x88,0x09,0x17,0x9B,0x85,0x5D,0xBE}
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          SetupBrowser
+Module INF Path:      MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
+File GUID:            EBf342FE-B1D3-4EF8-957C-8048606FF671
+Size:                 0x13000 (76.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    154839ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdFrameworkCompatibilitySupport        :   FLAG  (BOOLEAN) = 0
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          BdsDxe
+Module INF Path:      MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+File GUID:            6D33944A-EC75-4855-A54D-809C75241F6C
+Size:                 0x11000 (68.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    131869ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdBootManagerInBootOrder               :  FIXED  (BOOLEAN) = 1
+ *P PcdBootManagerMenuFile                  :  FIXED    (VOID*) = {
+0x21,0xAA,0x2C,0x46,0x14,0x76,0x03,0x45,0x83,0x6E,0x8A,0xB6,0xF4,0x66,0x23,0x31}
+                                                    DEC DEFAULT = {
+0xDC,0x5B,0xC2,0xEE,0xF2,0x67,0x95,0x4D,0xB1,0xD5,0xF8,0x1B,0x20,0x39,0xD1,0x1D}
+    PcdConInConnectOnDemand                 :  FIXED  (BOOLEAN) = 0
+    PcdConOutColumn                         :  PATCH   (UINT32) = 0x50 (80)
+    PcdConOutRow                            :  PATCH   (UINT32) = 0x19 (25)
+    PcdDriverHealthConfigureForm            :  FIXED    (VOID*) = {
+0xF4,0xD9,0x96,0x42,0xFC,0xF6,0xDE,0x4D,0x86,0x85,0x8C,0xE2,0xD7,0x9D,0x90,0xF0}
+    PcdErrorCodeSetVariable                 :  FIXED   (UINT32) = 0x03058002 (50692098)
+ *P PcdFirmwareRevision                     :  FIXED   (UINT32) = 0x00000001 (1)
+                                                    DEC DEFAULT = 0x00010000 (65536)
+    PcdFirmwareVendor                       :  FIXED    (VOID*) = L"EDK II"
+    PcdMaxRepairCount                       :  FIXED   (UINT32) = 0x00 (0)
+    PcdPlatformRecoverySupported            :  FIXED  (BOOLEAN) = 1
+    PcdProgressCodeOsLoaderLoad             :  FIXED   (UINT32) = 0x03058000 (50692096)
+    PcdProgressCodeOsLoaderStart            :  FIXED   (UINT32) = 0x03058001 (50692097)
+ *P PcdResetOnMemoryTypeInformationChange   :  FIXED  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+    PcdTestKeyUsed                          :    DYN  (BOOLEAN) = 0
+ *P PcdVideoHorizontalResolution            :  PATCH   (UINT32) = 0x500 (1280)
+                                                    DEC DEFAULT = 0x320 (800)
+ *P PcdVideoVerticalResolution              :  PATCH   (UINT32) = 0x320 (800)
+                                                    DEC DEFAULT = 0x258 (600)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDefaultTerminalType                  :  FIXED    (UINT8) = 0x4 (4)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdHardwareErrorRecordLevel             :  FIXED   (UINT16) = 0x0 (0)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPerformanceLibraryPropertyMask       :  FIXED    (UINT8) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdPlatformBootTimeOut                  :  FIXED   (UINT16) = 0x0 (0)
+                                                    DEC DEFAULT = 0xffff (65535)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUefiVariableDefaultLang              :  FIXED    (VOID*) = "eng"
+    PcdUefiVariableDefaultLangCodes         :  FIXED    (VOID*) = "engfraengfra"
+    PcdUefiVariableDefaultLangDeprecate     :   FLAG  (BOOLEAN) = 0
+    PcdUefiVariableDefaultPlatformLang      :  FIXED    (VOID*) = "en-US"
+    PcdUefiVariableDefaultPlatformLangCodes   :  FIXED    (VOID*) = "en;fr;en-US;fr-FR"
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          UiApp
+Module INF Path:      MdeModulePkg/Application/UiApp/UiApp.inf
+File GUID:            462CAA21-7614-4503-836E-8AB6F4662331
+Size:                 0x21000 (132.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    160442ms
+Driver Type:          0x9 (APPLICATION)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdBootManagerInBootOrder               :  FIXED  (BOOLEAN) = 1
+ *P PcdBootManagerMenuFile                  :  FIXED    (VOID*) = {
+0x21,0xAA,0x2C,0x46,0x14,0x76,0x03,0x45,0x83,0x6E,0x8A,0xB6,0xF4,0x66,0x23,0x31}
+                                                    DEC DEFAULT = {
+0xDC,0x5B,0xC2,0xEE,0xF2,0x67,0x95,0x4D,0xB1,0xD5,0xF8,0x1B,0x20,0x39,0xD1,0x1D}
+    PcdConOutColumn                         :  PATCH   (UINT32) = 0x50 (80)
+    PcdConOutRow                            :  PATCH   (UINT32) = 0x19 (25)
+    PcdDriverHealthConfigureForm            :  FIXED    (VOID*) = {
+0xF4,0xD9,0x96,0x42,0xFC,0xF6,0xDE,0x4D,0x86,0x85,0x8C,0xE2,0xD7,0x9D,0x90,0xF0}
+    PcdErrorCodeSetVariable                 :  FIXED   (UINT32) = 0x03058002 (50692098)
+    PcdFirmwareVersionString                :  FIXED    (VOID*) = L""
+    PcdMaxRepairCount                       :  FIXED   (UINT32) = 0x00 (0)
+    PcdProgressCodeOsLoaderLoad             :  FIXED   (UINT32) = 0x03058000 (50692096)
+    PcdProgressCodeOsLoaderStart            :  FIXED   (UINT32) = 0x03058001 (50692097)
+ *P PcdResetOnMemoryTypeInformationChange   :  FIXED  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+    PcdSetupConOutColumn                    :  PATCH   (UINT32) = 0x50 (80)
+    PcdSetupConOutRow                       :  PATCH   (UINT32) = 0x19 (25)
+    PcdSetupVideoHorizontalResolution       :  PATCH   (UINT32) = 0x320 (800)
+    PcdSetupVideoVerticalResolution         :  PATCH   (UINT32) = 0x258 (600)
+    PcdTestKeyUsed                          :    DYN  (BOOLEAN) = 0
+ *P PcdVideoHorizontalResolution            :  PATCH   (UINT32) = 0x500 (1280)
+                                                    DEC DEFAULT = 0x320 (800)
+ *P PcdVideoVerticalResolution              :  PATCH   (UINT32) = 0x320 (800)
+                                                    DEC DEFAULT = 0x258 (600)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPerformanceLibraryPropertyMask       :  FIXED    (UINT8) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdPlatformBootTimeOut                  :  FIXED   (UINT16) = 0x0 (0)
+                                                    DEC DEFAULT = 0xffff (65535)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUefiVariableDefaultPlatformLangCodes   :  FIXED    (VOID*) = "en;fr;en-US;fr-FR"
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          Shell
+Module INF Path:      ShellPkg/Application/Shell/Shell.inf
+File GUID:            7C04A583-9E3E-4f1c-AD65-E05268D0B4D1
+Size:                 0xCC000 (816.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    76410ms
+Driver Type:          0x9 (APPLICATION)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdBootManagerInBootOrder               :  FIXED  (BOOLEAN) = 1
+ *P PcdBootManagerMenuFile                  :  FIXED    (VOID*) = {
+0x21,0xAA,0x2C,0x46,0x14,0x76,0x03,0x45,0x83,0x6E,0x8A,0xB6,0xF4,0x66,0x23,0x31}
+                                                    DEC DEFAULT = {
+0xDC,0x5B,0xC2,0xEE,0xF2,0x67,0x95,0x4D,0xB1,0xD5,0xF8,0x1B,0x20,0x39,0xD1,0x1D}
+    PcdDriverHealthConfigureForm            :  FIXED    (VOID*) = {
+0xF4,0xD9,0x96,0x42,0xFC,0xF6,0xDE,0x4D,0x86,0x85,0x8C,0xE2,0xD7,0x9D,0x90,0xF0}
+    PcdErrorCodeSetVariable                 :  FIXED   (UINT32) = 0x03058002 (50692098)
+    PcdMaxRepairCount                       :  FIXED   (UINT32) = 0x00 (0)
+    PcdProgressCodeOsLoaderLoad             :  FIXED   (UINT32) = 0x03058000 (50692096)
+    PcdProgressCodeOsLoaderStart            :  FIXED   (UINT32) = 0x03058001 (50692097)
+ *P PcdResetOnMemoryTypeInformationChange   :  FIXED  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPerformanceLibraryPropertyMask       :  FIXED    (UINT8) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdReportStatusCodePropertyMask         :  FIXED    (UINT8) = 0x47 (71)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiFileHandleLibPrintBufferSize     :  FIXED   (UINT16) = 0x600 (1536)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+gEfiShellPkgTokenSpaceGuid
+    PcdShellDecodeIScsiMapNames             :  FIXED  (BOOLEAN) = 0
+    PcdShellFileOperationSize               :  FIXED   (UINT32) = 0x1000 (4096)
+    PcdShellForceConsole                    :   FLAG  (BOOLEAN) = 0
+    PcdShellIncludeNtGuids                  :   FLAG  (BOOLEAN) = 1
+    PcdShellInsertModeDefault               :  FIXED  (BOOLEAN) = 1
+ *P PcdShellLibAutoInitialize               :  FIXED  (BOOLEAN) = 0
+                                                    DEC DEFAULT = 1
+    PcdShellMapNameLength                   :  FIXED    (UINT8) = 0x32 (50)
+    PcdShellMaxHistoryCommandCount          :  FIXED   (UINT16) = 0x0020 (32)
+    PcdShellPageBreakDefault                :  FIXED  (BOOLEAN) = 0
+    PcdShellPrintBufferSize                 :  FIXED   (UINT16) = 0x3E80 (16000)
+    PcdShellProfileMask                     :  FIXED    (UINT8) = 0xFF (255)
+    PcdShellRequireHiiPlatform              :   FLAG  (BOOLEAN) = 1
+    PcdShellScreenLogCount                  :  FIXED    (UINT8) = 0x3 (3)
+    PcdShellSupplier                        :  FIXED    (VOID*) = L"EDK II"
+    PcdShellSupportFrameworkHii             :   FLAG  (BOOLEAN) = 0
+    PcdShellSupportLevel                    :  FIXED    (UINT8) = 0x3 (3)
+    PcdShellSupportOldProtocols             :  FIXED  (BOOLEAN) = 0
+    PcdShellVendorExtendedDecode            :  FIXED   (UINT32) = 0x0 (0)
+    PcdUsbExtendedDecode                    :  FIXED  (BOOLEAN) = 1
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          OpteeClientApiTest
+Module INF Path:      Microsoft/OpteeClientPkg/Application/OpteeClientApiTest/OpteeClientApiTest.inf
+File GUID:            814EA9F7-4DEE-4817-B0B9-224EBA8126E9
+Size:                 0x7000 (28.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    44508ms
+Driver Type:          0x9 (APPLICATION)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPerformanceLibraryPropertyMask       :  FIXED    (UINT8) = 0x1 (1)
+                                                    DEC DEFAULT = 0x0 (0)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+gOpteeClientPkgTokenSpaceGuid
+ *P PcdTrustZoneSharedMemoryBase            :  FIXED   (UINT64) = 0xBFE00000 (3219128320)
+                                                    DEC DEFAULT = 0xDEAD2 (912082)
+ *P PcdTrustZoneSharedMemorySize            :  FIXED   (UINT64) = 0x00200000 (2097152)
+                                                    DEC DEFAULT = 0xAA (170)
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          EbcDxe
+Module INF Path:      MdeModulePkg/Universal/EbcDxe/EbcDxe.inf
+File GUID:            13AC6DD0-73D0-11D4-B06B-00AA00BD6DE7
+Size:                 0x7000 (28.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    68913ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          AcpiTableDxe
+Module INF Path:      MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
+File GUID:            9622E42C-8E38-4a08-9E8F-54F784652F6B
+Size:                 0x4000 (16.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    77042ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdAcpiDefaultCreatorId                 :  FIXED   (UINT32) = 0x20202020 (538976288)
+    PcdAcpiDefaultCreatorRevision           :  FIXED   (UINT32) = 0x01000013 (16777235)
+    PcdAcpiDefaultOemId                     :  FIXED    (VOID*) = "INTEL "
+    PcdAcpiDefaultOemRevision               :  FIXED   (UINT32) = 0x00000002 (2)
+    PcdAcpiDefaultOemTableId                :  FIXED   (UINT64) = 0x20202020324B4445 (2314885531123270725)
+    PcdAcpiExposedTableVersions             :  FIXED   (UINT32) = 0x3E (62)
+    PcdInstallAcpiSdtProtocol               :   FLAG  (BOOLEAN) = 0
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          AcpiPlatform
+Module INF Path:      MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
+File GUID:            cb933912-df8f-4305-b1f9-7b44fa11395c
+Size:                 0x3000 (12.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    15699ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdAcpiTableStorageFile                 :  FIXED    (VOID*) = {
+0x25,0x4E,0x37,0x7E,0x01,0x8E,0xEE,0x4F,0x87,0xF2,0x39,0x0C,0x23,0xC6,0x06,0xCD}
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          PlatformAcpiTables
+Module INF Path:      KARO/TX8M_MINI_EVK_1GB/AcpiTables/AcpiTables.inf
+File GUID:            7E374E25-8E01-4FEE-87F2-390C23C606CD
+Module Build Time:    36542ms
+Driver Type:          0x2 (FREE_FORM)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmPlatformTokenSpaceGuid
+ *P PcdCoreCount                            :  FIXED   (UINT32) = 0x4 (4)
+                                                    DEC DEFAULT = 0x1 (1)
+gArmTokenSpaceGuid
+    PcdArmArchTimerHypIntrNum               :  FIXED   (UINT32) = 0x1A (26)
+    PcdArmArchTimerIntrNum                  :  FIXED   (UINT32) = 0x1E (30)
+    PcdArmArchTimerSecIntrNum               :  FIXED   (UINT32) = 0x1D (29)
+    PcdArmArchTimerVirtIntrNum              :  FIXED   (UINT32) = 0x1B (27)
+ *P PcdGicDistributorBase                   :  FIXED   (UINT64) = 0x38800000 (947912704)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdGicRedistributorsBase                :  FIXED   (UINT64) = 0x38880000 (948436992)
+                                                    DEC DEFAULT = 0x0 (0)
+gOpteeClientPkgTokenSpaceGuid
+ *P PcdTpm2AcpiBufferBase                   :  FIXED   (UINT64) = 0x407EA000 (1082040320)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdTpm2AcpiBufferSize                   :  FIXED   (UINT32) = 0x3000 (12288)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdTrustZoneSharedMemoryBase            :  FIXED   (UINT64) = 0xBFE00000 (3219128320)
+                                                    DEC DEFAULT = 0xDEAD2 (912082)
+ *P PcdTrustZoneSharedMemorySize            :  FIXED   (UINT64) = 0x00200000 (2097152)
+                                                    DEC DEFAULT = 0xAA (170)
+giMXPlatformTokenSpaceGuid
+ *P PcdGlobalDataBaseAddress                :  FIXED   (UINT32) = 0x407E9000 (1082036224)
+                                                    DEC DEFAULT = 0x00000000 (0)
+    PcdKdUartInstance                       :  FIXED   (UINT32) = 0x1 (1)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          SmbiosDxe
+Module INF Path:      MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
+File GUID:            F9D88642-0737-49bc-81B5-6889CD57D9EA
+Size:                 0x4000 (16.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    28306ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+    PcdSmbiosDocRev                         :  FIXED    (UINT8) = 0x0 (0)
+    PcdSmbiosEntryPointProvideMethod        :  FIXED   (UINT32) = 0x3 (3)
+ *P PcdSmbiosVersion                        :  FIXED   (UINT16) = 0x0300 (768)
+                                                    DEC DEFAULT = 0x0302 (770)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          SmbiosPlatformDxe
+Module INF Path:      KARO/TX8M_MINI_EVK_1GB/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+File GUID:            4110465d-5ff3-4f4b-b580-24ed0d06747a
+Size:                 0x4000 (16.00K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    16508ms
+Driver Type:          0x7 (DRIVER)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gArmPlatformTokenSpaceGuid
+ *P PcdCoreCount                            :  FIXED   (UINT32) = 0x4 (4)
+                                                    DEC DEFAULT = 0x1 (1)
+gArmTokenSpaceGuid
+    PcdArmArchTimerFreqInHz                 :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdSystemMemoryBase                     :  FIXED   (UINT64) = 0x40000000 (1073741824)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdSystemMemorySize                     :  FIXED   (UINT64) = 0x3E000000 (1040187392)
+                                                    DEC DEFAULT = 0x0 (0)
+gEfiMdeModulePkgTokenSpaceGuid
+ *P PcdFirmwareRevision                     :  FIXED   (UINT32) = 0x00000001 (1)
+                                                    DEC DEFAULT = 0x00010000 (65536)
+gEfiMdePkgTokenSpaceGuid
+ *P PcdComponentName2Disable                :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdComponentNameDisable                 :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue                :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel                 :  FIXED   (UINT32) = 0x80080206 (2148008454)
+                                                    DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                    :  FIXED    (UINT8) = 0x6F (111)
+                                                    DEC DEFAULT = 0x0 (0)
+ *P PcdDriverDiagnostics2Disable            :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdDriverDiagnosticsDisable             :   FLAG  (BOOLEAN) = 1
+                                                    DEC DEFAULT = 0
+ *P PcdFixedDebugPrintErrorLevel            :  FIXED   (UINT32) = 0x80480246 (2152202822)
+                                                    DEC DEFAULT = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength             :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumDevicePathNodeCount           :  FIXED   (UINT32) = 0x0 (0)
+    PcdMaximumLinkedListLength              :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdUefiLibMaxPrintBufferSize            :  FIXED   (UINT32) = 0x140 (320)
+    PcdUgaConsumeSupport                    :   FLAG  (BOOLEAN) = 1
+    PcdVerifyNodeInList                     :   FLAG  (BOOLEAN) = 0
+giMXPlatformTokenSpaceGuid
+ *P PcdSerialRegisterBase                   :  FIXED   (UINT32) = 0x30860000 (814088192)
+                                                    DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+

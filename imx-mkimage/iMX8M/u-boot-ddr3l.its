@@ -1,0 +1,50 @@
+/dts-v1/;
+
+/ {
+	description = "Configuration to load ATF before U-Boot";
+
+	images {
+		uboot@1 {
+			description = "U-Boot (64-bit)";
+			data = /incbin/("u-boot-nodtb.bin");
+			type = "standalone";
+			arch = "arm64";
+			compression = "none";
+			load = <0x40200000>;
+		};
+		atf@1 {
+			description = "ARM Trusted Firmware";
+			data = /incbin/("bl31.bin");
+			type = "firmware";
+			arch = "arm64";
+			compression = "none";
+			load = <0x00920000>;
+			entry = <0x00920000>;
+		};
+		tee@1 {
+			description = "TEE firmware";
+			data = /incbin/("tee.bin");
+			type = "firmware";
+			arch = "arm64";
+			compression = "none";
+			load = <0xbe000000>;
+			entry = <0xbe000000>;
+		};
+		fdt@1 {
+			description = "imx8mm-tx8m-1610-mipi-mb";
+			data = /incbin/("imx8mm-tx8m-1610-mipi-mb.dtb");
+			type = "flat_dt";
+			compression = "none";
+		};
+	};
+	configurations {
+		default = "config@1";
+
+		config@1 {
+			description = "imx8mm-tx8m-1610-mipi-mb";
+			firmware = "uboot@1";
+			loadables = "atf@1", "tee@1";
+			fdt = "fdt@1";
+		};
+	};
+};

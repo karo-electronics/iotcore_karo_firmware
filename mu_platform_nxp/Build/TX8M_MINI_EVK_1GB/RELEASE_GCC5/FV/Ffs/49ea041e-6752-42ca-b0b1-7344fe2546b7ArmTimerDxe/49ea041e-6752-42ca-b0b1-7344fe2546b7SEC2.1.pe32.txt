@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/FV/Ffs/49ea041e-6752-42ca-b0b1-7344fe2546b7ArmTimerDxe/49ea041e-6752-42ca-b0b1-7344fe2546b7SEC2.1.pe32 /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/TimerDxe/TimerDxe/OUTPUT/ArmTimerDxe.efi

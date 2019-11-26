@@ -1,0 +1,6 @@
+ArmPlatformPrePiUniCore (Fixed Flash Address, BaseAddress=0x00500040a0, EntryPoint=0x005000a0f0)
+(GUID=D959E387-7B91-452C-90E0-A1DBAC90DDB8 .textbaseaddress=0x0050004180 .databaseaddress=0x005000b020)
+(IMAGE=/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiUniCore/DEBUG/ArmPlatformPrePiUniCore.efi)
+
+
+
