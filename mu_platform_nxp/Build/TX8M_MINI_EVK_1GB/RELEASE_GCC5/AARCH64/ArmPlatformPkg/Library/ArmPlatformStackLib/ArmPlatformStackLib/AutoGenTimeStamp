@@ -1,8 +1,0 @@
-/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPlatformPkg/Library/ArmPlatformStackLib/AArch64/ArmPlatformStackLib.masm
-/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Base.h
-/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib.inf
-/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/AArch64/ProcessorBind.h
-/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/MU_BASECORE/MdePkg/Include/Library/PcdLib.h
-/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPlatformPkg/Library/ArmPlatformStackLib/AArch64/ArmPlatformStackLib.S
-/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Silicon/ARM/MU_TIANO/ArmPkg/Include/AsmMacroIoLibV8.h
-/home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/DEBUG/AutoGen.h

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_RAW -o /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/FV/Ffs/E660EA85-058E-4b55-A54B-F02F83A24707DisplayEngine/DisplayEngineOffset.raw /home/uwe/git/ms/iot_core_tx8mmini/mu_platform_nxp/Build/TX8M_MINI_EVK_1GB/RELEASE_GCC5/FV/Ffs/E660EA85-058E-4b55-A54B-F02F83A24707DisplayEngine/DisplayEngine.offset
