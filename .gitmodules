@@ -3,3 +3,15 @@
 	url = https://github.com/Microsoft/mu_basecore.git
 	branch = release/201903
 
+[submodule "mu_platform_nxp/Common/MU"]
+	path = mu_platform_nxp/Common/MU
+	url = https://github.com/Microsoft/mu_plus.git
+	branch = release/201903
+[submodule "mu_platform_nxp/Common/MU_TIANO"]
+	path = mu_platform_nxp/Common/MU_TIANO
+	url = https://github.com/Microsoft/mu_tiano_plus.git
+	branch = release/201903
+[submodule "mu_platform_nxp/Common/MU_OEM_SAMPLE"]
+	path = mu_platform_nxp/Common/MU_OEM_SAMPLE
+	url = https://github.com/Microsoft/mu_oem_sample.git
+	branch = release/201903
