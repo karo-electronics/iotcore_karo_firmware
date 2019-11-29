@@ -42,10 +42,12 @@
 #
 ################################################################################
 
-!include iMX8Pkg/iMX8ConfigDsc.inc
 
 # Include common peripherals
-!include Silicon/ARM/NXP/iMX8Pkg/iMX8CommonDsc.inc
+!include iMX8Pkg/iMX8CommonDsc.inc
+!if $(CONFIG_FRONTPAGE) == TRUE
+!include FrontpageDsc.inc
+!endif
 
 ################################################################################
 #
@@ -83,10 +85,6 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdTurnOffUsbLegacySupport|TRUE
 
 [PcdsFixedAtBuild.common]
-  gEfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0x2F
-  gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask|0x7
-  gEfiMdePkgTokenSpaceGuid.PcdFixedDebugPrintErrorLevel|0x80080246
-
   # FirmwareRevision 0.1
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareRevision|0x00000001
 
@@ -121,6 +119,9 @@
 
   ## iMXPlatformPackage - Serial Terminal
   giMXPlatformTokenSpaceGuid.PcdSerialRegisterBase|0x30860000
+
+  ## iMXPlatformPackage - Debug UART instance UART1 0x30860000
+  giMXPlatformTokenSpaceGuid.PcdKdUartInstance|1
 
   # uSDHCx | iMX8M EVK Connections
   #-------------------------------------
@@ -180,4 +181,3 @@
   # Use system default resolution
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|0
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|0
-

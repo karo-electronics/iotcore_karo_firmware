@@ -17,6 +17,55 @@
 
 [BuildOptions]
   GCC:*_*_ARM_PLATFORM_FLAGS = -march=armv8-a -fno-inline -fno-inline-smallfunctions -fno-inline-functions-called-once
+#
+# For each enabled CONFIG_* flag in the PlatformBuild files, define that flag in C code.
+# Note: The = sign in BuildOptions section appends to the existing macro, while
+# == can be used to replace its value. See the EDK2 DSC specs.
+#
+
+# CPU_* compiler flag is used to select constants for iMX8.h
+  GCC:*_*_*_CC_FLAGS = -D$(BOARD_NAME) -DCPU_$(IMX_FAMILY)
+
+!if $(CONFIG_HEADLESS) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_HEADLESS=1
+!endif
+
+!if $(CONFIG_DUMP_SYMBOL_INFO) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_DUMP_SYMBOL_INFO=1
+!endif
+
+!if $(CONFIG_MPCORE) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_MPCORE=1
+!endif
+
+!if $(CONFIG_USB) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_USB=1
+!endif
+
+!if $(CONFIG_PCIE) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_PCIE=1
+!endif
+
+!if $(CONFIG_OPTEE) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_OPTEE=1
+!endif
+
+!if $(CONFIG_OPTEE_PROFILE) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DOPTEE_PROFILE=1
+!endif
+
+!if $(CONFIG_AUTH_VAR) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_AUTH_VAR=1
+!endif
+
+!if $(CONFIG_MEASURED_BOOT) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_MEASURED_BOOT=1
+!endif
+
+!if $(CONFIG_SECURE_BOOT) == TRUE
+  GCC:*_*_*_CC_FLAGS = -DCONFIG_SECURE_BOOT=1
+!endif
+
 
 [BuildOptions.common.EDKII.DXE_CORE,BuildOptions.common.EDKII.DXE_DRIVER,BuildOptions.common.EDKII.UEFI_DRIVER,BuildOptions.common.EDKII.UEFI_APPLICATION]
   GCC:*_*_*_DLINK_FLAGS = -z common-page-size=0x1000
@@ -26,6 +75,8 @@
   GCC:*_*_AARCH64_DLINK_FLAGS = -z common-page-size=0x10000
 
 [LibraryClasses.common]
+  HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
+
   AuthVariableLib|MdeModulePkg/Library/AuthVariableLibNull/AuthVariableLibNull.inf
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   ArmMmuLib|ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
@@ -33,6 +84,7 @@
 
   BaseBinSecurityLib|MdePkg/Library/BaseBinSecurityLibNull/BaseBinSecurityLibNull.inf
   DeviceBootManagerLib|iMXPlatformPkg/Library/DeviceBootManagerLib/DeviceBootManagerLib.inf
+  ResetSystemLib|MdeModulePkg/Library/DxeResetSystemLib/DxeResetSystemLib.inf
   SecurityLockAuditLib|MdeModulePkg/Library/SecurityLockAuditLibNull/SecurityLockAuditLibNull.inf
 
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
@@ -45,6 +97,12 @@
 !if $(CONFIG_HEADLESS) != TRUE
   LcdHwLib|ArmPlatformPkg/Library/LcdHwNullLib/LcdHwNullLib.inf
   LcdPlatformLib|iMX8Pkg/Library/HdLcdiMX8Lib/HdLcdiMX8Lib.inf
+!endif
+
+!if $(CONFIG_FRONTPAGE) == TRUE
+  MsPlatformDevicesLib|iMX8Pkg/Library/MsPlatformDevicesLib/MsPlatformDevicesLib.inf
+  DfciDeviceIdSupportLib|iMX8Pkg/Library/DfciDeviceIdSupportLibStub/Imx8DeviceIdSupportLibStub.inf
+  PlatformThemeLib|iMX8Pkg/Library/PlatformThemeLib/PlatformThemeLib.inf
 !endif
 
   BaseLib|MdePkg/Library/BaseLib/BaseLib.inf
@@ -277,12 +335,12 @@
 !if $(TARGET) != RELEASE
   DebugLib|MdePkg/Library/DxeRuntimeDebugLibSerialPort/DxeRuntimeDebugLibSerialPort.inf
 !endif
+  DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
   HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
   ReportStatusCodeLib|MdeModulePkg/Library/RuntimeDxeReportStatusCodeLib/RuntimeDxeReportStatusCodeLib.inf
   ResetUtilityLib|MdeModulePkg/Library/ResetUtilityLib/ResetUtilityLib.inf
-  ResetSystemLib|MdeModulePkg/Library/DxeResetSystemLib/DxeResetSystemLib.inf
 !if $(CONFIG_OPTEE) == TRUE
   OpteeClientApiLib|Microsoft/OpteeClientPkg/Library/OpteeClientApiLib/OpteeClientApiLib.inf
   !if $(CONFIG_MEASURED_BOOT) == TRUE
@@ -290,7 +348,6 @@
   !else
     TpmMeasurementLib|MdeModulePkg/Library/TpmMeasurementLibNull/TpmMeasurementLibNull.inf
   !endif
-
 !else
   TpmMeasurementLib|MdeModulePkg/Library/TpmMeasurementLibNull/TpmMeasurementLibNull.inf
 !endif
@@ -389,9 +446,9 @@
   #                              // significantly impact boot performance
   #  DEBUG_ERROR     0x80000000  // Error
 #  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x8012004F
-  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80080206
-#  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80480246   # KaRo added DEBUG_INFO | DEBUG_VERBOSE
-
+# Turn on FixedDebugPrintErrorLevel for more debug!!!
+#  gEfiMdePkgTokenSpaceGuid.PcdFixedDebugPrintErrorLevel|0x80080246
+  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80080246
   gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask|0x07
 
   #
@@ -622,8 +679,13 @@
   #
   gEfiSecurityPkgTokenSpaceGuid.PcdTpmInstanceGuid|{ 0x5a, 0xf2, 0x6b, 0x28, 0xc3, 0xc2, 0x8c, 0x40, 0xb3, 0xb4, 0x25, 0xe6, 0x75, 0x8b, 0x73, 0x17 }
 
+  # Options are defined in Tcg2PhysicalPresenceLib.h Currently no PPI is supported.
+  #
+  gEfiSecurityPkgTokenSpaceGuid.PcdTcg2PhysicalPresenceFlags|0x0
+
 [PcdsDynamicExDefault.common.DEFAULT]
-  gEfiSecurityPkgTokenSpaceGuid.PcdTcg2HashAlgorithmBitmap|0x0
+  # Tcg2Dxe registers SHA1, SHA256, SHA384, and SHA512
+  gEfiSecurityPkgTokenSpaceGuid.PcdTcg2HashAlgorithmBitmap|0x0f
 !endif
 
 ################################################################################
@@ -655,7 +717,14 @@
   #
   ArmPkg/Drivers/CpuDxe/CpuDxe.inf
   MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
-  MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+  MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf {
+!if $(CONFIG_MEASURED_BOOT) == TRUE
+    <LibraryClasses>
+      NULL|SecurityPkg/Library/DxeImageVerificationLib/DxeImageVerificationLib.inf
+      NULL|SecurityPkg/Library/DxeTpm2MeasureBootLib/DxeTpm2MeasureBootLib.inf
+!endif
+  }
+
   MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf {
     <LibraryClasses>
       ResetSystemLib|MdeModulePkg/Library/RuntimeResetSystemLib/RuntimeResetSystemLib.inf
@@ -671,16 +740,14 @@
 #  ArmPkg/Drivers/GenericWatchdogDxe/GenericWatchdogDxe.inf
   MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
 
+!if $(CONFIG_HEADLESS) != TRUE
   MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
   MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
   MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
+!endif
   MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf
   MdeModulePkg/Universal/SerialDxe/SerialDxe.inf
 
-  MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf {
-    <LibraryClasses>
-      NULL|MdeModulePkg/Universal/Variable/RuntimeDxe/PropertyBasedVarLockLib.inf
-  }
   MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe.inf
 
   MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
@@ -716,11 +783,17 @@
   # Bds
   #
   MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+!if $(CONFIG_FRONTPAGE) != TRUE
   MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
+!endif
   MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
   MdeModulePkg/Universal/BdsDxe/BdsDxe.inf {
     <LibraryClasses>
+!if $(CONFIG_FRONTPAGE) == TRUE
       PlatformBootManagerLib|MsCorePkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
+!else
+      PlatformBootManagerLib|ArmPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
+!endif
   }
   MdeModulePkg/Application/UiApp/UiApp.inf {
     <LibraryClasses>
@@ -800,6 +873,8 @@
     <LibraryClasses>
       NULL|SecurityPkg/Library/HashInstanceLibSha1/HashInstanceLibSha1.inf
       NULL|SecurityPkg/Library/HashInstanceLibSha256/HashInstanceLibSha256.inf
+      NULL|SecurityPkg/Library/HashInstanceLibSha384/HashInstanceLibSha384.inf
+      NULL|SecurityPkg/Library/HashInstanceLibSha512/HashInstanceLibSha512.inf
       Tpm2DeviceLib|Microsoft/OpteeClientPkg/Library/Tpm2DeviceLibOptee/Tpm2DeviceLibOptee.inf
 
     <PcdsFixedAtBuild>
@@ -808,6 +883,19 @@
       !else
         gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask|0
       !endif
+  }
+
+  Microsoft/OpteeClientPkg/Drivers/AuthVarOpteeRuntimeDxe/AuthVarsDxe.inf
+!else
+  MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf {
+    <LibraryClasses>
+      NULL|MdeModulePkg/Universal/Variable/RuntimeDxe/PropertyBasedVarLockLib.inf
+
+    <PcdsFixedAtBuild>
+    #
+    # Make VariableRuntimeDxe work at emulated non-volatile variable mode.
+    #
+    gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
   }
 !endif
 

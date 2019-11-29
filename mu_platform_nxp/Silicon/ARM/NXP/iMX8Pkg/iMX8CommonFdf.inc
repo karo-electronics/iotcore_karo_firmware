@@ -33,7 +33,6 @@
   INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
 
-  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
   INF MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe.inf
 
   INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
@@ -41,9 +40,11 @@
   #
   # Multiple Console IO support
   #
+!if $(CONFIG_HEADLESS) != TRUE
   INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
   INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
   INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
+!endif
   INF MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf
   INF MdeModulePkg/Universal/SerialDxe/SerialDxe.inf
 
@@ -97,7 +98,9 @@
   # Bds
   #
   INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+!if $(CONFIG_FRONTPAGE) != TRUE
   INF MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
+!endif
   INF MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
   INF MdeModulePkg/Application/UiApp/UiApp.inf
@@ -129,8 +132,19 @@
 
   # fTPM Service TA UUID in UEFI format: bc50d971-d4c9-42c4-82cb-343fb7f37896
   FILE FREEFORM = BC50D971-D4C9-42C4-82CB-343FB7F37896 {
-    SECTION RAW = Microsoft/OpteeClientPkg/Bin/fTpmTa/Arm64/Test/bc50d971-d4c9-42c4-82cb-343fb7f37896.ta
+    SECTION RAW = Microsoft/OpteeClientPkg/Bin/fTpmTa/Arm/Test/bc50d971-d4c9-42c4-82cb-343fb7f37896.ta
   }
+
+  # AuthVar Service TA UUID in UEFI format: 2d57c0f7-bddf-48ea-832f-d84a1a219301
+  FILE FREEFORM = 2D57C0F7-BDDF-48EA-832F-D84A1A219301 {
+    SECTION RAW = Microsoft/OpteeClientPkg/Bin/AuthvarsTa/Arm64/Test/2d57c0f7-bddf-48ea-832f-d84a1a219301.ta
+  }
+!endif
+
+!if $(CONFIG_MEASURED_BOOT) == TRUE
+  INF Microsoft/OpteeClientPkg/Drivers/AuthVarOpteeRuntimeDxe/AuthVarsDxe.inf
+!else
+  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
 !endif
 
 !if $(CONFIG_EDK_TESTS) == TRUE
@@ -144,6 +158,10 @@
   FILE FREEFORM = 27A9C9E7-4B7A-4C7E-A8F5-77DB38D7100A {
     SECTION RAW = Microsoft/Application/AuthVarTest/Test_db.bin
   }
+!endif
+
+!if $(CONFIG_FRONTPAGE) == TRUE
+!include FrontpageFdf.inc
 !endif
 
 [FV.FVMAIN_COMPACT]

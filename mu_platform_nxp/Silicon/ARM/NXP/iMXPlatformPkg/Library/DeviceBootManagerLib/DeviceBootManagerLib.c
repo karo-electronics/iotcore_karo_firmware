@@ -29,6 +29,8 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/DevicePathLib.h>
 #include <Library/BaseMemoryLib.h>
+#include <Library/PcdLib.h>
+#include <Guid/ZeroGuid.h>
 
 #define gEndEntire \
   { \
@@ -39,9 +41,6 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       0 \
     } \
   }
-
-//89464DAE-8DAA-41FE-A4C8-40 D2 17 5A F1 E9
-#define GRAPHICS_DEVICE_PATH_GUID  {0x89464DAE, 0x8DAA, 0x41FE, {0xa4, 0xc8, 0x40, 0xd2, 0x17, 0x5a, 0xf1, 0xe9}}
 
 typedef struct {
     VENDOR_DEVICE_PATH             VendorDevicePath;
@@ -58,7 +57,7 @@ static GRAPHICS_DEVICE_PATH gPlatformGraphicsDevice = {
         (UINT8)((sizeof(VENDOR_DEVICE_PATH)) >> 8)
       }
     },
-    GRAPHICS_DEVICE_PATH_GUID
+    ZERO_GUID
   },
   gEndEntire
 };
@@ -166,7 +165,7 @@ Done:
 /**
   Do the device specific action after the console is connected.
 
-  Such as:
+  Such as: Nothing right now.
 **/
 EFI_DEVICE_PATH_PROTOCOL **
 EFIAPI

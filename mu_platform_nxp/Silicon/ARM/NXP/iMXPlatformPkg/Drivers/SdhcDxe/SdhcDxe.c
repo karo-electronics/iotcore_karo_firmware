@@ -291,24 +291,29 @@ WaitForCmdAndOrDataLine (
 
 EFI_STATUS
 WaitForCmdResponse (
-  IN USDHC_PRIVATE_CONTEXT *SdhcCtx
+  IN USDHC_PRIVATE_CONTEXT *SdhcCtx,
+  IN BOOLEAN WaitForBusy
   )
 {
   USDHC_REGISTERS       *Reg;
   USDHC_INT_STATUS_REG  IntStatus;
+  USDHC_PRES_STATE_REG  PresState;
   UINT32                Retry;
 
   Reg = SdhcCtx->RegistersBase;
-  IntStatus.AsUint32 = MmioRead32 ((UINTN)&Reg->INT_STATUS) ;
+  IntStatus.AsUint32 = MmioRead32 ((UINTN)&Reg->INT_STATUS);
+  PresState.AsUint32 = MmioRead32 ((UINTN)&Reg->PRES_STATE);
   Retry = USDHC_POLL_RETRY_COUNT;
 
   // Wait for command to finish execution either with success or failure
-  while (!IntStatus.Fields.CC &&
+  while ((!IntStatus.Fields.CC ||
+          (WaitForBusy && PresState.Fields.DLA)) &&
          !(IntStatus.AsUint32 & USDHC_INT_STATUS_ERROR) &&
          Retry) {
     gBS->Stall (USDHC_POLL_WAIT_US);
     --Retry;
     IntStatus.AsUint32 = MmioRead32 ((UINTN)&Reg->INT_STATUS);
+    PresState.AsUint32 = MmioRead32 ((UINTN)&Reg->PRES_STATE);
   }
 
   if (IntStatus.AsUint32 & USDHC_INT_STATUS_ERROR) {
@@ -492,8 +497,6 @@ SdhcIsCardPresent (
   if (SdhcCtx->CardDetectSignal == USDHC_SIGNAL_INTERNAL_PIN) {
     Reg = SdhcCtx->RegistersBase;
     PresState.AsUint32 = MmioRead32 ((UINTN)&Reg->PRES_STATE);
-	DEBUG ((DEBUG_INFO, "KaRo: ---------------> PresSTate = 0x%08x\n", PresState.AsUint32));
-
     IsCardPresent = (PresState.Fields.CINST == 1);
   } else {
     if (USDHC_IS_GPIO_SIGNAL_SOURCE (SdhcCtx->CardDetectSignal)) {
@@ -701,7 +704,9 @@ SdhcSendCommand (
   MmioWrite32 ((UINTN)&Reg->CMD_ARG, Argument);
   MmioWrite32 ((UINTN)&Reg->CMD_XFR_TYP, CmdXfrTyp.AsUint32);
 
-  Status = WaitForCmdResponse (SdhcCtx);
+  Status = WaitForCmdResponse (
+    SdhcCtx,
+    CmdXfrTyp.Fields.RSPTYP == USDHC_CMD_XFR_TYP_RSPTYP_RSP_48_CHK_BSY);
   if (EFI_ERROR (Status)) {
     LOG_ERROR ("WaitForCmdResponse() failed. %r", Status);
     return Status;

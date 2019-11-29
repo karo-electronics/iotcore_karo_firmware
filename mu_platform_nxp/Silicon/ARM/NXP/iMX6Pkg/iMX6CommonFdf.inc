@@ -104,6 +104,11 @@
   FILE FREEFORM = BC50D971-D4C9-42C4-82CB-343FB7F37896 {
     SECTION RAW = Microsoft/OpteeClientPkg/Bin/fTpmTa/Arm/Test/bc50d971-d4c9-42c4-82cb-343fb7f37896.ta
   }
+
+  # AuthVar Service TA UUID in UEFI format: 2d57c0f7-bddf-48ea-832f-d84a1a219301
+  FILE FREEFORM = 2D57C0F7-BDDF-48EA-832F-D84A1A219301 {
+    SECTION RAW = Microsoft/OpteeClientPkg/Bin/AuthvarsTa/Arm/Test/2d57c0f7-bddf-48ea-832f-d84a1a219301.ta
+  }
 !endif
 
 !if $(CONFIG_EDK_TESTS) == TRUE
@@ -116,7 +121,11 @@
   }
 !endif
 
-INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+!if $(CONFIG_MEASURED_BOOT) == TRUE
+  INF Microsoft/OpteeClientPkg/Drivers/AuthVarOpteeRuntimeDxe/AuthVarsDxe.inf
+!else
+  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+!endif
 
 [FV.FVMAIN_COMPACT]
 FvAlignment        = 8
