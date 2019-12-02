@@ -18,3 +18,7 @@
 [submodule "MSRSec"]
 	path = MSRSec
 	url = https://github.com/Microsoft/MSRSec
+[submodule "imx-atf"]
+	path = imx-atf
+	url = https://source.codeaurora.org/external/imx/imx-atf
+	branch = imx_4.14.98_2.0.0_ga
