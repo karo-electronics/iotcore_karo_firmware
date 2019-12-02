@@ -1,5 +1,12 @@
 mu_platform_nxp/Build
 mu_platform_nxp/Conf
 __pycache__
+mkimage/iMX8M/*.bin
+mkimage/iMX8M/*.dtb
+mkimage/iMX8M/*.itb
+optee_os/out
+
+
+
 
 

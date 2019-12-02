@@ -1,5 +1,5 @@
 # auto-generated TEE configuration file
-# TEE version 2.3.0-1229-g7edb46e0-dev
+# TEE version 5f81d64-dev
 # CFG_AES_GCM_TABLE_BASED is not set 
 set(CFG_ARM64_core y)
 set(CFG_ARM64_ta_arm64 y)

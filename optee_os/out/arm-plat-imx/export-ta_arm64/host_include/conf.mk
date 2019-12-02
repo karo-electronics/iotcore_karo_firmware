@@ -1,5 +1,5 @@
 # auto-generated TEE configuration file
-# TEE version 2.3.0-1229-g7edb46e0-dev
+# TEE version 5f81d64-dev
 ARCH=arm
 PLATFORM=imx
 PLATFORM_FLAVOR=mx8mmevk

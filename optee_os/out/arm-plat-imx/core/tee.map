@@ -18710,7 +18710,7 @@ Linker script and memory map
 .iplt           0x00000000be0320c8        0x0
  .iplt          0x00000000be0320c8        0x0 out/arm-plat-imx/core/arch/arm/kernel/user_ta.o
 
-.rodata         0x00000000be0320c8     0x4e70
+.rodata         0x00000000be0320c8     0x4e50
                 0x00000000be0320c8                __rodata_start = .
  *(SORT(.gnu.linkonce.r.*))
  *(SORT(.rodata) SORT(.rodata.*))
@@ -19086,124 +19086,123 @@ Linker script and memory map
  .rodata.str1.1.core/tee/tee_svc.c
                 0x00000000be0352b7      0x1dd out/arm-plat-imx/core/tee/tee_svc.o
  .rodata.trustedos_impl_version
-                0x00000000be035494       0x19 out/arm-plat-imx/core/tee/tee_svc.o
+                0x00000000be035494        0xc out/arm-plat-imx/core/tee/tee_svc.o
  .rodata.trustedos_manufacturer
-                0x00000000be0354ad        0x7 out/arm-plat-imx/core/tee/tee_svc.o
+                0x00000000be0354a0        0x7 out/arm-plat-imx/core/tee/tee_svc.o
  .rodata.__func__.3314
-                0x00000000be0354b4       0x1a out/arm-plat-imx/core/tee/tee_svc_storage.o
+                0x00000000be0354a7       0x1a out/arm-plat-imx/core/tee/tee_svc_storage.o
  .rodata.__func__.3332
-                0x00000000be0354ce       0x19 out/arm-plat-imx/core/tee/tee_svc_storage.o
+                0x00000000be0354c1       0x19 out/arm-plat-imx/core/tee/tee_svc_storage.o
  .rodata.__func__.3446
-                0x00000000be0354e7       0x19 out/arm-plat-imx/core/tee/tee_svc_storage.o
+                0x00000000be0354da       0x19 out/arm-plat-imx/core/tee/tee_svc_storage.o
  .rodata.__func__.3467
-                0x00000000be035500       0x1a out/arm-plat-imx/core/tee/tee_svc_storage.o
+                0x00000000be0354f3       0x1a out/arm-plat-imx/core/tee/tee_svc_storage.o
  .rodata.syscall_storage_obj_open.str1.1
-                0x00000000be03551a        0xf out/arm-plat-imx/core/tee/tee_svc_storage.o
+                0x00000000be03550d        0xf out/arm-plat-imx/core/tee/tee_svc_storage.o
  .rodata.syscall_storage_obj_read.str1.1
-                0x00000000be035529       0x1f out/arm-plat-imx/core/tee/tee_svc_storage.o
+                0x00000000be03551c       0x1f out/arm-plat-imx/core/tee/tee_svc_storage.o
  .rodata.tee_svc_storage_read_head.str1.1
-                0x00000000be035548        0xe out/arm-plat-imx/core/tee/tee_svc_storage.o
+                0x00000000be03553b        0xe out/arm-plat-imx/core/tee/tee_svc_storage.o
  .rodata.rpmb_test_key
-                0x00000000be035556       0x20 out/arm-plat-imx/core/tee/tee_rpmb_fs.o
+                0x00000000be035549       0x20 out/arm-plat-imx/core/tee/tee_rpmb_fs.o
  .rodata.tee_fs_init_key_manager.str1.1
-                0x00000000be035576       0x14 out/arm-plat-imx/core/tee/tee_fs_key_manager.o
+                0x00000000be035569       0x14 out/arm-plat-imx/core/tee/tee_fs_key_manager.o
  .rodata.__func__.3071
-                0x00000000be03558a       0x11 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_cfg.o
+                0x00000000be03557d       0x11 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_cfg.o
  .rodata.hal_cfg_get_conf.str1.1
-                0x00000000be03559b       0x41 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_cfg.o
+                0x00000000be03558e       0x41 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_cfg.o
  .rodata.__func__.1701
-                0x00000000be0355dc        0xd out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_jr.o
+                0x00000000be0355cf        0xd out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_jr.o
  .rodata.hal_jr_reset.str1.1
-                0x00000000be0355e9       0x34 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_jr.o
+                0x00000000be0355dc       0x34 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_jr.o
  .rodata.sqrt_value
-                0x00000000be03561d      0x201 out/arm-plat-imx/core/drivers/caam/acipher/caam_prime.o
+                0x00000000be035610      0x201 out/arm-plat-imx/core/drivers/caam/acipher/caam_prime.o
  .rodata.str1.1.core/drivers/caam/acipher/caam_prime.c
-                0x00000000be03581e      0xf3d out/arm-plat-imx/core/drivers/caam/acipher/caam_prime.o
+                0x00000000be035811      0xf3d out/arm-plat-imx/core/drivers/caam/acipher/caam_prime.o
  .rodata.__func__.2922
-                0x00000000be03675b        0xf out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
+                0x00000000be03674e        0xf out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
  .rodata.__func__.2927
-                0x00000000be03676a       0x16 out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
+                0x00000000be03675d       0x16 out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
  .rodata.snvs_set_master_otpmk.str1.1
-                0x00000000be036780      0x2b6 out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
+                0x00000000be036773      0x2b6 out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
  .rodata.ta_pub_key_modulus
-                0x00000000be036a36      0x100 out/arm-plat-imx/core/ta_pub_key.o
-                0x00000000be036a36                ta_pub_key_modulus
+                0x00000000be036a29      0x100 out/arm-plat-imx/core/ta_pub_key.o
+                0x00000000be036a29                ta_pub_key_modulus
  .rodata.core_v_str
-                0x00000000be036b36       0x41 out/arm-plat-imx/core/version.o
-                0x00000000be036b36                core_v_str
+                0x00000000be036b29       0x34 out/arm-plat-imx/core/version.o
+                0x00000000be036b29                core_v_str
  .rodata.str1.1.core/lib/libimxcrypt/crypto_api/oid/hash_oid.c
-                0x00000000be036b77       0x36 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_oid.o)
+                0x00000000be036b5d       0x36 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_oid.o)
  .rodata.libsoft_rng_init.str1.1
-                0x00000000be036bad        0x7 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rng.o)
+                0x00000000be036b93        0x7 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rng.o)
  .rodata.get_ltc_cipherindex.str1.1
-                0x00000000be036bb4        0x9 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
+                0x00000000be036b9a        0x9 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
  .rodata.get_ltc_hashindex.str1.1
-                0x00000000be036bbd       0x25 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
+                0x00000000be036ba3       0x25 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
  .rodata.get_sw_hashindex.str1.1
-                0x00000000be036be2        0xe out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_sw.o)
+                0x00000000be036bc8        0xe out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_sw.o)
  .rodata.str1.1.core/lib/libtomcrypt/src/mpa_desc.c
-                0x00000000be036be2        0x4 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(mpa_desc.o)
+                0x00000000be036bc8        0x4 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(mpa_desc.o)
  .rodata.str1.1.core/lib/libtomcrypt/src/hashes/sha2/sha384.c
-                0x00000000be036be6        0x7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha384.o)
+                0x00000000be036bcc        0x7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha384.o)
  .rodata.str1.1.core/lib/libtomcrypt/src/hashes/sha2/sha512.c
-                0x00000000be036be6        0x7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha512.o)
+                0x00000000be036bcc        0x7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha512.o)
  .rodata.dsa_make_key.str1.1
-                0x00000000be036be6       0x15 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_make_key.o)
+                0x00000000be036bcc       0x15 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_make_key.o)
  .rodata.__func__.2016
-                0x00000000be036be6        0xc out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_io.o)
+                0x00000000be036bcc        0xc out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_io.o)
  .rodata.mpa_set_str.str1.1
-                0x00000000be036bf2       0x47 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_io.o)
+                0x00000000be036bd8       0x47 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_io.o)
  .rodata.HEXDIGITS
-                0x00000000be036c39       0x11 out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
+                0x00000000be036c1f       0x11 out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
  .rodata.__vsnprintf.str1.1
-                0x00000000be036c4a       0x38 out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
+                0x00000000be036c30       0x38 out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
  .rodata.hexdigits
-                0x00000000be036c82       0x11 out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
+                0x00000000be036c68       0x11 out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
  .rodata.lvl_strs.1582
-                0x00000000be036c93        0x5 out/arm-plat-imx/core-lib/libutils/libutils.a(trace.o)
+                0x00000000be036c79        0x5 out/arm-plat-imx/core-lib/libutils/libutils.a(trace.o)
  .rodata.trace_printf.str1.1
-                0x00000000be036c98       0x1a out/arm-plat-imx/core-lib/libutils/libutils.a(trace.o)
+                0x00000000be036c7e       0x1a out/arm-plat-imx/core-lib/libutils/libutils.a(trace.o)
                                          0x1b (size before relaxing)
-                0x00000000be036cb8                . = ALIGN (0x8)
- *fill*         0x00000000be036cb2        0x6 
-                0x00000000be036cb8                __start_ta_head_section = .
+                0x00000000be036c98                . = ALIGN (0x8)
+                0x00000000be036c98                __start_ta_head_section = .
  *(SORT(ta_head_section))
  ta_head_section
-                0x00000000be036cb8       0x48 out/arm-plat-imx/core/arch/arm/tee/pta_socket.o
+                0x00000000be036c98       0x48 out/arm-plat-imx/core/arch/arm/tee/pta_socket.o
  ta_head_section
-                0x00000000be036d00       0x48 out/arm-plat-imx/core/arch/arm/pta/pta_invoke_tests.o
+                0x00000000be036ce0       0x48 out/arm-plat-imx/core/arch/arm/pta/pta_invoke_tests.o
  ta_head_section
-                0x00000000be036d48       0x48 out/arm-plat-imx/core/arch/arm/pta/interrupt_tests.o
+                0x00000000be036d28       0x48 out/arm-plat-imx/core/arch/arm/pta/interrupt_tests.o
  ta_head_section
-                0x00000000be036d90       0x48 out/arm-plat-imx/core/arch/arm/pta/system.o
-                0x00000000be036dd8                __stop_ta_head_section = .
-                0x00000000be036dd8                . = ALIGN (0x8)
-                0x00000000be036dd8                __start_phys_mem_map_section = .
+                0x00000000be036d70       0x48 out/arm-plat-imx/core/arch/arm/pta/system.o
+                0x00000000be036db8                __stop_ta_head_section = .
+                0x00000000be036db8                . = ALIGN (0x8)
+                0x00000000be036db8                __start_phys_mem_map_section = .
  *(SORT(phys_mem_map_section))
  phys_mem_map_section
-                0x00000000be036dd8       0xc0 out/arm-plat-imx/core/arch/arm/mm/core_mmu.o
+                0x00000000be036db8       0xc0 out/arm-plat-imx/core/arch/arm/mm/core_mmu.o
  phys_mem_map_section
-                0x00000000be036e98       0x80 out/arm-plat-imx/core/arch/arm/plat-imx/main.o
+                0x00000000be036e78       0x80 out/arm-plat-imx/core/arch/arm/plat-imx/main.o
  phys_mem_map_section
-                0x00000000be036f18       0x20 out/arm-plat-imx/core/arch/arm/plat-imx/tzasc.o
-                0x00000000be036f38                __end_phys_mem_map_section = .
-                0x00000000be036f38                . = ALIGN (0x8)
-                0x00000000be036f38                __start_phys_sdp_mem_section = .
+                0x00000000be036ef8       0x20 out/arm-plat-imx/core/arch/arm/plat-imx/tzasc.o
+                0x00000000be036f18                __end_phys_mem_map_section = .
+                0x00000000be036f18                . = ALIGN (0x8)
+                0x00000000be036f18                __start_phys_sdp_mem_section = .
  *(SORT(phys_sdp_mem_section))
-                0x00000000be036f38                __end_phys_sdp_mem_section = .
-                0x00000000be036f38                . = ALIGN (0x8)
-                0x00000000be036f38                __start_phys_nsec_ddr_section = .
+                0x00000000be036f18                __end_phys_sdp_mem_section = .
+                0x00000000be036f18                . = ALIGN (0x8)
+                0x00000000be036f18                __start_phys_nsec_ddr_section = .
  *(SORT(phys_nsec_ddr_section))
-                0x00000000be036f38                __end_phys_nsec_ddr_section = .
-                0x00000000be036f38                . = ALIGN (0x8)
-                0x00000000be036f38                __start_phys_ddr_overall_section = .
+                0x00000000be036f18                __end_phys_nsec_ddr_section = .
+                0x00000000be036f18                . = ALIGN (0x8)
+                0x00000000be036f18                __start_phys_ddr_overall_section = .
  *(SORT(phys_ddr_overall_section))
-                0x00000000be036f38                __end_phys_ddr_overall_section = .
-                0x00000000be036f38                . = ALIGN (0x8)
-                0x00000000be036f38                __rodata_end = .
+                0x00000000be036f18                __end_phys_ddr_overall_section = .
+                0x00000000be036f18                . = ALIGN (0x8)
+                0x00000000be036f18                __rodata_end = .
 
-.rela.dyn       0x00000000be036f38        0x0
- .rela.iplt     0x00000000be036f38        0x0 out/arm-plat-imx/core/arch/arm/kernel/user_ta.o
+.rela.dyn       0x00000000be036f18        0x0
+ .rela.iplt     0x00000000be036f18        0x0 out/arm-plat-imx/core/arch/arm/kernel/user_ta.o
 
 .interp
  *(SORT(.interp))
@@ -19289,15 +19288,15 @@ Linker script and memory map
 .plt
  *(SORT(.plt))
 
-.ARM.exidx      0x00000000be036f38        0x0
-                0x00000000be036f38                __exidx_start = .
+.ARM.exidx      0x00000000be036f18        0x0
+                0x00000000be036f18                __exidx_start = .
  *(SORT(.ARM.exidx*) SORT(.gnu.linkonce.armexidx.*))
-                0x00000000be036f38                __exidx_end = .
+                0x00000000be036f18                __exidx_end = .
 
-.ARM.extab      0x00000000be036f38        0x0
-                0x00000000be036f38                __extab_start = .
+.ARM.extab      0x00000000be036f18        0x0
+                0x00000000be036f18                __extab_start = .
  *(SORT(.ARM.extab*))
-                0x00000000be036f38                __extab_end = .
+                0x00000000be036f18                __extab_end = .
                 0x00000000be037000                . = ALIGN (0x1000)
                 0x0000000000004f38                __flatmap_unpg_ro_size = (. - __flatmap_unpg_ro_start)
                 0x00000000be037000                __flatmap_unpg_rw_start = .
@@ -19763,7 +19762,7 @@ LOAD out/arm-plat-imx/core-lib/libutils/libutils.a
 LOAD /home/uwe/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu/bin/../lib/gcc/aarch64-linux-gnu/7.2.1/libgcc.a
 OUTPUT(out/arm-plat-imx/core/tee.elf elf64-littleaarch64)
 
-.debug_info     0x0000000000000000    0xc6d4a
+.debug_info     0x0000000000000000    0xc6d35
  .debug_info    0x0000000000000000     0x3850 out/arm-plat-imx/core/arch/arm/kernel/user_ta.o
  .debug_info    0x0000000000003850     0x1a87 out/arm-plat-imx/core/arch/arm/kernel/ree_fs_ta.o
  .debug_info    0x00000000000052d7     0x1c75 out/arm-plat-imx/core/arch/arm/kernel/pseudo_ta.o
@@ -19828,140 +19827,140 @@ OUTPUT(out/arm-plat-imx/core/tee.elf elf64-littleaarch64)
  .debug_info    0x0000000000045bea      0x6fc out/arm-plat-imx/core/tee/tee_cryp_hkdf.o
  .debug_info    0x00000000000462e6      0x39c out/arm-plat-imx/core/tee/tee_cryp_concat_kdf.o
  .debug_info    0x0000000000046682      0x4a1 out/arm-plat-imx/core/tee/tee_cryp_pbkdf2.o
- .debug_info    0x0000000000046b23     0x3297 out/arm-plat-imx/core/tee/tee_svc.o
- .debug_info    0x0000000000049dba     0x744a out/arm-plat-imx/core/tee/tee_svc_cryp.o
- .debug_info    0x0000000000051204     0x308a out/arm-plat-imx/core/tee/tee_svc_storage.o
- .debug_info    0x000000000005428e     0x6239 out/arm-plat-imx/core/tee/tee_rpmb_fs.o
- .debug_info    0x000000000005a4c7     0x3006 out/arm-plat-imx/core/tee/fs_htree.o
- .debug_info    0x000000000005d4cd     0x1406 out/arm-plat-imx/core/tee/tee_fs_rpc_cache.o
- .debug_info    0x000000000005e8d3     0x130f out/arm-plat-imx/core/tee/tee_fs_key_manager.o
- .debug_info    0x000000000005fbe2     0x1393 out/arm-plat-imx/core/tee/tee_obj.o
- .debug_info    0x0000000000060f75      0x998 out/arm-plat-imx/core/tee/tee_pobj.o
- .debug_info    0x000000000006190d      0x568 out/arm-plat-imx/core/tee/tee_time_generic.o
- .debug_info    0x0000000000061e75      0x1cd out/arm-plat-imx/core/tee/uuid.o
- .debug_info    0x0000000000062042     0x11a2 out/arm-plat-imx/core/drivers/tzc380.o
- .debug_info    0x00000000000631e4     0x1504 out/arm-plat-imx/core/drivers/gic.o
- .debug_info    0x00000000000646e8      0xd7f out/arm-plat-imx/core/drivers/imx_uart.o
- .debug_info    0x0000000000065467      0x6d5 out/arm-plat-imx/core/drivers/caam/caam_pwr.o
- .debug_info    0x0000000000065b3c      0x3a7 out/arm-plat-imx/core/drivers/caam/caam_ctrl.o
- .debug_info    0x0000000000065ee3     0x1a78 out/arm-plat-imx/core/drivers/caam/caam_jr.o
- .debug_info    0x000000000006795b     0x1631 out/arm-plat-imx/core/drivers/caam/caam_rng.o
- .debug_info    0x0000000000068f8c     0x1b07 out/arm-plat-imx/core/drivers/caam/caam_hash.o
- .debug_info    0x000000000006aa93      0xdb4 out/arm-plat-imx/core/drivers/caam/caam_blob.o
- .debug_info    0x000000000006b847      0xc33 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_cfg.o
- .debug_info    0x000000000006c47a      0x5a1 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_rng.o
- .debug_info    0x000000000006ca1b      0xed9 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_jr.o
- .debug_info    0x000000000006d8f4      0x28a out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_ctrl.o
- .debug_info    0x000000000006db7e       0x98 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_clk.o
- .debug_info    0x000000000006dc16      0x1a4 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_ctrl.o
- .debug_info    0x000000000006ddba      0x392 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_jr.o
- .debug_info    0x000000000006e14c     0x1184 out/arm-plat-imx/core/drivers/caam/utils/utils_mem.o
- .debug_info    0x000000000006f2d0       0xe9 out/arm-plat-imx/core/drivers/caam/utils/utils_delay.o
- .debug_info    0x000000000006f3b9      0x28f out/arm-plat-imx/core/drivers/caam/utils/utils_sgt.o
- .debug_info    0x000000000006f648     0x2193 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher.o
- .debug_info    0x00000000000717db      0xefa out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher_cmac.o
- .debug_info    0x00000000000726d5     0x1197 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher_xts.o
- .debug_info    0x000000000007386c     0x1145 out/arm-plat-imx/core/drivers/caam/acipher/caam_prime.o
- .debug_info    0x00000000000749b1      0xdd4 out/arm-plat-imx/core/drivers/caam/acipher/caam_math.o
- .debug_info    0x0000000000075785     0x2b03 out/arm-plat-imx/core/drivers/caam/acipher/caam_rsa.o
- .debug_info    0x0000000000078288     0x1c0a out/arm-plat-imx/core/drivers/caam/acipher/caam_ecc.o
- .debug_info    0x0000000000079e92      0xae6 out/arm-plat-imx/core/drivers/snvs/snvs.o
- .debug_info    0x000000000007a978     0x12b1 out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
- .debug_info    0x000000000007bc29       0xde out/arm-plat-imx/core/ta_pub_key.o
- .debug_info    0x000000000007bd07      0x262 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(tee_provider.o)
- .debug_info    0x000000000007bf69      0x2ec out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(modulus.o)
- .debug_info    0x000000000007c255     0x1a89 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
- .debug_info    0x000000000007dcde      0x774 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
- .debug_info    0x000000000007e452      0xf53 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(mac.o)
- .debug_info    0x000000000007f3a5      0x5a9 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(bignum.o)
- .debug_info    0x000000000007f94e      0xd53 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsa.o)
- .debug_info    0x00000000000806a1     0x1406 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsassa.o)
- .debug_info    0x0000000000081aa7      0x58a out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsamgf.o)
- .debug_info    0x0000000000082031      0x6a2 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dsa.o)
- .debug_info    0x00000000000826d3      0x8e3 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(ecc.o)
- .debug_info    0x0000000000082fb6      0x471 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dh.o)
- .debug_info    0x0000000000083427      0x11a out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_oid.o)
- .debug_info    0x0000000000083541      0x5ed out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(aes_ccm.o)
- .debug_info    0x0000000000083b2e      0x21d out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(huk.o)
- .debug_info    0x0000000000083d4b     0x10df out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(init.o)
- .debug_info    0x0000000000084e2a     0x1100 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(init_mpa_pool.o)
- .debug_info    0x0000000000085f2a     0x1338 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rng.o)
- .debug_info    0x0000000000087262     0x1699 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
- .debug_info    0x00000000000888fb     0x19f2 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dsa.o)
- .debug_info    0x000000000008a2ed     0x1733 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dh.o)
- .debug_info    0x000000000008ba20     0x19de out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
- .debug_info    0x000000000008d3fe     0x1786 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_sw.o)
- .debug_info    0x000000000008eb84     0x1740 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hmac_sw.o)
- .debug_info    0x00000000000902c4     0x1a8f out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(authenc.o)
- .debug_info    0x0000000000091d53      0xb1d out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(authenc.o)
- .debug_info    0x0000000000092870     0x10ec out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(status.o)
- .debug_info    0x000000000009395c     0x32af out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(mpa_desc.o)
- .debug_info    0x0000000000096c0b     0x1247 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_init.o)
- .debug_info    0x0000000000097e52     0x11da out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_add_nonce.o)
- .debug_info    0x000000000009902c     0x11de out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_add_aad.o)
- .debug_info    0x000000000009a20a     0x1214 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_process.o)
- .debug_info    0x000000000009b41e     0x1201 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_done.o)
- .debug_info    0x000000000009c61f     0x11c7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_reset.o)
- .debug_info    0x000000000009d7e6     0x11c4 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha384.o)
- .debug_info    0x000000000009e9aa     0x13ce out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha512.o)
- .debug_info    0x000000000009fd78     0x129b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_done.o)
- .debug_info    0x00000000000a1013     0x129d out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_init.o)
- .debug_info    0x00000000000a22b0     0x113f out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_process.o)
- .debug_info    0x00000000000a33ef     0x11fb out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(multi.o)
- .debug_info    0x00000000000a45ea     0x1019 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(zeromem.o)
- .debug_info    0x00000000000a5603      0xfc7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_cipher_descriptor.o)
- .debug_info    0x00000000000a65ca     0x10db out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_cipher_is_valid.o)
- .debug_info    0x00000000000a76a5     0x10f9 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_cipher.o)
- .debug_info    0x00000000000a879e     0x10f9 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_hash.o)
- .debug_info    0x00000000000a9897     0x10f9 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_prng.o)
- .debug_info    0x00000000000aa990      0xfc7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_hash_descriptor.o)
- .debug_info    0x00000000000ab957     0x10db out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_hash_is_valid.o)
- .debug_info    0x00000000000aca32      0xfc7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_prng_descriptor.o)
- .debug_info    0x00000000000ad9f9     0x10d6 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_cipher.o)
- .debug_info    0x00000000000aeacf     0x10d6 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_hash.o)
- .debug_info    0x00000000000afba5     0x10d6 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_prng.o)
- .debug_info    0x00000000000b0c7b     0x106a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_free.o)
- .debug_info    0x00000000000b1ce5     0x1acc out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_make_key.o)
- .debug_info    0x00000000000b37b1     0x16ad out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_sign_hash.o)
- .debug_info    0x00000000000b4e5e     0x1533 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_verify_hash.o)
- .debug_info    0x00000000000b6391     0x139b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dh.o)
- .debug_info    0x00000000000b772c     0x11a7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hash_memory.o)
- .debug_info    0x00000000000b88d3     0x12e5 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(rand_bn.o)
- .debug_info    0x00000000000b9bb8     0x10db out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_prng_is_valid.o)
- .debug_info    0x00000000000bac93      0x433 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_misc.o)
- .debug_info    0x00000000000bb0c6      0x814 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_montgomery.o)
- .debug_info    0x00000000000bb8da      0xa1e out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_primetest.o)
- .debug_info    0x00000000000bc2f8      0x216 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_conv.o)
- .debug_info    0x00000000000bc50e      0xbf1 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_div.o)
- .debug_info    0x00000000000bd0ff      0xf20 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_gcd.o)
- .debug_info    0x00000000000be01f      0x2fc out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_mem_static.o)
- .debug_info    0x00000000000be31b      0x6a2 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_mul.o)
- .debug_info    0x00000000000be9bd      0x3d7 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_random.o)
- .debug_info    0x00000000000bed94      0x3ee out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_shift.o)
- .debug_info    0x00000000000bf182      0xcba out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_addsub.o)
- .debug_info    0x00000000000bfe3c      0x329 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_cmp.o)
- .debug_info    0x00000000000c0165      0x50e out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_expmod.o)
- .debug_info    0x00000000000c0673      0x24c out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_init.o)
- .debug_info    0x00000000000c08bf      0xa9c out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_io.o)
- .debug_info    0x00000000000c135b      0x753 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_modulus.o)
- .debug_info    0x00000000000c1aae     0x203a out/arm-plat-imx/core-lib/libutils/libutils.a(bget_malloc.o)
- .debug_info    0x00000000000c3ae8       0x68 out/arm-plat-imx/core-lib/libutils/libutils.a(isxdigit.o)
- .debug_info    0x00000000000c3b50      0x7dc out/arm-plat-imx/core-lib/libutils/libutils.a(malloc_lock.o)
- .debug_info    0x00000000000c432c      0x82c out/arm-plat-imx/core-lib/libutils/libutils.a(qsort.o)
- .debug_info    0x00000000000c4b58      0x21c out/arm-plat-imx/core-lib/libutils/libutils.a(snprintf.o)
- .debug_info    0x00000000000c4d74       0x68 out/arm-plat-imx/core-lib/libutils/libutils.a(tolower.o)
- .debug_info    0x00000000000c4ddc       0xce out/arm-plat-imx/core-lib/libutils/libutils.a(memcmp.o)
- .debug_info    0x00000000000c4eaa       0xda out/arm-plat-imx/core-lib/libutils/libutils.a(memcpy.o)
- .debug_info    0x00000000000c4f84       0xd8 out/arm-plat-imx/core-lib/libutils/libutils.a(memmove.o)
- .debug_info    0x00000000000c505c       0xb6 out/arm-plat-imx/core-lib/libutils/libutils.a(memset.o)
- .debug_info    0x00000000000c5112       0x9a out/arm-plat-imx/core-lib/libutils/libutils.a(strcmp.o)
- .debug_info    0x00000000000c51ac       0xa0 out/arm-plat-imx/core-lib/libutils/libutils.a(strlen.o)
- .debug_info    0x00000000000c524c      0x76a out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
- .debug_info    0x00000000000c59b6       0xdd out/arm-plat-imx/core-lib/libutils/libutils.a(buf_compare_ct.o)
- .debug_info    0x00000000000c5a93      0x518 out/arm-plat-imx/core-lib/libutils/libutils.a(trace.o)
- .debug_info    0x00000000000c5fab      0xc51 out/arm-plat-imx/core-lib/libutils/libutils.a(mempool.o)
- .debug_info    0x00000000000c6bfc       0x77 out/arm-plat-imx/core-lib/libutils/libutils.a(atomic_a64.o)
- .debug_info    0x00000000000c6c73       0xd7 out/arm-plat-imx/core-lib/libutils/libutils.a(memchr.o)
+ .debug_info    0x0000000000046b23     0x3282 out/arm-plat-imx/core/tee/tee_svc.o
+ .debug_info    0x0000000000049da5     0x744a out/arm-plat-imx/core/tee/tee_svc_cryp.o
+ .debug_info    0x00000000000511ef     0x308a out/arm-plat-imx/core/tee/tee_svc_storage.o
+ .debug_info    0x0000000000054279     0x6239 out/arm-plat-imx/core/tee/tee_rpmb_fs.o
+ .debug_info    0x000000000005a4b2     0x3006 out/arm-plat-imx/core/tee/fs_htree.o
+ .debug_info    0x000000000005d4b8     0x1406 out/arm-plat-imx/core/tee/tee_fs_rpc_cache.o
+ .debug_info    0x000000000005e8be     0x130f out/arm-plat-imx/core/tee/tee_fs_key_manager.o
+ .debug_info    0x000000000005fbcd     0x1393 out/arm-plat-imx/core/tee/tee_obj.o
+ .debug_info    0x0000000000060f60      0x998 out/arm-plat-imx/core/tee/tee_pobj.o
+ .debug_info    0x00000000000618f8      0x568 out/arm-plat-imx/core/tee/tee_time_generic.o
+ .debug_info    0x0000000000061e60      0x1cd out/arm-plat-imx/core/tee/uuid.o
+ .debug_info    0x000000000006202d     0x11a2 out/arm-plat-imx/core/drivers/tzc380.o
+ .debug_info    0x00000000000631cf     0x1504 out/arm-plat-imx/core/drivers/gic.o
+ .debug_info    0x00000000000646d3      0xd7f out/arm-plat-imx/core/drivers/imx_uart.o
+ .debug_info    0x0000000000065452      0x6d5 out/arm-plat-imx/core/drivers/caam/caam_pwr.o
+ .debug_info    0x0000000000065b27      0x3a7 out/arm-plat-imx/core/drivers/caam/caam_ctrl.o
+ .debug_info    0x0000000000065ece     0x1a78 out/arm-plat-imx/core/drivers/caam/caam_jr.o
+ .debug_info    0x0000000000067946     0x1631 out/arm-plat-imx/core/drivers/caam/caam_rng.o
+ .debug_info    0x0000000000068f77     0x1b07 out/arm-plat-imx/core/drivers/caam/caam_hash.o
+ .debug_info    0x000000000006aa7e      0xdb4 out/arm-plat-imx/core/drivers/caam/caam_blob.o
+ .debug_info    0x000000000006b832      0xc33 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_cfg.o
+ .debug_info    0x000000000006c465      0x5a1 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_rng.o
+ .debug_info    0x000000000006ca06      0xed9 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_jr.o
+ .debug_info    0x000000000006d8df      0x28a out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_ctrl.o
+ .debug_info    0x000000000006db69       0x98 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_clk.o
+ .debug_info    0x000000000006dc01      0x1a4 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_ctrl.o
+ .debug_info    0x000000000006dda5      0x392 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_jr.o
+ .debug_info    0x000000000006e137     0x1184 out/arm-plat-imx/core/drivers/caam/utils/utils_mem.o
+ .debug_info    0x000000000006f2bb       0xe9 out/arm-plat-imx/core/drivers/caam/utils/utils_delay.o
+ .debug_info    0x000000000006f3a4      0x28f out/arm-plat-imx/core/drivers/caam/utils/utils_sgt.o
+ .debug_info    0x000000000006f633     0x2193 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher.o
+ .debug_info    0x00000000000717c6      0xefa out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher_cmac.o
+ .debug_info    0x00000000000726c0     0x1197 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher_xts.o
+ .debug_info    0x0000000000073857     0x1145 out/arm-plat-imx/core/drivers/caam/acipher/caam_prime.o
+ .debug_info    0x000000000007499c      0xdd4 out/arm-plat-imx/core/drivers/caam/acipher/caam_math.o
+ .debug_info    0x0000000000075770     0x2b03 out/arm-plat-imx/core/drivers/caam/acipher/caam_rsa.o
+ .debug_info    0x0000000000078273     0x1c0a out/arm-plat-imx/core/drivers/caam/acipher/caam_ecc.o
+ .debug_info    0x0000000000079e7d      0xae6 out/arm-plat-imx/core/drivers/snvs/snvs.o
+ .debug_info    0x000000000007a963     0x12b1 out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
+ .debug_info    0x000000000007bc14       0xde out/arm-plat-imx/core/ta_pub_key.o
+ .debug_info    0x000000000007bcf2      0x262 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(tee_provider.o)
+ .debug_info    0x000000000007bf54      0x2ec out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(modulus.o)
+ .debug_info    0x000000000007c240     0x1a89 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
+ .debug_info    0x000000000007dcc9      0x774 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
+ .debug_info    0x000000000007e43d      0xf53 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(mac.o)
+ .debug_info    0x000000000007f390      0x5a9 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(bignum.o)
+ .debug_info    0x000000000007f939      0xd53 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsa.o)
+ .debug_info    0x000000000008068c     0x1406 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsassa.o)
+ .debug_info    0x0000000000081a92      0x58a out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsamgf.o)
+ .debug_info    0x000000000008201c      0x6a2 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dsa.o)
+ .debug_info    0x00000000000826be      0x8e3 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(ecc.o)
+ .debug_info    0x0000000000082fa1      0x471 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dh.o)
+ .debug_info    0x0000000000083412      0x11a out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_oid.o)
+ .debug_info    0x000000000008352c      0x5ed out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(aes_ccm.o)
+ .debug_info    0x0000000000083b19      0x21d out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(huk.o)
+ .debug_info    0x0000000000083d36     0x10df out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(init.o)
+ .debug_info    0x0000000000084e15     0x1100 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(init_mpa_pool.o)
+ .debug_info    0x0000000000085f15     0x1338 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rng.o)
+ .debug_info    0x000000000008724d     0x1699 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
+ .debug_info    0x00000000000888e6     0x19f2 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dsa.o)
+ .debug_info    0x000000000008a2d8     0x1733 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dh.o)
+ .debug_info    0x000000000008ba0b     0x19de out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
+ .debug_info    0x000000000008d3e9     0x1786 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_sw.o)
+ .debug_info    0x000000000008eb6f     0x1740 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hmac_sw.o)
+ .debug_info    0x00000000000902af     0x1a8f out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(authenc.o)
+ .debug_info    0x0000000000091d3e      0xb1d out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(authenc.o)
+ .debug_info    0x000000000009285b     0x10ec out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(status.o)
+ .debug_info    0x0000000000093947     0x32af out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(mpa_desc.o)
+ .debug_info    0x0000000000096bf6     0x1247 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_init.o)
+ .debug_info    0x0000000000097e3d     0x11da out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_add_nonce.o)
+ .debug_info    0x0000000000099017     0x11de out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_add_aad.o)
+ .debug_info    0x000000000009a1f5     0x1214 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_process.o)
+ .debug_info    0x000000000009b409     0x1201 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_done.o)
+ .debug_info    0x000000000009c60a     0x11c7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_reset.o)
+ .debug_info    0x000000000009d7d1     0x11c4 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha384.o)
+ .debug_info    0x000000000009e995     0x13ce out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha512.o)
+ .debug_info    0x000000000009fd63     0x129b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_done.o)
+ .debug_info    0x00000000000a0ffe     0x129d out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_init.o)
+ .debug_info    0x00000000000a229b     0x113f out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_process.o)
+ .debug_info    0x00000000000a33da     0x11fb out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(multi.o)
+ .debug_info    0x00000000000a45d5     0x1019 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(zeromem.o)
+ .debug_info    0x00000000000a55ee      0xfc7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_cipher_descriptor.o)
+ .debug_info    0x00000000000a65b5     0x10db out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_cipher_is_valid.o)
+ .debug_info    0x00000000000a7690     0x10f9 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_cipher.o)
+ .debug_info    0x00000000000a8789     0x10f9 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_hash.o)
+ .debug_info    0x00000000000a9882     0x10f9 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_prng.o)
+ .debug_info    0x00000000000aa97b      0xfc7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_hash_descriptor.o)
+ .debug_info    0x00000000000ab942     0x10db out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_hash_is_valid.o)
+ .debug_info    0x00000000000aca1d      0xfc7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_prng_descriptor.o)
+ .debug_info    0x00000000000ad9e4     0x10d6 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_cipher.o)
+ .debug_info    0x00000000000aeaba     0x10d6 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_hash.o)
+ .debug_info    0x00000000000afb90     0x10d6 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_prng.o)
+ .debug_info    0x00000000000b0c66     0x106a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_free.o)
+ .debug_info    0x00000000000b1cd0     0x1acc out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_make_key.o)
+ .debug_info    0x00000000000b379c     0x16ad out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_sign_hash.o)
+ .debug_info    0x00000000000b4e49     0x1533 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_verify_hash.o)
+ .debug_info    0x00000000000b637c     0x139b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dh.o)
+ .debug_info    0x00000000000b7717     0x11a7 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hash_memory.o)
+ .debug_info    0x00000000000b88be     0x12e5 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(rand_bn.o)
+ .debug_info    0x00000000000b9ba3     0x10db out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_prng_is_valid.o)
+ .debug_info    0x00000000000bac7e      0x433 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_misc.o)
+ .debug_info    0x00000000000bb0b1      0x814 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_montgomery.o)
+ .debug_info    0x00000000000bb8c5      0xa1e out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_primetest.o)
+ .debug_info    0x00000000000bc2e3      0x216 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_conv.o)
+ .debug_info    0x00000000000bc4f9      0xbf1 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_div.o)
+ .debug_info    0x00000000000bd0ea      0xf20 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_gcd.o)
+ .debug_info    0x00000000000be00a      0x2fc out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_mem_static.o)
+ .debug_info    0x00000000000be306      0x6a2 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_mul.o)
+ .debug_info    0x00000000000be9a8      0x3d7 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_random.o)
+ .debug_info    0x00000000000bed7f      0x3ee out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_shift.o)
+ .debug_info    0x00000000000bf16d      0xcba out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_addsub.o)
+ .debug_info    0x00000000000bfe27      0x329 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_cmp.o)
+ .debug_info    0x00000000000c0150      0x50e out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_expmod.o)
+ .debug_info    0x00000000000c065e      0x24c out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_init.o)
+ .debug_info    0x00000000000c08aa      0xa9c out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_io.o)
+ .debug_info    0x00000000000c1346      0x753 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_modulus.o)
+ .debug_info    0x00000000000c1a99     0x203a out/arm-plat-imx/core-lib/libutils/libutils.a(bget_malloc.o)
+ .debug_info    0x00000000000c3ad3       0x68 out/arm-plat-imx/core-lib/libutils/libutils.a(isxdigit.o)
+ .debug_info    0x00000000000c3b3b      0x7dc out/arm-plat-imx/core-lib/libutils/libutils.a(malloc_lock.o)
+ .debug_info    0x00000000000c4317      0x82c out/arm-plat-imx/core-lib/libutils/libutils.a(qsort.o)
+ .debug_info    0x00000000000c4b43      0x21c out/arm-plat-imx/core-lib/libutils/libutils.a(snprintf.o)
+ .debug_info    0x00000000000c4d5f       0x68 out/arm-plat-imx/core-lib/libutils/libutils.a(tolower.o)
+ .debug_info    0x00000000000c4dc7       0xce out/arm-plat-imx/core-lib/libutils/libutils.a(memcmp.o)
+ .debug_info    0x00000000000c4e95       0xda out/arm-plat-imx/core-lib/libutils/libutils.a(memcpy.o)
+ .debug_info    0x00000000000c4f6f       0xd8 out/arm-plat-imx/core-lib/libutils/libutils.a(memmove.o)
+ .debug_info    0x00000000000c5047       0xb6 out/arm-plat-imx/core-lib/libutils/libutils.a(memset.o)
+ .debug_info    0x00000000000c50fd       0x9a out/arm-plat-imx/core-lib/libutils/libutils.a(strcmp.o)
+ .debug_info    0x00000000000c5197       0xa0 out/arm-plat-imx/core-lib/libutils/libutils.a(strlen.o)
+ .debug_info    0x00000000000c5237      0x76a out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
+ .debug_info    0x00000000000c59a1       0xdd out/arm-plat-imx/core-lib/libutils/libutils.a(buf_compare_ct.o)
+ .debug_info    0x00000000000c5a7e      0x518 out/arm-plat-imx/core-lib/libutils/libutils.a(trace.o)
+ .debug_info    0x00000000000c5f96      0xc51 out/arm-plat-imx/core-lib/libutils/libutils.a(mempool.o)
+ .debug_info    0x00000000000c6be7       0x77 out/arm-plat-imx/core-lib/libutils/libutils.a(atomic_a64.o)
+ .debug_info    0x00000000000c6c5e       0xd7 out/arm-plat-imx/core-lib/libutils/libutils.a(memchr.o)
 
 .debug_abbrev   0x0000000000000000    0x1c3ae
  .debug_abbrev  0x0000000000000000      0x57b out/arm-plat-imx/core/arch/arm/kernel/user_ta.o
@@ -21478,7 +21477,7 @@ OUTPUT(out/arm-plat-imx/core/tee.elf elf64-littleaarch64)
  .debug_line    0x0000000000039c4c       0x79 out/arm-plat-imx/core-lib/libutils/libutils.a(atomic_a64.o)
  .debug_line    0x0000000000039cc5      0x165 out/arm-plat-imx/core-lib/libutils/libutils.a(memchr.o)
 
-.debug_str      0x0000000000000000    0x3604f
+.debug_str      0x0000000000000000    0x36042
  .debug_str     0x0000000000000000    0x16841 out/arm-plat-imx/core/arch/arm/kernel/user_ta.o
                                       0x16d62 (size before relaxing)
  .debug_str     0x0000000000016841      0x317 out/arm-plat-imx/core/arch/arm/kernel/ree_fs_ta.o
@@ -21587,271 +21586,271 @@ OUTPUT(out/arm-plat-imx/core/tee.elf elf64-littleaarch64)
                                        0x8baa (size before relaxing)
  .debug_str     0x0000000000023af7       0x8e out/arm-plat-imx/core/tee/tee_cryp_pbkdf2.o
                                        0x8bae (size before relaxing)
- .debug_str     0x0000000000023b85      0x583 out/arm-plat-imx/core/tee/tee_svc.o
-                                      0x11708 (size before relaxing)
- .debug_str     0x0000000000024108     0x114f out/arm-plat-imx/core/tee/tee_svc_cryp.o
+ .debug_str     0x0000000000023b85      0x576 out/arm-plat-imx/core/tee/tee_svc.o
+                                      0x116fb (size before relaxing)
+ .debug_str     0x00000000000240fb     0x114f out/arm-plat-imx/core/tee/tee_svc_cryp.o
                                       0x1110a (size before relaxing)
- .debug_str     0x0000000000025257      0x3ad out/arm-plat-imx/core/tee/tee_svc_storage.o
+ .debug_str     0x000000000002524a      0x3ad out/arm-plat-imx/core/tee/tee_svc_storage.o
                                       0x1015a (size before relaxing)
- .debug_str     0x0000000000025604      0xe11 out/arm-plat-imx/core/tee/tee_rpmb_fs.o
+ .debug_str     0x00000000000255f7      0xe11 out/arm-plat-imx/core/tee/tee_rpmb_fs.o
                                       0x125e8 (size before relaxing)
- .debug_str     0x0000000000026415      0x51c out/arm-plat-imx/core/tee/fs_htree.o
+ .debug_str     0x0000000000026408      0x51c out/arm-plat-imx/core/tee/fs_htree.o
                                       0x100f8 (size before relaxing)
- .debug_str     0x0000000000026931       0x1c out/arm-plat-imx/core/tee/tee_fs_rpc_cache.o
+ .debug_str     0x0000000000026924       0x1c out/arm-plat-imx/core/tee/tee_fs_rpc_cache.o
                                       0x101f8 (size before relaxing)
- .debug_str     0x000000000002694d      0x103 out/arm-plat-imx/core/tee/tee_fs_key_manager.o
+ .debug_str     0x0000000000026940      0x103 out/arm-plat-imx/core/tee/tee_fs_key_manager.o
                                        0xd734 (size before relaxing)
- .debug_str     0x0000000000026a50       0x22 out/arm-plat-imx/core/tee/tee_obj.o
+ .debug_str     0x0000000000026a43       0x22 out/arm-plat-imx/core/tee/tee_obj.o
                                        0xe9d7 (size before relaxing)
- .debug_str     0x0000000000026a72       0x59 out/arm-plat-imx/core/tee/tee_pobj.o
+ .debug_str     0x0000000000026a65       0x59 out/arm-plat-imx/core/tee/tee_pobj.o
                                        0xb888 (size before relaxing)
- .debug_str     0x0000000000026acb       0x9e out/arm-plat-imx/core/tee/tee_time_generic.o
+ .debug_str     0x0000000000026abe       0x9e out/arm-plat-imx/core/tee/tee_time_generic.o
                                        0x90b4 (size before relaxing)
- .debug_str     0x0000000000026b69       0x10 out/arm-plat-imx/core/tee/uuid.o
+ .debug_str     0x0000000000026b5c       0x10 out/arm-plat-imx/core/tee/uuid.o
                                        0x8c22 (size before relaxing)
- .debug_str     0x0000000000026b79      0x192 out/arm-plat-imx/core/drivers/tzc380.o
+ .debug_str     0x0000000000026b6c      0x192 out/arm-plat-imx/core/drivers/tzc380.o
                                       0x1199b (size before relaxing)
- .debug_str     0x0000000000026d0b      0x4c0 out/arm-plat-imx/core/drivers/gic.o
+ .debug_str     0x0000000000026cfe      0x4c0 out/arm-plat-imx/core/drivers/gic.o
                                        0xb07a (size before relaxing)
- .debug_str     0x00000000000271cb      0x326 out/arm-plat-imx/core/drivers/imx_uart.o
+ .debug_str     0x00000000000271be      0x326 out/arm-plat-imx/core/drivers/imx_uart.o
                                       0x10eaf (size before relaxing)
- .debug_str     0x00000000000274f1     0x49f5 out/arm-plat-imx/core/drivers/caam/caam_pwr.o
+ .debug_str     0x00000000000274e4     0x49f5 out/arm-plat-imx/core/drivers/caam/caam_pwr.o
                                       0x11439 (size before relaxing)
- .debug_str     0x000000000002bee6      0x322 out/arm-plat-imx/core/drivers/caam/caam_ctrl.o
+ .debug_str     0x000000000002bed9      0x322 out/arm-plat-imx/core/drivers/caam/caam_ctrl.o
                                       0x10837 (size before relaxing)
- .debug_str     0x000000000002c208      0x3e4 out/arm-plat-imx/core/drivers/caam/caam_jr.o
+ .debug_str     0x000000000002c1fb      0x3e4 out/arm-plat-imx/core/drivers/caam/caam_jr.o
                                       0x1503d (size before relaxing)
- .debug_str     0x000000000002c5ec      0x29b out/arm-plat-imx/core/drivers/caam/caam_rng.o
+ .debug_str     0x000000000002c5df      0x29b out/arm-plat-imx/core/drivers/caam/caam_rng.o
                                       0x14bbd (size before relaxing)
- .debug_str     0x000000000002c887      0x462 out/arm-plat-imx/core/drivers/caam/caam_hash.o
+ .debug_str     0x000000000002c87a      0x462 out/arm-plat-imx/core/drivers/caam/caam_hash.o
                                       0x15a8f (size before relaxing)
- .debug_str     0x000000000002cce9       0xe8 out/arm-plat-imx/core/drivers/caam/caam_blob.o
+ .debug_str     0x000000000002ccdc       0xe8 out/arm-plat-imx/core/drivers/caam/caam_blob.o
                                       0x156f4 (size before relaxing)
- .debug_str     0x000000000002cdd1      0x3e2 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_cfg.o
+ .debug_str     0x000000000002cdc4      0x3e2 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_cfg.o
                                       0x1591e (size before relaxing)
- .debug_str     0x000000000002d1b3      0x589 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_rng.o
+ .debug_str     0x000000000002d1a6      0x589 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_rng.o
                                        0x6286 (size before relaxing)
- .debug_str     0x000000000002d73c      0x203 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_jr.o
+ .debug_str     0x000000000002d72f      0x203 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_jr.o
                                        0xe0f5 (size before relaxing)
- .debug_str     0x000000000002d93f       0x44 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_ctrl.o
+ .debug_str     0x000000000002d932       0x44 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/../common/hal_ctrl.o
                                        0x9399 (size before relaxing)
- .debug_str     0x000000000002d983       0x27 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_clk.o
+ .debug_str     0x000000000002d976       0x27 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_clk.o
                                        0x4982 (size before relaxing)
- .debug_str     0x000000000002d9aa       0x28 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_ctrl.o
+ .debug_str     0x000000000002d99d       0x28 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_ctrl.o
                                        0x9181 (size before relaxing)
- .debug_str     0x000000000002d9d2       0x48 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_jr.o
+ .debug_str     0x000000000002d9c5       0x48 out/arm-plat-imx/core/drivers/caam/hal/imx_8m/hal_jr.o
                                        0xdff7 (size before relaxing)
- .debug_str     0x000000000002da1a      0x18a out/arm-plat-imx/core/drivers/caam/utils/utils_mem.o
+ .debug_str     0x000000000002da0d      0x18a out/arm-plat-imx/core/drivers/caam/utils/utils_mem.o
                                       0x1484a (size before relaxing)
- .debug_str     0x000000000002dba4       0x26 out/arm-plat-imx/core/drivers/caam/utils/utils_delay.o
+ .debug_str     0x000000000002db97       0x26 out/arm-plat-imx/core/drivers/caam/utils/utils_delay.o
                                        0x6647 (size before relaxing)
- .debug_str     0x000000000002dbca       0x4d out/arm-plat-imx/core/drivers/caam/utils/utils_sgt.o
+ .debug_str     0x000000000002dbbd       0x4d out/arm-plat-imx/core/drivers/caam/utils/utils_sgt.o
                                        0xdbc2 (size before relaxing)
- .debug_str     0x000000000002dc17      0x4b8 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher.o
+ .debug_str     0x000000000002dc0a      0x4b8 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher.o
                                       0x15e32 (size before relaxing)
- .debug_str     0x000000000002e0cf       0x44 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher_cmac.o
+ .debug_str     0x000000000002e0c2       0x44 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher_cmac.o
                                       0x14d2c (size before relaxing)
- .debug_str     0x000000000002e113       0x88 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher_xts.o
+ .debug_str     0x000000000002e106       0x88 out/arm-plat-imx/core/drivers/caam/cipher/caam_cipher_xts.o
                                       0x149b0 (size before relaxing)
- .debug_str     0x000000000002e19b      0x5cb out/arm-plat-imx/core/drivers/caam/acipher/caam_prime.o
+ .debug_str     0x000000000002e18e      0x5cb out/arm-plat-imx/core/drivers/caam/acipher/caam_prime.o
                                       0x154d1 (size before relaxing)
- .debug_str     0x000000000002e766       0xd6 out/arm-plat-imx/core/drivers/caam/acipher/caam_math.o
+ .debug_str     0x000000000002e759       0xd6 out/arm-plat-imx/core/drivers/caam/acipher/caam_math.o
                                       0x14a8d (size before relaxing)
- .debug_str     0x000000000002e83c      0x3e1 out/arm-plat-imx/core/drivers/caam/acipher/caam_rsa.o
+ .debug_str     0x000000000002e82f      0x3e1 out/arm-plat-imx/core/drivers/caam/acipher/caam_rsa.o
                                       0x1626b (size before relaxing)
- .debug_str     0x000000000002ec1d      0x20c out/arm-plat-imx/core/drivers/caam/acipher/caam_ecc.o
+ .debug_str     0x000000000002ec10      0x20c out/arm-plat-imx/core/drivers/caam/acipher/caam_ecc.o
                                       0x153db (size before relaxing)
- .debug_str     0x000000000002ee29       0x19 out/arm-plat-imx/core/drivers/snvs/snvs.o
+ .debug_str     0x000000000002ee1c       0x19 out/arm-plat-imx/core/drivers/snvs/snvs.o
                                       0x10b8d (size before relaxing)
- .debug_str     0x000000000002ee42       0x81 out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
+ .debug_str     0x000000000002ee35       0x81 out/arm-plat-imx/core/drivers/snvs/snvs_mstkey.o
                                       0x10d04 (size before relaxing)
- .debug_str     0x000000000002eec3       0x23 out/arm-plat-imx/core/ta_pub_key.o
+ .debug_str     0x000000000002eeb6       0x23 out/arm-plat-imx/core/ta_pub_key.o
                                        0x40a7 (size before relaxing)
- .debug_str     0x000000000002eee6       0x7c out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(tee_provider.o)
+ .debug_str     0x000000000002eed9       0x7c out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(tee_provider.o)
                                        0x8b2d (size before relaxing)
- .debug_str     0x000000000002ef62       0x2f out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(modulus.o)
+ .debug_str     0x000000000002ef55       0x2f out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(modulus.o)
                                        0x9181 (size before relaxing)
- .debug_str     0x000000000002ef91     0x29d8 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
+ .debug_str     0x000000000002ef84     0x29d8 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
                                        0xfde7 (size before relaxing)
- .debug_str     0x0000000000031969       0x2c out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
+ .debug_str     0x000000000003195c       0x2c out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
                                        0x906a (size before relaxing)
- .debug_str     0x0000000000031995       0x94 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(mac.o)
+ .debug_str     0x0000000000031988       0x94 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(mac.o)
                                        0x9af5 (size before relaxing)
- .debug_str     0x0000000000031a29       0xbc out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(bignum.o)
+ .debug_str     0x0000000000031a1c       0xbc out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(bignum.o)
                                        0x8a64 (size before relaxing)
- .debug_str     0x0000000000031ae5       0x41 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsa.o)
+ .debug_str     0x0000000000031ad8       0x41 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsa.o)
                                        0x92c9 (size before relaxing)
- .debug_str     0x0000000000031b26      0x4f8 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsassa.o)
+ .debug_str     0x0000000000031b19      0x4f8 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsassa.o)
                                        0x9ee5 (size before relaxing)
- .debug_str     0x000000000003201e       0x77 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsamgf.o)
+ .debug_str     0x0000000000032011       0x77 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rsamgf.o)
                                        0x9149 (size before relaxing)
- .debug_str     0x0000000000032095       0x42 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dsa.o)
+ .debug_str     0x0000000000032088       0x42 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dsa.o)
                                        0x90c1 (size before relaxing)
- .debug_str     0x00000000000320d7       0x6d out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(ecc.o)
+ .debug_str     0x00000000000320ca       0x6d out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(ecc.o)
                                        0x9176 (size before relaxing)
- .debug_str     0x0000000000032144       0x39 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dh.o)
+ .debug_str     0x0000000000032137       0x39 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dh.o)
                                        0x8ae6 (size before relaxing)
- .debug_str     0x000000000003217d       0x2f out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_oid.o)
+ .debug_str     0x0000000000032170       0x2f out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_oid.o)
                                        0x7eb0 (size before relaxing)
- .debug_str     0x00000000000321ac       0x47 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(aes_ccm.o)
+ .debug_str     0x000000000003219f       0x47 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(aes_ccm.o)
                                        0x7d22 (size before relaxing)
- .debug_str     0x00000000000321f3       0x31 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(huk.o)
+ .debug_str     0x00000000000321e6       0x31 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(huk.o)
                                        0x80cc (size before relaxing)
- .debug_str     0x0000000000032224       0xf6 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(init.o)
+ .debug_str     0x0000000000032217       0xf6 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(init.o)
                                        0xed5f (size before relaxing)
- .debug_str     0x000000000003231a      0x158 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(init_mpa_pool.o)
+ .debug_str     0x000000000003230d      0x158 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(init_mpa_pool.o)
                                        0xf35b (size before relaxing)
- .debug_str     0x0000000000032472      0x2a2 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rng.o)
+ .debug_str     0x0000000000032465      0x2a2 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(rng.o)
                                        0xef83 (size before relaxing)
- .debug_str     0x0000000000032714      0x500 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
+ .debug_str     0x0000000000032707      0x500 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(cipher.o)
                                       0x10160 (size before relaxing)
- .debug_str     0x0000000000032c14       0xf5 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dsa.o)
+ .debug_str     0x0000000000032c07       0xf5 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dsa.o)
                                        0xf82b (size before relaxing)
- .debug_str     0x0000000000032d09       0x72 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dh.o)
+ .debug_str     0x0000000000032cfc       0x72 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(dh.o)
                                        0xf793 (size before relaxing)
- .debug_str     0x0000000000032d7b      0x3b0 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
+ .debug_str     0x0000000000032d6e      0x3b0 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash.o)
                                        0xffd7 (size before relaxing)
- .debug_str     0x000000000003312b       0x7a out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_sw.o)
+ .debug_str     0x000000000003311e       0x7a out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hash_sw.o)
                                        0xfd10 (size before relaxing)
- .debug_str     0x00000000000331a5       0xa6 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hmac_sw.o)
+ .debug_str     0x0000000000033198       0xa6 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(hmac_sw.o)
                                        0xfb49 (size before relaxing)
- .debug_str     0x000000000003324b      0x1c8 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(authenc.o)
+ .debug_str     0x000000000003323e      0x1c8 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(authenc.o)
                                        0xffa5 (size before relaxing)
- .debug_str     0x0000000000033413       0x44 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(authenc.o)
+ .debug_str     0x0000000000033406       0x44 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(authenc.o)
                                        0x8339 (size before relaxing)
- .debug_str     0x0000000000033457       0x37 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(status.o)
+ .debug_str     0x000000000003344a       0x37 out/arm-plat-imx/core/lib/libimxcrypt/libimxcrypt.a(status.o)
                                        0xeec1 (size before relaxing)
- .debug_str     0x000000000003348e      0x2d1 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(mpa_desc.o)
+ .debug_str     0x0000000000033481      0x2d1 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(mpa_desc.o)
                                        0xc150 (size before relaxing)
- .debug_str     0x000000000003375f       0x40 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_init.o)
+ .debug_str     0x0000000000033752       0x40 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_init.o)
                                        0xb393 (size before relaxing)
- .debug_str     0x000000000003379f       0x35 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_add_nonce.o)
+ .debug_str     0x0000000000033792       0x35 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_add_nonce.o)
                                        0xb374 (size before relaxing)
- .debug_str     0x00000000000337d4       0x42 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_add_aad.o)
+ .debug_str     0x00000000000337c7       0x42 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_add_aad.o)
                                        0xb379 (size before relaxing)
- .debug_str     0x0000000000033816       0x3d out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_process.o)
+ .debug_str     0x0000000000033809       0x3d out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_process.o)
                                        0xb374 (size before relaxing)
- .debug_str     0x0000000000033853       0x30 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_done.o)
+ .debug_str     0x0000000000033846       0x30 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_done.o)
                                        0xb364 (size before relaxing)
- .debug_str     0x0000000000033883       0x39 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_reset.o)
+ .debug_str     0x0000000000033876       0x39 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(ccm_reset.o)
                                        0xb36e (size before relaxing)
- .debug_str     0x00000000000338bc       0x5e out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha384.o)
+ .debug_str     0x00000000000338af       0x5e out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha384.o)
                                        0xb348 (size before relaxing)
- .debug_str     0x000000000003391a      0x21b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha512.o)
+ .debug_str     0x000000000003390d      0x21b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(sha512.o)
                                        0xb537 (size before relaxing)
- .debug_str     0x0000000000033b35       0x84 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_done.o)
+ .debug_str     0x0000000000033b28       0x84 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_done.o)
                                        0xb396 (size before relaxing)
- .debug_str     0x0000000000033bb9       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_init.o)
+ .debug_str     0x0000000000033bac       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_init.o)
                                        0xb3c4 (size before relaxing)
- .debug_str     0x0000000000033bf3       0x31 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_process.o)
+ .debug_str     0x0000000000033be6       0x31 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hmac_process.o)
                                        0xb34e (size before relaxing)
- .debug_str     0x0000000000033c24       0x6e out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(multi.o)
+ .debug_str     0x0000000000033c17       0x6e out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(multi.o)
                                        0xb395 (size before relaxing)
- .debug_str     0x0000000000033c92       0x28 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(zeromem.o)
+ .debug_str     0x0000000000033c85       0x28 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(zeromem.o)
                                        0xb118 (size before relaxing)
- .debug_str     0x0000000000033cba       0x3e out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_cipher_descriptor.o)
+ .debug_str     0x0000000000033cad       0x3e out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_cipher_descriptor.o)
                                        0xb118 (size before relaxing)
- .debug_str     0x0000000000033cf8       0x3c out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_cipher_is_valid.o)
+ .debug_str     0x0000000000033ceb       0x3c out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_cipher_is_valid.o)
                                        0xb336 (size before relaxing)
- .debug_str     0x0000000000033d34       0x38 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_cipher.o)
+ .debug_str     0x0000000000033d27       0x38 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_cipher.o)
                                        0xb335 (size before relaxing)
- .debug_str     0x0000000000033d6c       0x36 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_hash.o)
+ .debug_str     0x0000000000033d5f       0x36 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_hash.o)
                                        0xb331 (size before relaxing)
- .debug_str     0x0000000000033da2       0x36 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_prng.o)
+ .debug_str     0x0000000000033d95       0x36 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_find_prng.o)
                                        0xb331 (size before relaxing)
- .debug_str     0x0000000000033dd8       0x3c out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_hash_descriptor.o)
+ .debug_str     0x0000000000033dcb       0x3c out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_hash_descriptor.o)
                                        0xb116 (size before relaxing)
- .debug_str     0x0000000000033e14       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_hash_is_valid.o)
+ .debug_str     0x0000000000033e07       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_hash_is_valid.o)
                                        0xb332 (size before relaxing)
- .debug_str     0x0000000000033e4e       0x3c out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_prng_descriptor.o)
+ .debug_str     0x0000000000033e41       0x3c out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_prng_descriptor.o)
                                        0xb116 (size before relaxing)
- .debug_str     0x0000000000033e8a       0x3c out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_cipher.o)
+ .debug_str     0x0000000000033e7d       0x3c out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_cipher.o)
                                        0xb33d (size before relaxing)
- .debug_str     0x0000000000033ec6       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_hash.o)
+ .debug_str     0x0000000000033eb9       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_hash.o)
                                        0xb337 (size before relaxing)
- .debug_str     0x0000000000033f00       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_prng.o)
+ .debug_str     0x0000000000033ef3       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_register_prng.o)
                                        0xb337 (size before relaxing)
- .debug_str     0x0000000000033f3a       0x2b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_free.o)
+ .debug_str     0x0000000000033f2d       0x2b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_free.o)
                                        0xb131 (size before relaxing)
- .debug_str     0x0000000000033f65      0x102 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_make_key.o)
+ .debug_str     0x0000000000033f58      0x102 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_make_key.o)
                                        0xb48b (size before relaxing)
- .debug_str     0x0000000000034067      0x211 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_sign_hash.o)
+ .debug_str     0x000000000003405a      0x211 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_sign_hash.o)
                                        0xb579 (size before relaxing)
- .debug_str     0x0000000000034278       0x6b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_verify_hash.o)
+ .debug_str     0x000000000003426b       0x6b out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dsa_verify_hash.o)
                                        0xb534 (size before relaxing)
- .debug_str     0x00000000000342e3       0x42 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dh.o)
+ .debug_str     0x00000000000342d6       0x42 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(dh.o)
                                        0xb3ed (size before relaxing)
- .debug_str     0x0000000000034325       0x35 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hash_memory.o)
+ .debug_str     0x0000000000034318       0x35 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(hash_memory.o)
                                        0xb347 (size before relaxing)
- .debug_str     0x000000000003435a       0x36 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(rand_bn.o)
+ .debug_str     0x000000000003434d       0x36 out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(rand_bn.o)
                                        0xb358 (size before relaxing)
- .debug_str     0x0000000000034390       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_prng_is_valid.o)
+ .debug_str     0x0000000000034383       0x3a out/arm-plat-imx/core/lib/libtomcrypt/libtomcrypt.a(crypt_prng_is_valid.o)
                                        0xb332 (size before relaxing)
- .debug_str     0x00000000000343ca       0x5f out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_misc.o)
+ .debug_str     0x00000000000343bd       0x5f out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_misc.o)
                                        0x55a5 (size before relaxing)
- .debug_str     0x0000000000034429       0xef out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_montgomery.o)
+ .debug_str     0x000000000003441c       0xef out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_montgomery.o)
                                        0x56d7 (size before relaxing)
- .debug_str     0x0000000000034518      0x182 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_primetest.o)
+ .debug_str     0x000000000003450b      0x182 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_primetest.o)
                                        0x57b8 (size before relaxing)
- .debug_str     0x000000000003469a       0x2c out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_conv.o)
+ .debug_str     0x000000000003468d       0x2c out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_conv.o)
                                        0x552c (size before relaxing)
- .debug_str     0x00000000000346c6      0x13f out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_div.o)
+ .debug_str     0x00000000000346b9      0x13f out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_div.o)
                                        0x5722 (size before relaxing)
- .debug_str     0x0000000000034805       0x8b out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_gcd.o)
+ .debug_str     0x00000000000347f8       0x8b out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_gcd.o)
                                        0x5652 (size before relaxing)
- .debug_str     0x0000000000034890       0x47 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_mem_static.o)
+ .debug_str     0x0000000000034883       0x47 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_mem_static.o)
                                        0x6128 (size before relaxing)
- .debug_str     0x00000000000348d7       0x59 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_mul.o)
+ .debug_str     0x00000000000348ca       0x59 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_mul.o)
                                        0x5638 (size before relaxing)
- .debug_str     0x0000000000034930       0x26 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_random.o)
+ .debug_str     0x0000000000034923       0x26 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_random.o)
                                        0x896c (size before relaxing)
- .debug_str     0x0000000000034956       0x33 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_shift.o)
+ .debug_str     0x0000000000034949       0x33 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_shift.o)
                                        0x55a9 (size before relaxing)
- .debug_str     0x0000000000034989       0xf8 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_addsub.o)
+ .debug_str     0x000000000003497c       0xf8 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_addsub.o)
                                        0x5719 (size before relaxing)
- .debug_str     0x0000000000034a81       0x3c out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_cmp.o)
+ .debug_str     0x0000000000034a74       0x3c out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_cmp.o)
                                        0x5564 (size before relaxing)
- .debug_str     0x0000000000034abd       0x81 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_expmod.o)
+ .debug_str     0x0000000000034ab0       0x81 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_expmod.o)
                                        0x5678 (size before relaxing)
- .debug_str     0x0000000000034b3e       0x16 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_init.o)
+ .debug_str     0x0000000000034b31       0x16 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_init.o)
                                        0x557e (size before relaxing)
- .debug_str     0x0000000000034b54      0x170 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_io.o)
+ .debug_str     0x0000000000034b47      0x170 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_io.o)
                                        0x5c78 (size before relaxing)
- .debug_str     0x0000000000034cc4       0x31 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_modulus.o)
+ .debug_str     0x0000000000034cb7       0x31 out/arm-plat-imx/core-lib/libmpa/libmpa.a(mpa_modulus.o)
                                        0x5617 (size before relaxing)
- .debug_str     0x0000000000034cf5      0x48e out/arm-plat-imx/core-lib/libutils/libutils.a(bget_malloc.o)
+ .debug_str     0x0000000000034ce8      0x48e out/arm-plat-imx/core-lib/libutils/libutils.a(bget_malloc.o)
                                        0xed27 (size before relaxing)
- .debug_str     0x0000000000035183       0x1d out/arm-plat-imx/core-lib/libutils/libutils.a(isxdigit.o)
+ .debug_str     0x0000000000035176       0x1d out/arm-plat-imx/core-lib/libutils/libutils.a(isxdigit.o)
                                        0x380b (size before relaxing)
- .debug_str     0x00000000000351a0       0x20 out/arm-plat-imx/core-lib/libutils/libutils.a(malloc_lock.o)
+ .debug_str     0x0000000000035193       0x20 out/arm-plat-imx/core-lib/libutils/libutils.a(malloc_lock.o)
                                        0xe4ce (size before relaxing)
- .debug_str     0x00000000000351c0      0x251 out/arm-plat-imx/core-lib/libutils/libutils.a(qsort.o)
+ .debug_str     0x00000000000351b3      0x251 out/arm-plat-imx/core-lib/libutils/libutils.a(qsort.o)
                                        0x4bf2 (size before relaxing)
- .debug_str     0x0000000000035411       0x33 out/arm-plat-imx/core-lib/libutils/libutils.a(snprintf.o)
+ .debug_str     0x0000000000035404       0x33 out/arm-plat-imx/core-lib/libutils/libutils.a(snprintf.o)
                                        0x3b56 (size before relaxing)
- .debug_str     0x0000000000035444       0x1c out/arm-plat-imx/core-lib/libutils/libutils.a(tolower.o)
+ .debug_str     0x0000000000035437       0x1c out/arm-plat-imx/core-lib/libutils/libutils.a(tolower.o)
                                        0x3808 (size before relaxing)
- .debug_str     0x0000000000035460      0x2fd out/arm-plat-imx/core-lib/libutils/libutils.a(memcmp.o)
+ .debug_str     0x0000000000035453      0x2fd out/arm-plat-imx/core-lib/libutils/libutils.a(memcmp.o)
                                        0x3be0 (size before relaxing)
- .debug_str     0x000000000003575d       0x97 out/arm-plat-imx/core-lib/libutils/libutils.a(memcpy.o)
+ .debug_str     0x0000000000035750       0x97 out/arm-plat-imx/core-lib/libutils/libutils.a(memcpy.o)
                                        0x3c13 (size before relaxing)
- .debug_str     0x00000000000357f4       0x35 out/arm-plat-imx/core-lib/libutils/libutils.a(memmove.o)
+ .debug_str     0x00000000000357e7       0x35 out/arm-plat-imx/core-lib/libutils/libutils.a(memmove.o)
                                        0x3df9 (size before relaxing)
- .debug_str     0x0000000000035829       0x4c out/arm-plat-imx/core-lib/libutils/libutils.a(memset.o)
+ .debug_str     0x000000000003581c       0x4c out/arm-plat-imx/core-lib/libutils/libutils.a(memset.o)
                                        0x3bb0 (size before relaxing)
- .debug_str     0x0000000000035875       0x6c out/arm-plat-imx/core-lib/libutils/libutils.a(strcmp.o)
+ .debug_str     0x0000000000035868       0x6c out/arm-plat-imx/core-lib/libutils/libutils.a(strcmp.o)
                                        0x3dbb (size before relaxing)
- .debug_str     0x00000000000358e1       0x22 out/arm-plat-imx/core-lib/libutils/libutils.a(strlen.o)
+ .debug_str     0x00000000000358d4       0x22 out/arm-plat-imx/core-lib/libutils/libutils.a(strlen.o)
                                        0x3dbb (size before relaxing)
- .debug_str     0x0000000000035903      0x55e out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
+ .debug_str     0x00000000000358f6      0x55e out/arm-plat-imx/core-lib/libutils/libutils.a(snprintk.o)
                                        0x488c (size before relaxing)
- .debug_str     0x0000000000035e61       0x22 out/arm-plat-imx/core-lib/libutils/libutils.a(buf_compare_ct.o)
+ .debug_str     0x0000000000035e54       0x22 out/arm-plat-imx/core-lib/libutils/libutils.a(buf_compare_ct.o)
                                        0x39be (size before relaxing)
- .debug_str     0x0000000000035e83       0x9c out/arm-plat-imx/core-lib/libutils/libutils.a(trace.o)
+ .debug_str     0x0000000000035e76       0x9c out/arm-plat-imx/core-lib/libutils/libutils.a(trace.o)
                                        0x577d (size before relaxing)
- .debug_str     0x0000000000035f1f       0xb8 out/arm-plat-imx/core-lib/libutils/libutils.a(mempool.o)
+ .debug_str     0x0000000000035f12       0xb8 out/arm-plat-imx/core-lib/libutils/libutils.a(mempool.o)
                                        0xe70e (size before relaxing)
- .debug_str     0x0000000000035fd7       0x78 out/arm-plat-imx/core-lib/libutils/libutils.a(memchr.o)
+ .debug_str     0x0000000000035fca       0x78 out/arm-plat-imx/core-lib/libutils/libutils.a(memchr.o)
                                        0x3e1e (size before relaxing)
 
 .note.GNU-stack
