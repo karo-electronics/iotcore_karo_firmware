@@ -16,7 +16,7 @@
 	url = https://github.com/Microsoft/mu_oem_sample.git
 	branch = release/201903
 [submodule "imx-atf"]
-	path = imx_atf
+	path = imx-atf
 	url = https://source.codeaurora.org/external/imx/imx-atf
 	branch = imx_4.14.98_2.0.0_ga
 [submodule "MSRSec"]
